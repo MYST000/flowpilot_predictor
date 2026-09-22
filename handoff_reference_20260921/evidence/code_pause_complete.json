@@ -1,0 +1,55 @@
+{
+  "verified_at": "2026-09-18T16:06:29.472969+00:00",
+  "phase": "paused_by_user",
+  "accepted_tasks": 167,
+  "planned_tasks": 402,
+  "remaining_tasks": 235,
+  "stages": [
+    {
+      "stage": "lcb-historical25",
+      "accepted": 25
+    },
+    {
+      "stage": "lcb-fit205",
+      "accepted": 142
+    }
+  ],
+  "accepted_artifacts_before_stop_sha256_match": 668,
+  "accepted_registry_artifacts_validated": 167,
+  "frozen_source_config_selection_runtime_gate_passed": true,
+  "completed_exports_verified": true,
+  "interrupted_task": "abc360_c",
+  "interrupted_stage": "lcb-fit205",
+  "interrupted_attempt": "attempt-001",
+  "next_attempt": "attempt-002",
+  "interrupted_raw_attempt_retained": true,
+  "tmux_sessions_stopped": true,
+  "owned_processes_remaining": [],
+  "engine_group_empty": true,
+  "task_uid_processes_remaining": [],
+  "port_released": 8000,
+  "runtime_cache_removed": true,
+  "runtime_cache_logical_bytes_before_stop": 56383499,
+  "additional_cache_cleanup": [
+    {
+      "path": "/root/flowpilot_predictor/runs/code_lcb362_quixbugs40_B_seed20260916_20260917_001/ops/__pycache__",
+      "logical_bytes": 4398
+    }
+  ],
+  "disk_free_bytes_now": 39761940480,
+  "resume_command": "bash /root/flowpilot_predictor/runs/code_lcb362_quixbugs40_B_seed20260916_20260917_001/resume_with_guard.sh",
+  "read_only_check_command": "bash /root/flowpilot_predictor/runs/code_lcb362_quixbugs40_B_seed20260916_20260917_001/resume_with_guard.sh --check",
+  "resume_flags": {
+    "lcb-historical25": [],
+    "lcb-fit205": [
+      "--retry-infrastructure"
+    ],
+    "lcb-tune51": [],
+    "lcb-calibration31": [],
+    "lcb-test50": [],
+    "quix-dev40": []
+  },
+  "collection_restarted": false,
+  "evidence": "/root/flowpilot_predictor/runs/code_lcb362_quixbugs40_B_seed20260916_20260917_001/evidence/pause_20260918T160435Z",
+  "gpu_index_before_pause": 2
+}

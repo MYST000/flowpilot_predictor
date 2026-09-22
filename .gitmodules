@@ -1,0 +1,10 @@
+[submodule "repos/Openhands-software-agent-sdk"]
+	path = repos/Openhands-software-agent-sdk
+	url = https://github.com/Fate0123/Openhands-software-agent-sdk.git
+	branch = ql
+	ignore = untracked
+
+[submodule "repos/BrowseComp-Plus"]
+	path = repos/BrowseComp-Plus
+	url = https://github.com/texttron/BrowseComp-Plus.git
+	branch = main

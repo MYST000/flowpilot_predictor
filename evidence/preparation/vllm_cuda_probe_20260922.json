@@ -1,0 +1,23 @@
+{
+  "python": "3.12.14",
+  "torch": "2.13.0+cu129",
+  "cuda_runtime": "12.9",
+  "vllm": "0.29.0",
+  "transformers": "5.17.0",
+  "tokenizers": "0.23.2",
+  "cuda_available": true,
+  "gpu_uuids": [
+    "GPU-3b4ce066-8e0b-05fd-5578-252c1c1b00cd",
+    "GPU-ed408e81-0cfa-4522-bb89-759de1363dec"
+  ],
+  "tiny_bf16_gpu_matmul": [
+    {
+      "device": 0,
+      "value": 262144.0
+    },
+    {
+      "device": 1,
+      "value": 262144.0
+    }
+  ]
+}

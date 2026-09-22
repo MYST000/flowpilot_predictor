@@ -1,0 +1,8 @@
+usage: smoke_browsecomp_native.py [-h] [--output OUTPUT]
+
+Four independent native clients; generic queries only, no benchmark tasks or
+LLM.
+
+options:
+  -h, --help       show this help message and exit
+  --output OUTPUT

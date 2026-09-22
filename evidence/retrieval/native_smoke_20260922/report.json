@@ -1,0 +1,277 @@
+{
+  "passed": true,
+  "scope": "4 generic search calls and 1 get_document; no benchmark questions, no LLM or GPU",
+  "independent_clients": 4,
+  "client_search_intervals_peak_overlap": 4,
+  "server_executor_parallelism_measured": false,
+  "clients": [
+    {
+      "slot": 0,
+      "query": "London museum",
+      "submitted_ns": 4427447605131325,
+      "returned_ns": 4427450614860261,
+      "search_round_trip_ms": 3007.027669,
+      "results": 5,
+      "identity": {
+        "backend": "browsecomp_mcp",
+        "mcp_url": "http://127.0.0.1:8123/mcp",
+        "corpus_revision": "b27b02bc3e45511b8b82a13e6f90ce761df726f6",
+        "observed_tools_sha256": "b374e686b7bc81b3df81ff2a5fa2971eb64ba105f0b453cde678dffd4048e16f",
+        "tools": [
+          {
+            "name": "get_document",
+            "title": null,
+            "description": "Retrieve a full document by its docid.",
+            "inputSchema": {
+              "properties": {
+                "docid": {
+                  "title": "Docid",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "docid"
+              ],
+              "type": "object"
+            },
+            "outputSchema": null,
+            "icons": null,
+            "annotations": null,
+            "meta": null,
+            "execution": null
+          },
+          {
+            "name": "search",
+            "title": null,
+            "description": "Perform a search on a knowledge source. Returns top-5 hits with docid, score, and snippet. The snippet contains the document's contents (may be truncated based on token limits).",
+            "inputSchema": {
+              "properties": {
+                "query": {
+                  "title": "Query",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "query"
+              ],
+              "type": "object"
+            },
+            "outputSchema": null,
+            "icons": null,
+            "annotations": null,
+            "meta": null,
+            "execution": null
+          }
+        ],
+        "executor_timing_available": false,
+        "server_asset_identity_verified_by_bridge": false
+      },
+      "executor_duration_ms": null,
+      "queue_wait_ms": null,
+      "errors": [],
+      "document": {
+        "docid": "16973",
+        "characters": 184229,
+        "sha256": "0bee192123ad98aed3bf77786982b75c35318c0837d1b7509fbf01940d93f704",
+        "round_trip_ms": 44.351393,
+        "client_output_limit_chars": 3,
+        "no_client_truncation": true
+      }
+    },
+    {
+      "slot": 1,
+      "query": "mathematics history",
+      "submitted_ns": 4427447606686668,
+      "returned_ns": 4427450614734409,
+      "search_round_trip_ms": 3005.98252,
+      "results": 5,
+      "identity": {
+        "backend": "browsecomp_mcp",
+        "mcp_url": "http://127.0.0.1:8123/mcp",
+        "corpus_revision": "b27b02bc3e45511b8b82a13e6f90ce761df726f6",
+        "observed_tools_sha256": "b374e686b7bc81b3df81ff2a5fa2971eb64ba105f0b453cde678dffd4048e16f",
+        "tools": [
+          {
+            "name": "get_document",
+            "title": null,
+            "description": "Retrieve a full document by its docid.",
+            "inputSchema": {
+              "properties": {
+                "docid": {
+                  "title": "Docid",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "docid"
+              ],
+              "type": "object"
+            },
+            "outputSchema": null,
+            "icons": null,
+            "annotations": null,
+            "meta": null,
+            "execution": null
+          },
+          {
+            "name": "search",
+            "title": null,
+            "description": "Perform a search on a knowledge source. Returns top-5 hits with docid, score, and snippet. The snippet contains the document's contents (may be truncated based on token limits).",
+            "inputSchema": {
+              "properties": {
+                "query": {
+                  "title": "Query",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "query"
+              ],
+              "type": "object"
+            },
+            "outputSchema": null,
+            "icons": null,
+            "annotations": null,
+            "meta": null,
+            "execution": null
+          }
+        ],
+        "executor_timing_available": false,
+        "server_asset_identity_verified_by_bridge": false
+      },
+      "executor_duration_ms": null,
+      "queue_wait_ms": null,
+      "errors": []
+    },
+    {
+      "slot": 2,
+      "query": "ocean research",
+      "submitted_ns": 4427447604057227,
+      "returned_ns": 4427450612040875,
+      "search_round_trip_ms": 3006.283802,
+      "results": 5,
+      "identity": {
+        "backend": "browsecomp_mcp",
+        "mcp_url": "http://127.0.0.1:8123/mcp",
+        "corpus_revision": "b27b02bc3e45511b8b82a13e6f90ce761df726f6",
+        "observed_tools_sha256": "b374e686b7bc81b3df81ff2a5fa2971eb64ba105f0b453cde678dffd4048e16f",
+        "tools": [
+          {
+            "name": "get_document",
+            "title": null,
+            "description": "Retrieve a full document by its docid.",
+            "inputSchema": {
+              "properties": {
+                "docid": {
+                  "title": "Docid",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "docid"
+              ],
+              "type": "object"
+            },
+            "outputSchema": null,
+            "icons": null,
+            "annotations": null,
+            "meta": null,
+            "execution": null
+          },
+          {
+            "name": "search",
+            "title": null,
+            "description": "Perform a search on a knowledge source. Returns top-5 hits with docid, score, and snippet. The snippet contains the document's contents (may be truncated based on token limits).",
+            "inputSchema": {
+              "properties": {
+                "query": {
+                  "title": "Query",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "query"
+              ],
+              "type": "object"
+            },
+            "outputSchema": null,
+            "icons": null,
+            "annotations": null,
+            "meta": null,
+            "execution": null
+          }
+        ],
+        "executor_timing_available": false,
+        "server_asset_identity_verified_by_bridge": false
+      },
+      "executor_duration_ms": null,
+      "queue_wait_ms": null,
+      "errors": []
+    },
+    {
+      "slot": 3,
+      "query": "railway station",
+      "submitted_ns": 4427447603528499,
+      "returned_ns": 4427447809173812,
+      "search_round_trip_ms": 204.080271,
+      "results": 5,
+      "identity": {
+        "backend": "browsecomp_mcp",
+        "mcp_url": "http://127.0.0.1:8123/mcp",
+        "corpus_revision": "b27b02bc3e45511b8b82a13e6f90ce761df726f6",
+        "observed_tools_sha256": "b374e686b7bc81b3df81ff2a5fa2971eb64ba105f0b453cde678dffd4048e16f",
+        "tools": [
+          {
+            "name": "get_document",
+            "title": null,
+            "description": "Retrieve a full document by its docid.",
+            "inputSchema": {
+              "properties": {
+                "docid": {
+                  "title": "Docid",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "docid"
+              ],
+              "type": "object"
+            },
+            "outputSchema": null,
+            "icons": null,
+            "annotations": null,
+            "meta": null,
+            "execution": null
+          },
+          {
+            "name": "search",
+            "title": null,
+            "description": "Perform a search on a knowledge source. Returns top-5 hits with docid, score, and snippet. The snippet contains the document's contents (may be truncated based on token limits).",
+            "inputSchema": {
+              "properties": {
+                "query": {
+                  "title": "Query",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "query"
+              ],
+              "type": "object"
+            },
+            "outputSchema": null,
+            "icons": null,
+            "annotations": null,
+            "meta": null,
+            "execution": null
+          }
+        ],
+        "executor_timing_available": false,
+        "server_asset_identity_verified_by_bridge": false
+      },
+      "executor_duration_ms": null,
+      "queue_wait_ms": null,
+      "errors": []
+    }
+  ]
+}

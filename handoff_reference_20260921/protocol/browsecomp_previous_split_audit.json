@@ -1,0 +1,3337 @@
+{
+  "scope": "split calculation only; full corpus index not built here",
+  "counts": {
+    "fit": 493,
+    "tune": 124,
+    "test": 82,
+    "dev": 41,
+    "calibration": 82,
+    "historical_dev": 8
+  },
+  "unique_tasks": 830,
+  "groups": 811,
+  "largest_group": 3,
+  "seed": 20260920,
+  "selection": {
+    "1": {
+      "task_group_id": "browsecomp/43de3a417d75f4818c5a5532",
+      "research_split": "fit"
+    },
+    "10": {
+      "task_group_id": "browsecomp/6e32bc5b03ab4d239b1eff1d",
+      "research_split": "fit"
+    },
+    "100": {
+      "task_group_id": "browsecomp/7ca2b0f6fafed1ebb6862099",
+      "research_split": "tune"
+    },
+    "1000": {
+      "task_group_id": "browsecomp/87f71afe397c886db7bd0339",
+      "research_split": "fit"
+    },
+    "1002": {
+      "task_group_id": "browsecomp/d09f110a45ad66558e98ef2b",
+      "research_split": "fit"
+    },
+    "1003": {
+      "task_group_id": "browsecomp/9c31991bfab87db6477193fd",
+      "research_split": "fit"
+    },
+    "1004": {
+      "task_group_id": "browsecomp/ba07166769a3e3452c50870c",
+      "research_split": "test"
+    },
+    "1005": {
+      "task_group_id": "browsecomp/7035e44c680d86d35eccc733",
+      "research_split": "fit"
+    },
+    "1007": {
+      "task_group_id": "browsecomp/79f3bd6d76da47d6a9e81f97",
+      "research_split": "test"
+    },
+    "1008": {
+      "task_group_id": "browsecomp/d2dc8f0055b993ddce1703ad",
+      "research_split": "fit"
+    },
+    "1010": {
+      "task_group_id": "browsecomp/ccb25519846553ddeabd7d79",
+      "research_split": "tune"
+    },
+    "1012": {
+      "task_group_id": "browsecomp/60a3fe6cb65cd172e5a8d837",
+      "research_split": "tune"
+    },
+    "1015": {
+      "task_group_id": "browsecomp/b26e83e76e0031ecc7490f27",
+      "research_split": "fit"
+    },
+    "1016": {
+      "task_group_id": "browsecomp/e30f45278324c0be09044044",
+      "research_split": "dev"
+    },
+    "1018": {
+      "task_group_id": "browsecomp/ce42e598675f67de9d3be1e4",
+      "research_split": "fit"
+    },
+    "1019": {
+      "task_group_id": "browsecomp/7cddda1a728f92022f10315b",
+      "research_split": "fit"
+    },
+    "102": {
+      "task_group_id": "browsecomp/9649340520a48723d2ba8d1f",
+      "research_split": "tune"
+    },
+    "1020": {
+      "task_group_id": "browsecomp/9823889f2d204d3e6fe6d08a",
+      "research_split": "fit"
+    },
+    "1021": {
+      "task_group_id": "browsecomp/d01eaa7161a92c2744a9962b",
+      "research_split": "fit"
+    },
+    "1022": {
+      "task_group_id": "browsecomp/4f5256da086a19543bc0d1aa",
+      "research_split": "test"
+    },
+    "1023": {
+      "task_group_id": "browsecomp/874c83540d2dc65ce4a49c04",
+      "research_split": "fit"
+    },
+    "1025": {
+      "task_group_id": "browsecomp/690665a8fdc8971b52fa9e34",
+      "research_split": "dev"
+    },
+    "1026": {
+      "task_group_id": "browsecomp/53f27112912bb8162404c2ab",
+      "research_split": "tune"
+    },
+    "1027": {
+      "task_group_id": "browsecomp/a3d8f53c4bad15ace5ee1333",
+      "research_split": "fit"
+    },
+    "1028": {
+      "task_group_id": "browsecomp/50640397834dd96448c33f78",
+      "research_split": "tune"
+    },
+    "1029": {
+      "task_group_id": "browsecomp/308fb68b316378bf2b5b91ac",
+      "research_split": "test"
+    },
+    "103": {
+      "task_group_id": "browsecomp/12b3df9192c0a044bd582c94",
+      "research_split": "fit"
+    },
+    "1030": {
+      "task_group_id": "browsecomp/b27ff6312df9c2856ddc36b6",
+      "research_split": "fit"
+    },
+    "1032": {
+      "task_group_id": "browsecomp/68ffb230b659f47974631bd2",
+      "research_split": "fit"
+    },
+    "1033": {
+      "task_group_id": "browsecomp/119ee0b0cc26093644cb94fc",
+      "research_split": "fit"
+    },
+    "1034": {
+      "task_group_id": "browsecomp/1fc12532d71f5ac3477a4b3f",
+      "research_split": "fit"
+    },
+    "1035": {
+      "task_group_id": "browsecomp/297da6f10216840b07e9c157",
+      "research_split": "calibration"
+    },
+    "1036": {
+      "task_group_id": "browsecomp/b33cc2be20ef231d730c6ffe",
+      "research_split": "fit"
+    },
+    "1037": {
+      "task_group_id": "browsecomp/09aaa6062f4a39b891182fac",
+      "research_split": "fit"
+    },
+    "1038": {
+      "task_group_id": "browsecomp/7cabe46d3dc75c47d4e104a9",
+      "research_split": "fit"
+    },
+    "1039": {
+      "task_group_id": "browsecomp/dd26c2c9c10fcb16dc00bbe9",
+      "research_split": "test"
+    },
+    "1040": {
+      "task_group_id": "browsecomp/501c55f152233f3e9515e102",
+      "research_split": "test"
+    },
+    "1041": {
+      "task_group_id": "browsecomp/acd6803db0a5eead7607787c",
+      "research_split": "fit"
+    },
+    "1042": {
+      "task_group_id": "browsecomp/f462343d5eae85671ec21307",
+      "research_split": "fit"
+    },
+    "1043": {
+      "task_group_id": "browsecomp/7f75e8915ccd49e110000de7",
+      "research_split": "calibration"
+    },
+    "1044": {
+      "task_group_id": "browsecomp/25368c9110728582f83fbdd8",
+      "research_split": "fit"
+    },
+    "1045": {
+      "task_group_id": "browsecomp/405d64df08d69e0467d5ba93",
+      "research_split": "fit"
+    },
+    "1046": {
+      "task_group_id": "browsecomp/138a6524aa79675f5b7fe04e",
+      "research_split": "fit"
+    },
+    "1047": {
+      "task_group_id": "browsecomp/20678ccebce4dd5c47f03bba",
+      "research_split": "fit"
+    },
+    "1048": {
+      "task_group_id": "browsecomp/3f22339e9c1972df86390748",
+      "research_split": "fit"
+    },
+    "1049": {
+      "task_group_id": "browsecomp/2024e2f0abf542628dabad87",
+      "research_split": "fit"
+    },
+    "105": {
+      "task_group_id": "browsecomp/b745af82e9fe7d20e1c66e79",
+      "research_split": "tune"
+    },
+    "1052": {
+      "task_group_id": "browsecomp/5bfadccf09aa82f87c82783e",
+      "research_split": "calibration"
+    },
+    "1053": {
+      "task_group_id": "browsecomp/032ddad0dfc6d4460115b9cd",
+      "research_split": "fit"
+    },
+    "1055": {
+      "task_group_id": "browsecomp/62f1f3d2caeea796250e1c66",
+      "research_split": "fit"
+    },
+    "1057": {
+      "task_group_id": "browsecomp/3c2c8f27272d86f785621ccd",
+      "research_split": "fit"
+    },
+    "1058": {
+      "task_group_id": "browsecomp/e1d9c85ff62186ea5eba3e7b",
+      "research_split": "fit"
+    },
+    "106": {
+      "task_group_id": "browsecomp/57af6fe488bba6cd224ae96e",
+      "research_split": "fit"
+    },
+    "1060": {
+      "task_group_id": "browsecomp/0582a7cf29bde6fd8e59e91a",
+      "research_split": "tune"
+    },
+    "1061": {
+      "task_group_id": "browsecomp/9d6a79db9f70f480b53d765b",
+      "research_split": "fit"
+    },
+    "1062": {
+      "task_group_id": "browsecomp/4a383ae4fc8f688f9020b8d3",
+      "research_split": "fit"
+    },
+    "1063": {
+      "task_group_id": "browsecomp/800c39f798be572025142fa2",
+      "research_split": "fit"
+    },
+    "1065": {
+      "task_group_id": "browsecomp/1bc72c293f420770f578f0c0",
+      "research_split": "test"
+    },
+    "1066": {
+      "task_group_id": "browsecomp/e03ed09f565fc4cdd2153e02",
+      "research_split": "calibration"
+    },
+    "1068": {
+      "task_group_id": "browsecomp/a870dcb24a5decb006ff62fa",
+      "research_split": "fit"
+    },
+    "107": {
+      "task_group_id": "browsecomp/f24b576bdb7d04fb296f50cb",
+      "research_split": "calibration"
+    },
+    "1071": {
+      "task_group_id": "browsecomp/603a46b611985fb132839f69",
+      "research_split": "fit"
+    },
+    "1072": {
+      "task_group_id": "browsecomp/a0c357c04e807a9b80b199e0",
+      "research_split": "calibration"
+    },
+    "1073": {
+      "task_group_id": "browsecomp/52bf13c18358488ad9154ec3",
+      "research_split": "test"
+    },
+    "1076": {
+      "task_group_id": "browsecomp/c0278f6c246fb4fd90518966",
+      "research_split": "calibration"
+    },
+    "1077": {
+      "task_group_id": "browsecomp/7280d046250502a99d3a9174",
+      "research_split": "dev"
+    },
+    "1078": {
+      "task_group_id": "browsecomp/7485d5d3c2620570cb485acd",
+      "research_split": "fit"
+    },
+    "1079": {
+      "task_group_id": "browsecomp/dcdbccfa33cc17acd4983a29",
+      "research_split": "calibration"
+    },
+    "1081": {
+      "task_group_id": "browsecomp/ff8af3592f31e1333e0c4f13",
+      "research_split": "test"
+    },
+    "1082": {
+      "task_group_id": "browsecomp/dcfbc4439436e37199a68086",
+      "research_split": "test"
+    },
+    "1083": {
+      "task_group_id": "browsecomp/0c8635c814587f7d36d86187",
+      "research_split": "tune"
+    },
+    "1085": {
+      "task_group_id": "browsecomp/854bf78383a68f341a1a3fa8",
+      "research_split": "test"
+    },
+    "1089": {
+      "task_group_id": "browsecomp/0d1a6b8a2ef2278075ba133c",
+      "research_split": "fit"
+    },
+    "109": {
+      "task_group_id": "browsecomp/5c44b4e1272f73e28411b088",
+      "research_split": "fit"
+    },
+    "1090": {
+      "task_group_id": "browsecomp/7d7923b4bc4d74bc822d9d75",
+      "research_split": "fit"
+    },
+    "1091": {
+      "task_group_id": "browsecomp/9d719d1cdbc908ba883aa70e",
+      "research_split": "dev"
+    },
+    "1092": {
+      "task_group_id": "browsecomp/bd22934b377da2b55dca68f3",
+      "research_split": "tune"
+    },
+    "1093": {
+      "task_group_id": "browsecomp/603fc0a409e3c3600928daf5",
+      "research_split": "tune"
+    },
+    "1094": {
+      "task_group_id": "browsecomp/51f514324eb9311e03ffde2d",
+      "research_split": "fit"
+    },
+    "1095": {
+      "task_group_id": "browsecomp/6169d3221e26a426569dbfeb",
+      "research_split": "tune"
+    },
+    "1096": {
+      "task_group_id": "browsecomp/38808ac949eca13262bb8785",
+      "research_split": "test"
+    },
+    "1097": {
+      "task_group_id": "browsecomp/102b8443a1a65e08d3b1e20c",
+      "research_split": "fit"
+    },
+    "1098": {
+      "task_group_id": "browsecomp/cf5e11e08b51c4de353f2db3",
+      "research_split": "fit"
+    },
+    "1099": {
+      "task_group_id": "browsecomp/71798fa4b4cabca6ba9d1473",
+      "research_split": "fit"
+    },
+    "11": {
+      "task_group_id": "browsecomp/71447c96d68bdc65906c5092",
+      "research_split": "calibration"
+    },
+    "110": {
+      "task_group_id": "browsecomp/e3f984d13f9e21c10d9a7b03",
+      "research_split": "dev"
+    },
+    "1101": {
+      "task_group_id": "browsecomp/5a58489a22c9b92715092435",
+      "research_split": "calibration"
+    },
+    "1103": {
+      "task_group_id": "browsecomp/bdec260a09165efe2547a417",
+      "research_split": "test"
+    },
+    "1105": {
+      "task_group_id": "browsecomp/244f52bf5a5a7a5d0109c1a2",
+      "research_split": "fit"
+    },
+    "1106": {
+      "task_group_id": "browsecomp/2c560f812411b54d0cd4c3b3",
+      "research_split": "tune"
+    },
+    "1107": {
+      "task_group_id": "browsecomp/3b3635cef2ae1f820c4a0847",
+      "research_split": "tune"
+    },
+    "1108": {
+      "task_group_id": "browsecomp/9cbcd81794b78f1d171cab35",
+      "research_split": "fit"
+    },
+    "111": {
+      "task_group_id": "browsecomp/ce790cfff57b371b71bf1fb8",
+      "research_split": "calibration"
+    },
+    "1110": {
+      "task_group_id": "browsecomp/c163350087a10bbb6c22c383",
+      "research_split": "tune"
+    },
+    "1111": {
+      "task_group_id": "browsecomp/ab4c20d5ca16298768484e75",
+      "research_split": "calibration"
+    },
+    "1115": {
+      "task_group_id": "browsecomp/57af6fe488bba6cd224ae96e",
+      "research_split": "fit"
+    },
+    "1117": {
+      "task_group_id": "browsecomp/69b67011e2516fae306a2823",
+      "research_split": "fit"
+    },
+    "1118": {
+      "task_group_id": "browsecomp/76d35c27e4e1938b4d705360",
+      "research_split": "fit"
+    },
+    "1119": {
+      "task_group_id": "browsecomp/8942de4e90c5cadd51cfb722",
+      "research_split": "fit"
+    },
+    "1121": {
+      "task_group_id": "browsecomp/c3156dcb5e24fc6884b10c1d",
+      "research_split": "fit"
+    },
+    "1122": {
+      "task_group_id": "browsecomp/c0ba7ed5c8b31755a7296603",
+      "research_split": "test"
+    },
+    "1124": {
+      "task_group_id": "browsecomp/f862549f5d8d0fa25c797a3b",
+      "research_split": "calibration"
+    },
+    "1126": {
+      "task_group_id": "browsecomp/ac7f1e728789774064460738",
+      "research_split": "fit"
+    },
+    "1127": {
+      "task_group_id": "browsecomp/e1b2777fa1acc0ffcf52d5e0",
+      "research_split": "test"
+    },
+    "1128": {
+      "task_group_id": "browsecomp/e3b04055423ab9e7e73f5fc0",
+      "research_split": "fit"
+    },
+    "113": {
+      "task_group_id": "browsecomp/a33f431fc07018cf80cc9772",
+      "research_split": "calibration"
+    },
+    "1131": {
+      "task_group_id": "browsecomp/4febbc3d54fa42cab28ad75d",
+      "research_split": "fit"
+    },
+    "1133": {
+      "task_group_id": "browsecomp/c1c6f5bd55943da910f24700",
+      "research_split": "dev"
+    },
+    "1134": {
+      "task_group_id": "browsecomp/9169f645c453bf7fc2d7dd2e",
+      "research_split": "fit"
+    },
+    "1135": {
+      "task_group_id": "browsecomp/7630b16496d2b4322edfd5e2",
+      "research_split": "fit"
+    },
+    "1138": {
+      "task_group_id": "browsecomp/e051ccbb93620d814022ae25",
+      "research_split": "fit"
+    },
+    "1139": {
+      "task_group_id": "browsecomp/4d8d6bb849957244438683fd",
+      "research_split": "fit"
+    },
+    "1141": {
+      "task_group_id": "browsecomp/f5f6424c803ac04e5d3b1dd5",
+      "research_split": "fit"
+    },
+    "1142": {
+      "task_group_id": "browsecomp/cdcece2f507718407efc5c77",
+      "research_split": "tune"
+    },
+    "1144": {
+      "task_group_id": "browsecomp/546e30bec8e681df02cd767a",
+      "research_split": "fit"
+    },
+    "1147": {
+      "task_group_id": "browsecomp/05409bca67fa256a5964d301",
+      "research_split": "fit"
+    },
+    "1148": {
+      "task_group_id": "browsecomp/d7907caa46294790d3a35ce5",
+      "research_split": "tune"
+    },
+    "1149": {
+      "task_group_id": "browsecomp/4575eb8f865b22b846dd91f0",
+      "research_split": "fit"
+    },
+    "1150": {
+      "task_group_id": "browsecomp/e32e6fb5f689988d7b700ea7",
+      "research_split": "fit"
+    },
+    "1152": {
+      "task_group_id": "browsecomp/92cdfd84ab177b35785b7f1d",
+      "research_split": "fit"
+    },
+    "1153": {
+      "task_group_id": "browsecomp/a882fec75e44bce5cdf8c738",
+      "research_split": "fit"
+    },
+    "1155": {
+      "task_group_id": "browsecomp/8f774d9cdd565c35eb7726de",
+      "research_split": "fit"
+    },
+    "1158": {
+      "task_group_id": "browsecomp/22d9d66ebc39a7263baf276b",
+      "research_split": "calibration"
+    },
+    "116": {
+      "task_group_id": "browsecomp/88ad8a1f069401e3146d7f65",
+      "research_split": "fit"
+    },
+    "1161": {
+      "task_group_id": "browsecomp/d5c8a82839724254d3d5b855",
+      "research_split": "calibration"
+    },
+    "1162": {
+      "task_group_id": "browsecomp/8e85881a6c746848d0add102",
+      "research_split": "fit"
+    },
+    "1163": {
+      "task_group_id": "browsecomp/d976545f50b0269bd339cfe0",
+      "research_split": "test"
+    },
+    "1164": {
+      "task_group_id": "browsecomp/f9573a524e1ea175dd6f278c",
+      "research_split": "fit"
+    },
+    "1167": {
+      "task_group_id": "browsecomp/7c47abb845ba8fdebdd40a57",
+      "research_split": "calibration"
+    },
+    "1169": {
+      "task_group_id": "browsecomp/58e73335c65a59ae81a65692",
+      "research_split": "tune"
+    },
+    "1172": {
+      "task_group_id": "browsecomp/ded67f7b6f5bf6e426c8ce68",
+      "research_split": "fit"
+    },
+    "1174": {
+      "task_group_id": "browsecomp/e24eb884aae6d49e02cfd380",
+      "research_split": "calibration"
+    },
+    "1176": {
+      "task_group_id": "browsecomp/6f192cdcb28f5b85b0db3b39",
+      "research_split": "fit"
+    },
+    "1177": {
+      "task_group_id": "browsecomp/b20ee764f489d884be509f0b",
+      "research_split": "fit"
+    },
+    "1179": {
+      "task_group_id": "browsecomp/9f71e83a4b9a48640f799094",
+      "research_split": "fit"
+    },
+    "1182": {
+      "task_group_id": "browsecomp/1ee822d22b1f67b4101bb1ae",
+      "research_split": "fit"
+    },
+    "1184": {
+      "task_group_id": "browsecomp/57af6fe488bba6cd224ae96e",
+      "research_split": "fit"
+    },
+    "1185": {
+      "task_group_id": "browsecomp/4b513711bc9c1439a6ab4b10",
+      "research_split": "test"
+    },
+    "1187": {
+      "task_group_id": "browsecomp/42e1f2871e52f12e9591741b",
+      "research_split": "fit"
+    },
+    "1188": {
+      "task_group_id": "browsecomp/4abeebd8c8e58bc54b85af01",
+      "research_split": "test"
+    },
+    "119": {
+      "task_group_id": "browsecomp/f7d722c7a05b454d2296f34c",
+      "research_split": "calibration"
+    },
+    "1190": {
+      "task_group_id": "browsecomp/c3e89e255681493e6f1f96d0",
+      "research_split": "fit"
+    },
+    "1191": {
+      "task_group_id": "browsecomp/59b251c1a226bd084d1a3003",
+      "research_split": "calibration"
+    },
+    "1192": {
+      "task_group_id": "browsecomp/ecc6a836617e661780fb58b0",
+      "research_split": "fit"
+    },
+    "1193": {
+      "task_group_id": "browsecomp/e3df72fed6e9086d593350a9",
+      "research_split": "fit"
+    },
+    "1194": {
+      "task_group_id": "browsecomp/a934cba2aec265032cea9c35",
+      "research_split": "fit"
+    },
+    "1195": {
+      "task_group_id": "browsecomp/e100ad21abd1d5806ba41e4e",
+      "research_split": "fit"
+    },
+    "1196": {
+      "task_group_id": "browsecomp/ef23da8274f03241a1bbe213",
+      "research_split": "fit"
+    },
+    "1198": {
+      "task_group_id": "browsecomp/10660adffc097cdbe50eb0ff",
+      "research_split": "fit"
+    },
+    "12": {
+      "task_group_id": "browsecomp/115175dafa22e31590031054",
+      "research_split": "fit"
+    },
+    "120": {
+      "task_group_id": "browsecomp/25c31de92e6dcd20f991271f",
+      "research_split": "fit"
+    },
+    "1200": {
+      "task_group_id": "browsecomp/6a0482c900addb92a3acff67",
+      "research_split": "fit"
+    },
+    "1201": {
+      "task_group_id": "browsecomp/43633f3d3137329420f7a33a",
+      "research_split": "test"
+    },
+    "1203": {
+      "task_group_id": "browsecomp/89de42d2b7bce74319edad4b",
+      "research_split": "calibration"
+    },
+    "1204": {
+      "task_group_id": "browsecomp/89de42d2b7bce74319edad4b",
+      "research_split": "calibration"
+    },
+    "1206": {
+      "task_group_id": "browsecomp/a32afccc748a4506d94e881a",
+      "research_split": "fit"
+    },
+    "1207": {
+      "task_group_id": "browsecomp/6e8a87e973412885f152d34d",
+      "research_split": "fit"
+    },
+    "1208": {
+      "task_group_id": "browsecomp/f84923ac270bd56136b56af1",
+      "research_split": "fit"
+    },
+    "1209": {
+      "task_group_id": "browsecomp/5e8feb9d7e65616a94d8bf02",
+      "research_split": "fit"
+    },
+    "121": {
+      "task_group_id": "browsecomp/1ee822d22b1f67b4101bb1ae",
+      "research_split": "fit"
+    },
+    "1210": {
+      "task_group_id": "browsecomp/39be93ef33f55bdfb221e9ee",
+      "research_split": "fit"
+    },
+    "1211": {
+      "task_group_id": "browsecomp/f1642e8dac83bff4e60aa814",
+      "research_split": "fit"
+    },
+    "1212": {
+      "task_group_id": "browsecomp/bed1f5df1f0b3afec227efa0",
+      "research_split": "calibration"
+    },
+    "1213": {
+      "task_group_id": "browsecomp/853be7a1ffcb804c85ce0651",
+      "research_split": "test"
+    },
+    "1214": {
+      "task_group_id": "browsecomp/2010e567f94a181179e0179a",
+      "research_split": "tune"
+    },
+    "1215": {
+      "task_group_id": "browsecomp/b87746b5d2020c8ab0ce6cae",
+      "research_split": "fit"
+    },
+    "1216": {
+      "task_group_id": "browsecomp/2b92a5ca25e0c5682d73c9db",
+      "research_split": "test"
+    },
+    "1217": {
+      "task_group_id": "browsecomp/194be3e34a650ef036ca9de9",
+      "research_split": "fit"
+    },
+    "1218": {
+      "task_group_id": "browsecomp/75b30fcd1ac9643e3dd554a2",
+      "research_split": "fit"
+    },
+    "1219": {
+      "task_group_id": "browsecomp/271b9f7361c5643c103ce4a5",
+      "research_split": "fit"
+    },
+    "122": {
+      "task_group_id": "browsecomp/c8fcb2594b7acd13a46b9502",
+      "research_split": "fit"
+    },
+    "1220": {
+      "task_group_id": "browsecomp/4d1592457da40b3ba67abf20",
+      "research_split": "fit"
+    },
+    "1221": {
+      "task_group_id": "browsecomp/bcfa15d30a85e58ea6bf38e6",
+      "research_split": "tune"
+    },
+    "1222": {
+      "task_group_id": "browsecomp/7ada84eff72cae311b68bc4e",
+      "research_split": "tune"
+    },
+    "1223": {
+      "task_group_id": "browsecomp/199f877a7fdcda1484e62cb6",
+      "research_split": "fit"
+    },
+    "1224": {
+      "task_group_id": "browsecomp/15a3915c03c9d8e41a433141",
+      "research_split": "fit"
+    },
+    "1225": {
+      "task_group_id": "browsecomp/83032922b0a4e4a72f25138c",
+      "research_split": "fit"
+    },
+    "1226": {
+      "task_group_id": "browsecomp/b8f96f19d666d705a322fa68",
+      "research_split": "calibration"
+    },
+    "1227": {
+      "task_group_id": "browsecomp/5e800d40783d3edae9ddf1f0",
+      "research_split": "calibration"
+    },
+    "1228": {
+      "task_group_id": "browsecomp/593b9194d025817937fa3989",
+      "research_split": "fit"
+    },
+    "1230": {
+      "task_group_id": "browsecomp/500e60eb7f2ab5109e7882d1",
+      "research_split": "tune"
+    },
+    "1231": {
+      "task_group_id": "browsecomp/95f719476062a3f8550898b9",
+      "research_split": "fit"
+    },
+    "1232": {
+      "task_group_id": "browsecomp/1d853a05722c846dca0b8cef",
+      "research_split": "test"
+    },
+    "1233": {
+      "task_group_id": "browsecomp/150f1f29c305fdcf42a6a938",
+      "research_split": "calibration"
+    },
+    "1234": {
+      "task_group_id": "browsecomp/bbc61898f610a139a4d31a93",
+      "research_split": "tune"
+    },
+    "1235": {
+      "task_group_id": "browsecomp/a2d21ca93706d33835d645ef",
+      "research_split": "tune"
+    },
+    "1236": {
+      "task_group_id": "browsecomp/5ebd913f0e58874c6224d9dc",
+      "research_split": "tune"
+    },
+    "1237": {
+      "task_group_id": "browsecomp/151e6671bd9b809f0b7afc0b",
+      "research_split": "dev"
+    },
+    "1238": {
+      "task_group_id": "browsecomp/10a90139ba6cd52f3863af58",
+      "research_split": "dev"
+    },
+    "1239": {
+      "task_group_id": "browsecomp/5e72cc36149e4265d5170b20",
+      "research_split": "test"
+    },
+    "124": {
+      "task_group_id": "browsecomp/bda135f9a9c461a704efb587",
+      "research_split": "fit"
+    },
+    "1240": {
+      "task_group_id": "browsecomp/7d0b2501ae55b9dc577a2447",
+      "research_split": "fit"
+    },
+    "1242": {
+      "task_group_id": "browsecomp/02a34c18030762ca0088cfc2",
+      "research_split": "dev"
+    },
+    "1243": {
+      "task_group_id": "browsecomp/593b9194d025817937fa3989",
+      "research_split": "fit"
+    },
+    "1246": {
+      "task_group_id": "browsecomp/c849a1040b95a6faa45f1360",
+      "research_split": "calibration"
+    },
+    "1247": {
+      "task_group_id": "browsecomp/be8e5bc633f2adb719080ae7",
+      "research_split": "fit"
+    },
+    "1248": {
+      "task_group_id": "browsecomp/3492d94d9b2f444b120e05df",
+      "research_split": "fit"
+    },
+    "1249": {
+      "task_group_id": "browsecomp/78588844fb69b74f1209d40b",
+      "research_split": "dev"
+    },
+    "125": {
+      "task_group_id": "browsecomp/8b543deb8e44e185e72cf9d4",
+      "research_split": "tune"
+    },
+    "1250": {
+      "task_group_id": "browsecomp/0e581c4815066a7ff423d513",
+      "research_split": "fit"
+    },
+    "1252": {
+      "task_group_id": "browsecomp/065b53398bd1ec36bb2c824d",
+      "research_split": "fit"
+    },
+    "1253": {
+      "task_group_id": "browsecomp/dbae05e57ce1748919b6e0d4",
+      "research_split": "fit"
+    },
+    "1254": {
+      "task_group_id": "browsecomp/2bc6ff2b62203143f5128792",
+      "research_split": "tune"
+    },
+    "1257": {
+      "task_group_id": "browsecomp/28ae2d42b623a5861d3257f7",
+      "research_split": "test"
+    },
+    "1258": {
+      "task_group_id": "browsecomp/d71b9b84dd4fe014666e7e3d",
+      "research_split": "fit"
+    },
+    "1259": {
+      "task_group_id": "browsecomp/0ad3b936585ffdefab9d763c",
+      "research_split": "fit"
+    },
+    "126": {
+      "task_group_id": "browsecomp/938c7a8e13e5f2c073a4914b",
+      "research_split": "fit"
+    },
+    "1260": {
+      "task_group_id": "browsecomp/083821f12d7436845a7f874e",
+      "research_split": "dev"
+    },
+    "1262": {
+      "task_group_id": "browsecomp/8ba4cd635f00b3bcf096007d",
+      "research_split": "fit"
+    },
+    "1263": {
+      "task_group_id": "browsecomp/63e247661f9a8287cd19eecf",
+      "research_split": "fit"
+    },
+    "1264": {
+      "task_group_id": "browsecomp/98989b4dbe7a4b5c6cb5e7e4",
+      "research_split": "fit"
+    },
+    "1265": {
+      "task_group_id": "browsecomp/2b856fc6be2fef9becc89bd7",
+      "research_split": "fit"
+    },
+    "1266": {
+      "task_group_id": "browsecomp/686329709ef6adbcc4f170d6",
+      "research_split": "fit"
+    },
+    "127": {
+      "task_group_id": "browsecomp/2559e18b9afaf13346332bbd",
+      "research_split": "calibration"
+    },
+    "128": {
+      "task_group_id": "browsecomp/6762937494768adc59b80df4",
+      "research_split": "test"
+    },
+    "130": {
+      "task_group_id": "browsecomp/e6032276dff082dac14355e8",
+      "research_split": "tune"
+    },
+    "131": {
+      "task_group_id": "browsecomp/37c8e4f5059ac55707552a69",
+      "research_split": "tune"
+    },
+    "132": {
+      "task_group_id": "browsecomp/8ad4b0c831361a6c7290c672",
+      "research_split": "fit"
+    },
+    "134": {
+      "task_group_id": "browsecomp/f1643c3b7032016cc1cc7695",
+      "research_split": "fit"
+    },
+    "138": {
+      "task_group_id": "browsecomp/f750141ebc99d41ec60eb871",
+      "research_split": "fit"
+    },
+    "140": {
+      "task_group_id": "browsecomp/c0351cd0caf4edf2a56beaaf",
+      "research_split": "fit"
+    },
+    "149": {
+      "task_group_id": "browsecomp/3ed24b49326f418df66dd6a2",
+      "research_split": "fit"
+    },
+    "15": {
+      "task_group_id": "browsecomp/614c38a4fe853d409710a29b",
+      "research_split": "fit"
+    },
+    "152": {
+      "task_group_id": "browsecomp/91c4d12a2a96f7218bbd0c57",
+      "research_split": "calibration"
+    },
+    "153": {
+      "task_group_id": "browsecomp/83ed4feb244e79b9d2b3c896",
+      "research_split": "fit"
+    },
+    "154": {
+      "task_group_id": "browsecomp/c3d8c9c8ee65214747403f6f",
+      "research_split": "fit"
+    },
+    "155": {
+      "task_group_id": "browsecomp/f2ce9a290570859c8286e74f",
+      "research_split": "tune"
+    },
+    "156": {
+      "task_group_id": "browsecomp/3e370947fc163a49551cc19a",
+      "research_split": "fit"
+    },
+    "159": {
+      "task_group_id": "browsecomp/641b37f3caf5449d570a951c",
+      "research_split": "fit"
+    },
+    "160": {
+      "task_group_id": "browsecomp/d67ecba2ed279abea02eaa7a",
+      "research_split": "calibration"
+    },
+    "161": {
+      "task_group_id": "browsecomp/25ef2d8264aec2e1b461c7e0",
+      "research_split": "calibration"
+    },
+    "165": {
+      "task_group_id": "browsecomp/d4b80c93d14ad093f0b90a09",
+      "research_split": "calibration"
+    },
+    "166": {
+      "task_group_id": "browsecomp/6e4afa6aad7ed4d2ef9a9194",
+      "research_split": "fit"
+    },
+    "168": {
+      "task_group_id": "browsecomp/f059b24ecd20866b3f9f2bc8",
+      "research_split": "fit"
+    },
+    "169": {
+      "task_group_id": "browsecomp/f5c82198ac86de80bf99be0d",
+      "research_split": "fit"
+    },
+    "170": {
+      "task_group_id": "browsecomp/2f39e9609e474ff1203aed0f",
+      "research_split": "tune"
+    },
+    "171": {
+      "task_group_id": "browsecomp/c391bdcc3ce2fbb14349f1ac",
+      "research_split": "fit"
+    },
+    "174": {
+      "task_group_id": "browsecomp/ce0229b7c6149d882cf3cef9",
+      "research_split": "calibration"
+    },
+    "175": {
+      "task_group_id": "browsecomp/e19f09f1b76954dc9e45aeda",
+      "research_split": "fit"
+    },
+    "176": {
+      "task_group_id": "browsecomp/116a7796c3e7625c221ab7a9",
+      "research_split": "fit"
+    },
+    "177": {
+      "task_group_id": "browsecomp/fbc943c85f5f0cf66ec9e4a3",
+      "research_split": "tune"
+    },
+    "178": {
+      "task_group_id": "browsecomp/f8be653d0f0bc6e14a612dc8",
+      "research_split": "fit"
+    },
+    "179": {
+      "task_group_id": "browsecomp/aa967be664e33c4752bef50a",
+      "research_split": "fit"
+    },
+    "18": {
+      "task_group_id": "browsecomp/c28e42d96b947502d9ff5405",
+      "research_split": "tune"
+    },
+    "180": {
+      "task_group_id": "browsecomp/be22b1076648e6a4ba02fc6a",
+      "research_split": "fit"
+    },
+    "181": {
+      "task_group_id": "browsecomp/e914309500f47dd6b8628798",
+      "research_split": "test"
+    },
+    "183": {
+      "task_group_id": "browsecomp/4bc12fadc3f4675f289d036b",
+      "research_split": "tune"
+    },
+    "184": {
+      "task_group_id": "browsecomp/60408c7726b5b42a4b146fdc",
+      "research_split": "calibration"
+    },
+    "186": {
+      "task_group_id": "browsecomp/6cbce65079b952b08b91f70b",
+      "research_split": "tune"
+    },
+    "190": {
+      "task_group_id": "browsecomp/c13c1fa9f1e4d89ea5aa93d4",
+      "research_split": "calibration"
+    },
+    "191": {
+      "task_group_id": "browsecomp/39eb86ef9ef45ff96e9d33cb",
+      "research_split": "test"
+    },
+    "192": {
+      "task_group_id": "browsecomp/7a3f9d7a689e84e5d068b46c",
+      "research_split": "fit"
+    },
+    "193": {
+      "task_group_id": "browsecomp/25d2e018a38e0b1b403f1c77",
+      "research_split": "test"
+    },
+    "194": {
+      "task_group_id": "browsecomp/024e578205c8a0477a30c793",
+      "research_split": "fit"
+    },
+    "196": {
+      "task_group_id": "browsecomp/251a46ccf81e4d1b64613e5e",
+      "research_split": "fit"
+    },
+    "199": {
+      "task_group_id": "browsecomp/fca3f0d6420a61ccd4002988",
+      "research_split": "fit"
+    },
+    "20": {
+      "task_group_id": "browsecomp/9246e824773fc95ffe7097eb",
+      "research_split": "fit"
+    },
+    "200": {
+      "task_group_id": "browsecomp/4d83a1f3e47b09a57f011d4b",
+      "research_split": "fit"
+    },
+    "201": {
+      "task_group_id": "browsecomp/34510ceb5116eee89abf4db6",
+      "research_split": "fit"
+    },
+    "202": {
+      "task_group_id": "browsecomp/279350954322d0c928c1888f",
+      "research_split": "fit"
+    },
+    "203": {
+      "task_group_id": "browsecomp/6b3c91b001cf34da8d2c9744",
+      "research_split": "fit"
+    },
+    "205": {
+      "task_group_id": "browsecomp/63913a37964f615bd9d50171",
+      "research_split": "test"
+    },
+    "206": {
+      "task_group_id": "browsecomp/320568925b7188230c537af9",
+      "research_split": "fit"
+    },
+    "209": {
+      "task_group_id": "browsecomp/c11a92900ae0524c181794b6",
+      "research_split": "dev"
+    },
+    "210": {
+      "task_group_id": "browsecomp/6bab51537255b0fa2721dfa7",
+      "research_split": "fit"
+    },
+    "211": {
+      "task_group_id": "browsecomp/89977e52968135323bbe057a",
+      "research_split": "calibration"
+    },
+    "215": {
+      "task_group_id": "browsecomp/d20c93bd0311e51e6b33732a",
+      "research_split": "fit"
+    },
+    "216": {
+      "task_group_id": "browsecomp/64739ecf5a650b7a332c5b33",
+      "research_split": "fit"
+    },
+    "219": {
+      "task_group_id": "browsecomp/98faf88bdeceb0a1801dc985",
+      "research_split": "dev"
+    },
+    "22": {
+      "task_group_id": "browsecomp/0417a7d51830bb705043cec4",
+      "research_split": "fit"
+    },
+    "221": {
+      "task_group_id": "browsecomp/96f2789e0362c74a52476808",
+      "research_split": "fit"
+    },
+    "223": {
+      "task_group_id": "browsecomp/c42246cfc4ba7e29ce1049dd",
+      "research_split": "calibration"
+    },
+    "226": {
+      "task_group_id": "browsecomp/6f6d15600bbea0facda1e20a",
+      "research_split": "fit"
+    },
+    "228": {
+      "task_group_id": "browsecomp/aa5083ad67bb290d9982c2fb",
+      "research_split": "calibration"
+    },
+    "229": {
+      "task_group_id": "browsecomp/608319652e727df8bf622e4c",
+      "research_split": "fit"
+    },
+    "23": {
+      "task_group_id": "browsecomp/4b42dd669fe6169e98ef22c1",
+      "research_split": "fit"
+    },
+    "231": {
+      "task_group_id": "browsecomp/64e23017fb5bdc7114e89bf9",
+      "research_split": "fit"
+    },
+    "233": {
+      "task_group_id": "browsecomp/a76f37cef918fa476dceb09b",
+      "research_split": "calibration"
+    },
+    "234": {
+      "task_group_id": "browsecomp/b06ffe9e84f950081a242421",
+      "research_split": "fit"
+    },
+    "235": {
+      "task_group_id": "browsecomp/ea5fbb7a404e2b0f4943a71a",
+      "research_split": "tune"
+    },
+    "236": {
+      "task_group_id": "browsecomp/ee7869d2d84e7b8b7ede9a7b",
+      "research_split": "fit"
+    },
+    "237": {
+      "task_group_id": "browsecomp/a611bb1b1644096390c00e69",
+      "research_split": "tune"
+    },
+    "238": {
+      "task_group_id": "browsecomp/d0053508597b2d9fa47e5dc3",
+      "research_split": "tune"
+    },
+    "239": {
+      "task_group_id": "browsecomp/e43cc865b5a2bb5aa15affbd",
+      "research_split": "fit"
+    },
+    "240": {
+      "task_group_id": "browsecomp/759737008814a18d082321a8",
+      "research_split": "test"
+    },
+    "241": {
+      "task_group_id": "browsecomp/606ab001936dbf4740ebf8b8",
+      "research_split": "fit"
+    },
+    "242": {
+      "task_group_id": "browsecomp/c1f39eba6498a36ac4dcfda3",
+      "research_split": "tune"
+    },
+    "244": {
+      "task_group_id": "browsecomp/9579219a63b906c54b65ba34",
+      "research_split": "fit"
+    },
+    "245": {
+      "task_group_id": "browsecomp/e866f2b906b3abc6476b17ed",
+      "research_split": "fit"
+    },
+    "246": {
+      "task_group_id": "browsecomp/e34bef2bb43a8c05f0306169",
+      "research_split": "fit"
+    },
+    "248": {
+      "task_group_id": "browsecomp/1d88b6f67f582e6e92eeabe8",
+      "research_split": "dev"
+    },
+    "249": {
+      "task_group_id": "browsecomp/40a144ec30480aa95d4c019e",
+      "research_split": "test"
+    },
+    "25": {
+      "task_group_id": "browsecomp/d3fc45e172f79b21f889e4d2",
+      "research_split": "tune"
+    },
+    "250": {
+      "task_group_id": "browsecomp/cdc63ffb46088c873be8ca49",
+      "research_split": "fit"
+    },
+    "251": {
+      "task_group_id": "browsecomp/291bb30c7bd73a5d7423eac5",
+      "research_split": "fit"
+    },
+    "253": {
+      "task_group_id": "browsecomp/c4fe5803aac3aecfa1dd16fe",
+      "research_split": "fit"
+    },
+    "254": {
+      "task_group_id": "browsecomp/94bd1da3baeb1fd10bc587a5",
+      "research_split": "fit"
+    },
+    "255": {
+      "task_group_id": "browsecomp/9d6b72463aae1ec66cfc90e1",
+      "research_split": "calibration"
+    },
+    "256": {
+      "task_group_id": "browsecomp/44928603bf7fb1cfd4549dfc",
+      "research_split": "fit"
+    },
+    "257": {
+      "task_group_id": "browsecomp/8a917c33df966685be7b7ab7",
+      "research_split": "fit"
+    },
+    "26": {
+      "task_group_id": "browsecomp/972975fc6396b41bef4c7564",
+      "research_split": "fit"
+    },
+    "261": {
+      "task_group_id": "browsecomp/be35229ddb9f2b141563d7f0",
+      "research_split": "tune"
+    },
+    "262": {
+      "task_group_id": "browsecomp/8a8de71659da3b717b397cd4",
+      "research_split": "fit"
+    },
+    "263": {
+      "task_group_id": "browsecomp/236dd19ae4decb13e2a9b129",
+      "research_split": "calibration"
+    },
+    "264": {
+      "task_group_id": "browsecomp/f4a604ee988b19906876455a",
+      "research_split": "calibration"
+    },
+    "265": {
+      "task_group_id": "browsecomp/3f411429b043b11572917603",
+      "research_split": "fit"
+    },
+    "266": {
+      "task_group_id": "browsecomp/2c964069e6095cc2ae9917e2",
+      "research_split": "calibration"
+    },
+    "267": {
+      "task_group_id": "browsecomp/fd3a295116ff8865ce4afe98",
+      "research_split": "fit"
+    },
+    "268": {
+      "task_group_id": "browsecomp/91bdbbb61bd93b8e0c622da7",
+      "research_split": "fit"
+    },
+    "27": {
+      "task_group_id": "browsecomp/d92723c4497911ac5053e8e1",
+      "research_split": "fit"
+    },
+    "270": {
+      "task_group_id": "browsecomp/926a6d8a0c921dbadd21adb3",
+      "research_split": "fit"
+    },
+    "275": {
+      "task_group_id": "browsecomp/a053ec3812e77721a246acca",
+      "research_split": "fit"
+    },
+    "276": {
+      "task_group_id": "browsecomp/71632c38e660329e96c6d437",
+      "research_split": "fit"
+    },
+    "278": {
+      "task_group_id": "browsecomp/4eff8848d4a26d29d083f73b",
+      "research_split": "tune"
+    },
+    "279": {
+      "task_group_id": "browsecomp/e039fb1fcdfd24b981e395a9",
+      "research_split": "fit"
+    },
+    "280": {
+      "task_group_id": "browsecomp/e83f191ee61acfa08bdfc220",
+      "research_split": "fit"
+    },
+    "282": {
+      "task_group_id": "browsecomp/3e82caf75c7d09b3bcfaa36d",
+      "research_split": "fit"
+    },
+    "283": {
+      "task_group_id": "browsecomp/224404684f4d55f18e3d94da",
+      "research_split": "fit"
+    },
+    "284": {
+      "task_group_id": "browsecomp/2156e9494b32ddbac27b2b4c",
+      "research_split": "tune"
+    },
+    "285": {
+      "task_group_id": "browsecomp/0a25deeb99f680b5d3598486",
+      "research_split": "fit"
+    },
+    "286": {
+      "task_group_id": "browsecomp/0512d272e8d0643d22ebb425",
+      "research_split": "tune"
+    },
+    "287": {
+      "task_group_id": "browsecomp/647eb194ce221a289893b2ae",
+      "research_split": "calibration"
+    },
+    "288": {
+      "task_group_id": "browsecomp/45be26213dc6c1cc028b5340",
+      "research_split": "fit"
+    },
+    "289": {
+      "task_group_id": "browsecomp/66275ca60381556c1af81b29",
+      "research_split": "calibration"
+    },
+    "291": {
+      "task_group_id": "browsecomp/aebf4f35d7a82a9e92700471",
+      "research_split": "fit"
+    },
+    "293": {
+      "task_group_id": "browsecomp/a9f921b9bf5dcc5858e4d6c3",
+      "research_split": "tune"
+    },
+    "294": {
+      "task_group_id": "browsecomp/bb0772ac4bf94ee1078725db",
+      "research_split": "tune"
+    },
+    "295": {
+      "task_group_id": "browsecomp/098c4e95afb6666ff6bd2368",
+      "research_split": "tune"
+    },
+    "297": {
+      "task_group_id": "browsecomp/046c853224cb40eb6caee25d",
+      "research_split": "dev"
+    },
+    "298": {
+      "task_group_id": "browsecomp/8d1f356c88571004bb0b0367",
+      "research_split": "fit"
+    },
+    "299": {
+      "task_group_id": "browsecomp/80f29876899089932fbec734",
+      "research_split": "tune"
+    },
+    "3": {
+      "task_group_id": "browsecomp/26a6ce94f8d2ece150a6caa0",
+      "research_split": "tune"
+    },
+    "30": {
+      "task_group_id": "browsecomp/c97e340a8bff18db0056e65d",
+      "research_split": "tune"
+    },
+    "301": {
+      "task_group_id": "browsecomp/71f6989b86e381e94f301826",
+      "research_split": "fit"
+    },
+    "303": {
+      "task_group_id": "browsecomp/878543114fbc8512f546b49d",
+      "research_split": "test"
+    },
+    "304": {
+      "task_group_id": "browsecomp/47a04f23587aa84a85b4117f",
+      "research_split": "tune"
+    },
+    "305": {
+      "task_group_id": "browsecomp/51f514324eb9311e03ffde2d",
+      "research_split": "fit"
+    },
+    "308": {
+      "task_group_id": "browsecomp/8b08c371725543bc49290f4e",
+      "research_split": "fit"
+    },
+    "309": {
+      "task_group_id": "browsecomp/f4eb79ee77c604996a10387e",
+      "research_split": "fit"
+    },
+    "310": {
+      "task_group_id": "browsecomp/cac6ff8ba564c44c020c6820",
+      "research_split": "fit"
+    },
+    "311": {
+      "task_group_id": "browsecomp/c160cf7caf32e28eb53754f2",
+      "research_split": "fit"
+    },
+    "314": {
+      "task_group_id": "browsecomp/0bbb909220c093fd36b2879e",
+      "research_split": "fit"
+    },
+    "315": {
+      "task_group_id": "browsecomp/51dd54107ca6a888fc2e89eb",
+      "research_split": "tune"
+    },
+    "317": {
+      "task_group_id": "browsecomp/4bb0389e0a2576cec0b3caf8",
+      "research_split": "fit"
+    },
+    "319": {
+      "task_group_id": "browsecomp/4fa7b0656f6fa2919c74b26f",
+      "research_split": "dev"
+    },
+    "320": {
+      "task_group_id": "browsecomp/77ba7b2faba5f61b79c743f4",
+      "research_split": "fit"
+    },
+    "322": {
+      "task_group_id": "browsecomp/b4416df77d6c1bf93608aa73",
+      "research_split": "test"
+    },
+    "323": {
+      "task_group_id": "browsecomp/262650562392c4a7ff75cd08",
+      "research_split": "calibration"
+    },
+    "324": {
+      "task_group_id": "browsecomp/31a6c9630340932ddfa3da7e",
+      "research_split": "fit"
+    },
+    "327": {
+      "task_group_id": "browsecomp/d63be1cc226426667e587de1",
+      "research_split": "fit"
+    },
+    "328": {
+      "task_group_id": "browsecomp/f6718a4eb4092b136b2faf14",
+      "research_split": "fit"
+    },
+    "33": {
+      "task_group_id": "browsecomp/0327562ac0e86ecba365bd4a",
+      "research_split": "fit"
+    },
+    "330": {
+      "task_group_id": "browsecomp/0a9c9510583499b32cc2cfc7",
+      "research_split": "fit"
+    },
+    "331": {
+      "task_group_id": "browsecomp/e3ddea27382ac1b92ea4a69e",
+      "research_split": "fit"
+    },
+    "333": {
+      "task_group_id": "browsecomp/91a62c50373a970c5c2f2007",
+      "research_split": "tune"
+    },
+    "335": {
+      "task_group_id": "browsecomp/e563802de14ff97b44687c16",
+      "research_split": "calibration"
+    },
+    "337": {
+      "task_group_id": "browsecomp/122566bbfaac60727c5788ec",
+      "research_split": "fit"
+    },
+    "342": {
+      "task_group_id": "browsecomp/ac1a561417fc0a3e760dda6e",
+      "research_split": "calibration"
+    },
+    "347": {
+      "task_group_id": "browsecomp/ac14d40ff95369fb5aedfc08",
+      "research_split": "fit"
+    },
+    "349": {
+      "task_group_id": "browsecomp/959a2d921d40aee97cdcfb4f",
+      "research_split": "tune"
+    },
+    "350": {
+      "task_group_id": "browsecomp/b9eabe33545daedd2cc87a80",
+      "research_split": "fit"
+    },
+    "351": {
+      "task_group_id": "browsecomp/31803f44297e5ccc6402b1e1",
+      "research_split": "tune"
+    },
+    "353": {
+      "task_group_id": "browsecomp/9857b49d588e8ded96bb8293",
+      "research_split": "fit"
+    },
+    "354": {
+      "task_group_id": "browsecomp/4cda1aae8b155c4435f3e3de",
+      "research_split": "fit"
+    },
+    "356": {
+      "task_group_id": "browsecomp/5efd1fea9f8fa78f083b2d81",
+      "research_split": "test"
+    },
+    "357": {
+      "task_group_id": "browsecomp/30b503be62afb66f0c7f10f1",
+      "research_split": "fit"
+    },
+    "36": {
+      "task_group_id": "browsecomp/aa6ad7c8d40b4e884fdb6af3",
+      "research_split": "fit"
+    },
+    "362": {
+      "task_group_id": "browsecomp/fe9af90ba36e3e749402635e",
+      "research_split": "fit"
+    },
+    "364": {
+      "task_group_id": "browsecomp/1f339a261eecd1af90c8e3a1",
+      "research_split": "fit"
+    },
+    "366": {
+      "task_group_id": "browsecomp/bcd0c3c368aecc643afbba7b",
+      "research_split": "fit"
+    },
+    "367": {
+      "task_group_id": "browsecomp/33c250cc8fbaa1df59261df9",
+      "research_split": "tune"
+    },
+    "37": {
+      "task_group_id": "browsecomp/ca3589e5ae7fc5057c17b2dd",
+      "research_split": "tune"
+    },
+    "370": {
+      "task_group_id": "browsecomp/8d9594aac7f12805c829cada",
+      "research_split": "test"
+    },
+    "371": {
+      "task_group_id": "browsecomp/83ed4feb244e79b9d2b3c896",
+      "research_split": "fit"
+    },
+    "372": {
+      "task_group_id": "browsecomp/089de73d17f61e2425b70865",
+      "research_split": "fit"
+    },
+    "376": {
+      "task_group_id": "browsecomp/0f0f82e779b7df37392a5893",
+      "research_split": "dev"
+    },
+    "377": {
+      "task_group_id": "browsecomp/bc2a95a2d9862241caf4d757",
+      "research_split": "test"
+    },
+    "380": {
+      "task_group_id": "browsecomp/2b44849d2ab69d18680b05c7",
+      "research_split": "tune"
+    },
+    "383": {
+      "task_group_id": "browsecomp/d61eaf1d6f89789cde38ae6f",
+      "research_split": "fit"
+    },
+    "384": {
+      "task_group_id": "browsecomp/2526977ace40f359fb937f8c",
+      "research_split": "fit"
+    },
+    "387": {
+      "task_group_id": "browsecomp/5f8e2f9be9e684cf95ed37d3",
+      "research_split": "fit"
+    },
+    "389": {
+      "task_group_id": "browsecomp/4a3b0e25dc2200c7b9eee663",
+      "research_split": "test"
+    },
+    "39": {
+      "task_group_id": "browsecomp/dd6a663d0e7cbae0ad459cd7",
+      "research_split": "fit"
+    },
+    "390": {
+      "task_group_id": "browsecomp/a3c78a35b51f9bd35fbd93da",
+      "research_split": "tune"
+    },
+    "391": {
+      "task_group_id": "browsecomp/d124cca24072e1106dd21696",
+      "research_split": "test"
+    },
+    "392": {
+      "task_group_id": "browsecomp/5a593916375ff682457d7ae4",
+      "research_split": "fit"
+    },
+    "393": {
+      "task_group_id": "browsecomp/1e74d972b173139d314d2403",
+      "research_split": "tune"
+    },
+    "394": {
+      "task_group_id": "browsecomp/0642c2bcfc977bd496808358",
+      "research_split": "fit"
+    },
+    "395": {
+      "task_group_id": "browsecomp/4f8cee7236b6bc53e573c349",
+      "research_split": "fit"
+    },
+    "396": {
+      "task_group_id": "browsecomp/db20d4541d3fc85981207fc1",
+      "research_split": "fit"
+    },
+    "397": {
+      "task_group_id": "browsecomp/6932ad4ea0fb5376d0f47a70",
+      "research_split": "fit"
+    },
+    "401": {
+      "task_group_id": "browsecomp/657fa5315d86739a6bbf948f",
+      "research_split": "fit"
+    },
+    "402": {
+      "task_group_id": "browsecomp/b053c78180b477803114afbb",
+      "research_split": "fit"
+    },
+    "403": {
+      "task_group_id": "browsecomp/0932705eb4c43815e1376c6b",
+      "research_split": "fit"
+    },
+    "405": {
+      "task_group_id": "browsecomp/e92bb0470016273130cb4315",
+      "research_split": "tune"
+    },
+    "406": {
+      "task_group_id": "browsecomp/e6a1913428909d15619a60a2",
+      "research_split": "fit"
+    },
+    "408": {
+      "task_group_id": "browsecomp/e27b4fd0a3b084a6ae838781",
+      "research_split": "fit"
+    },
+    "409": {
+      "task_group_id": "browsecomp/cb2b270a93eacd29b956a28a",
+      "research_split": "calibration"
+    },
+    "41": {
+      "task_group_id": "browsecomp/898d1890c30286031226763f",
+      "research_split": "fit"
+    },
+    "410": {
+      "task_group_id": "browsecomp/1a341ab84cf458d94d725ef7",
+      "research_split": "calibration"
+    },
+    "411": {
+      "task_group_id": "browsecomp/e7c3acbf691c7f9d1b8066d4",
+      "research_split": "tune"
+    },
+    "413": {
+      "task_group_id": "browsecomp/1550cddcd11c670465f47f94",
+      "research_split": "tune"
+    },
+    "414": {
+      "task_group_id": "browsecomp/08506f1b87093cf48d65f52c",
+      "research_split": "fit"
+    },
+    "416": {
+      "task_group_id": "browsecomp/b76ca821241b65c09aadedc2",
+      "research_split": "fit"
+    },
+    "417": {
+      "task_group_id": "browsecomp/e3901730a8c8a82391f6d799",
+      "research_split": "tune"
+    },
+    "418": {
+      "task_group_id": "browsecomp/431b942473200ffc4274afa1",
+      "research_split": "test"
+    },
+    "420": {
+      "task_group_id": "browsecomp/917f30bf4046acc06ecb33a5",
+      "research_split": "fit"
+    },
+    "421": {
+      "task_group_id": "browsecomp/38054f847c582f929393f62f",
+      "research_split": "fit"
+    },
+    "422": {
+      "task_group_id": "browsecomp/7035e44c680d86d35eccc733",
+      "research_split": "fit"
+    },
+    "424": {
+      "task_group_id": "browsecomp/e6ebc64bc698dbee43a51780",
+      "research_split": "fit"
+    },
+    "425": {
+      "task_group_id": "browsecomp/bd22934b377da2b55dca68f3",
+      "research_split": "tune"
+    },
+    "426": {
+      "task_group_id": "browsecomp/c18094daf42e85b065e8eae8",
+      "research_split": "fit"
+    },
+    "427": {
+      "task_group_id": "browsecomp/2a8d9a0707d4bbdbb5337354",
+      "research_split": "fit"
+    },
+    "428": {
+      "task_group_id": "browsecomp/4bdce982434460c3cd878e09",
+      "research_split": "calibration"
+    },
+    "429": {
+      "task_group_id": "browsecomp/0ad5b0c94d88201c87054497",
+      "research_split": "fit"
+    },
+    "432": {
+      "task_group_id": "browsecomp/fb82133051d8b596b394003c",
+      "research_split": "fit"
+    },
+    "433": {
+      "task_group_id": "browsecomp/d367d1a52a99e1877ed16d1d",
+      "research_split": "fit"
+    },
+    "434": {
+      "task_group_id": "browsecomp/4199442ffab92ff5e02dd958",
+      "research_split": "fit"
+    },
+    "435": {
+      "task_group_id": "browsecomp/56320bcaf5995088afd9c212",
+      "research_split": "fit"
+    },
+    "436": {
+      "task_group_id": "browsecomp/97cdd97c70597ccf484a060e",
+      "research_split": "fit"
+    },
+    "438": {
+      "task_group_id": "browsecomp/c54faafb9026fc391e5ea124",
+      "research_split": "fit"
+    },
+    "442": {
+      "task_group_id": "browsecomp/ba752a453e17ecd78f4c9f02",
+      "research_split": "fit"
+    },
+    "443": {
+      "task_group_id": "browsecomp/4a66e5de7bb15fe3e0edaa39",
+      "research_split": "fit"
+    },
+    "445": {
+      "task_group_id": "browsecomp/5674ab2e17d498dcff9d8612",
+      "research_split": "tune"
+    },
+    "446": {
+      "task_group_id": "browsecomp/e7474b49183d2190309f181e",
+      "research_split": "fit"
+    },
+    "449": {
+      "task_group_id": "browsecomp/1b3e13ae134d1eeccbf518ea",
+      "research_split": "fit"
+    },
+    "450": {
+      "task_group_id": "browsecomp/5b0e70a3ee79465c6b99561a",
+      "research_split": "fit"
+    },
+    "454": {
+      "task_group_id": "browsecomp/f456127b0e5054ef32de4d39",
+      "research_split": "fit"
+    },
+    "46": {
+      "task_group_id": "browsecomp/7f8ccf56f0868c0858f72883",
+      "research_split": "dev"
+    },
+    "464": {
+      "task_group_id": "browsecomp/2565932382a734f890afe288",
+      "research_split": "fit"
+    },
+    "467": {
+      "task_group_id": "browsecomp/0b3a57aad5349f8aa31e03e9",
+      "research_split": "fit"
+    },
+    "468": {
+      "task_group_id": "browsecomp/47a982b974c0a3f641684a67",
+      "research_split": "fit"
+    },
+    "469": {
+      "task_group_id": "browsecomp/ce60f91ba7321164f5f4612c",
+      "research_split": "calibration"
+    },
+    "470": {
+      "task_group_id": "browsecomp/7d97c2ff95eaffda35d393a0",
+      "research_split": "fit"
+    },
+    "471": {
+      "task_group_id": "browsecomp/b884170736fc937d067e5ecc",
+      "research_split": "fit"
+    },
+    "472": {
+      "task_group_id": "browsecomp/7c9300673aec8c27b9678796",
+      "research_split": "fit"
+    },
+    "473": {
+      "task_group_id": "browsecomp/3874fbed40d5c9baff72d73a",
+      "research_split": "fit"
+    },
+    "478": {
+      "task_group_id": "browsecomp/1f755ccfce42e5f7c83dc5cd",
+      "research_split": "tune"
+    },
+    "480": {
+      "task_group_id": "browsecomp/9e58805b80a3c6b7e9afe45b",
+      "research_split": "fit"
+    },
+    "481": {
+      "task_group_id": "browsecomp/755f75aea3e85506a7ea50d9",
+      "research_split": "fit"
+    },
+    "483": {
+      "task_group_id": "browsecomp/550ff381d4179d6fee74ff68",
+      "research_split": "fit"
+    },
+    "484": {
+      "task_group_id": "browsecomp/10a16096046051912d26a55a",
+      "research_split": "tune"
+    },
+    "485": {
+      "task_group_id": "browsecomp/eb13f5e2e675a5b348ef3ec7",
+      "research_split": "fit"
+    },
+    "486": {
+      "task_group_id": "browsecomp/53775e0953f576d92d6567b6",
+      "research_split": "fit"
+    },
+    "487": {
+      "task_group_id": "browsecomp/6494eef8a87d95aaf9414df8",
+      "research_split": "fit"
+    },
+    "49": {
+      "task_group_id": "browsecomp/8e7e24687e7a199d478c4646",
+      "research_split": "fit"
+    },
+    "490": {
+      "task_group_id": "browsecomp/e32e6fb5f689988d7b700ea7",
+      "research_split": "fit"
+    },
+    "491": {
+      "task_group_id": "browsecomp/743faf4277bd07db1855d74c",
+      "research_split": "test"
+    },
+    "493": {
+      "task_group_id": "browsecomp/df25e7b146f1b3a633940b2b",
+      "research_split": "fit"
+    },
+    "494": {
+      "task_group_id": "browsecomp/878c1892549d90b980e27c4f",
+      "research_split": "test"
+    },
+    "495": {
+      "task_group_id": "browsecomp/f0d8f98f6bb213f4d221c5c7",
+      "research_split": "tune"
+    },
+    "496": {
+      "task_group_id": "browsecomp/de39556d37400414b8149c00",
+      "research_split": "fit"
+    },
+    "497": {
+      "task_group_id": "browsecomp/7e05c3f9cb3a00bb1574d594",
+      "research_split": "fit"
+    },
+    "498": {
+      "task_group_id": "browsecomp/fad229beca6b9f0f718a8c49",
+      "research_split": "fit"
+    },
+    "499": {
+      "task_group_id": "browsecomp/92748d8d0e351feb90af0a2a",
+      "research_split": "fit"
+    },
+    "5": {
+      "task_group_id": "browsecomp/5e3322c682b4e46a737ec3a1",
+      "research_split": "dev"
+    },
+    "50": {
+      "task_group_id": "browsecomp/2308f4e21cb0531f80ef1e6a",
+      "research_split": "fit"
+    },
+    "500": {
+      "task_group_id": "browsecomp/1e37cb1e288be1823bd159a1",
+      "research_split": "fit"
+    },
+    "501": {
+      "task_group_id": "browsecomp/a6b170be6d9d923d4729758c",
+      "research_split": "calibration"
+    },
+    "502": {
+      "task_group_id": "browsecomp/02d440dc202dd7ed241112cb",
+      "research_split": "tune"
+    },
+    "503": {
+      "task_group_id": "browsecomp/ebf4be5ea69c25d933d509d3",
+      "research_split": "calibration"
+    },
+    "505": {
+      "task_group_id": "browsecomp/76b7df909d4ac0d47bd50dde",
+      "research_split": "calibration"
+    },
+    "506": {
+      "task_group_id": "browsecomp/a1df1c7ad5932c43014f3f30",
+      "research_split": "tune"
+    },
+    "507": {
+      "task_group_id": "browsecomp/527f237209f4475ffdb44e3a",
+      "research_split": "fit"
+    },
+    "509": {
+      "task_group_id": "browsecomp/57029f656804f24db613e314",
+      "research_split": "dev"
+    },
+    "51": {
+      "task_group_id": "browsecomp/00f704fb7518dcdccfc4e0a1",
+      "research_split": "fit"
+    },
+    "511": {
+      "task_group_id": "browsecomp/7b60cbfd56116504943215ab",
+      "research_split": "fit"
+    },
+    "512": {
+      "task_group_id": "browsecomp/ca557cb00afc5137e84bc98a",
+      "research_split": "fit"
+    },
+    "513": {
+      "task_group_id": "browsecomp/e32e6fb5f689988d7b700ea7",
+      "research_split": "fit"
+    },
+    "514": {
+      "task_group_id": "browsecomp/f3e026b856d64f5478ac27a6",
+      "research_split": "fit"
+    },
+    "515": {
+      "task_group_id": "browsecomp/e2b61b801736c69d72682a1d",
+      "research_split": "fit"
+    },
+    "516": {
+      "task_group_id": "browsecomp/315cd848da61cc2f4e076b8e",
+      "research_split": "test"
+    },
+    "517": {
+      "task_group_id": "browsecomp/c944980a50f4ec9de663d027",
+      "research_split": "tune"
+    },
+    "519": {
+      "task_group_id": "browsecomp/f3f7baf88642bbbc4f49704c",
+      "research_split": "fit"
+    },
+    "52": {
+      "task_group_id": "browsecomp/1a2835647e32523006fe3837",
+      "research_split": "tune"
+    },
+    "520": {
+      "task_group_id": "browsecomp/b018a020967d345bbec60260",
+      "research_split": "fit"
+    },
+    "521": {
+      "task_group_id": "browsecomp/8339b5e3977eda9eab7d63de",
+      "research_split": "calibration"
+    },
+    "523": {
+      "task_group_id": "browsecomp/b41ce904712fae9bcedc9af6",
+      "research_split": "fit"
+    },
+    "524": {
+      "task_group_id": "browsecomp/6550866fd70281fec2882d77",
+      "research_split": "test"
+    },
+    "525": {
+      "task_group_id": "browsecomp/0865799bb1dcb002d5c13a36",
+      "research_split": "test"
+    },
+    "527": {
+      "task_group_id": "browsecomp/58fec8649af6739799beb929",
+      "research_split": "fit"
+    },
+    "528": {
+      "task_group_id": "browsecomp/085fa277d641ae551d6d0d87",
+      "research_split": "test"
+    },
+    "529": {
+      "task_group_id": "browsecomp/24d4fc98239f651d3a134947",
+      "research_split": "fit"
+    },
+    "53": {
+      "task_group_id": "browsecomp/2559e18b9afaf13346332bbd",
+      "research_split": "calibration"
+    },
+    "530": {
+      "task_group_id": "browsecomp/fbb262ccebd3a8776a29269e",
+      "research_split": "fit"
+    },
+    "532": {
+      "task_group_id": "browsecomp/1ef9a791aa77c564e71896bc",
+      "research_split": "fit"
+    },
+    "533": {
+      "task_group_id": "browsecomp/0870e2a48a2b9c3ef05734ab",
+      "research_split": "fit"
+    },
+    "534": {
+      "task_group_id": "browsecomp/a9cc9587c4578d858a5d9131",
+      "research_split": "tune"
+    },
+    "535": {
+      "task_group_id": "browsecomp/669fb7803ab072ceb0b5537b",
+      "research_split": "fit"
+    },
+    "537": {
+      "task_group_id": "browsecomp/c917da950d999880c2a33dd6",
+      "research_split": "fit"
+    },
+    "538": {
+      "task_group_id": "browsecomp/5a1d458c3e6108434c9319bc",
+      "research_split": "dev"
+    },
+    "539": {
+      "task_group_id": "browsecomp/2f420e5413a8d50a92386be6",
+      "research_split": "fit"
+    },
+    "54": {
+      "task_group_id": "browsecomp/6389412746d41c3363995bfd",
+      "research_split": "fit"
+    },
+    "540": {
+      "task_group_id": "browsecomp/8d5974d3146a820dcfb1950b",
+      "research_split": "dev"
+    },
+    "542": {
+      "task_group_id": "browsecomp/ca6c4d4ce33b1e21147fda60",
+      "research_split": "tune"
+    },
+    "543": {
+      "task_group_id": "browsecomp/d36f3c2f1f006bdaaac6e321",
+      "research_split": "fit"
+    },
+    "544": {
+      "task_group_id": "browsecomp/4f66cea2b9889323355eaf5d",
+      "research_split": "fit"
+    },
+    "546": {
+      "task_group_id": "browsecomp/40aae902c5e6b19c51fda851",
+      "research_split": "tune"
+    },
+    "548": {
+      "task_group_id": "browsecomp/e6d557f8e10c101bb08009c9",
+      "research_split": "fit"
+    },
+    "549": {
+      "task_group_id": "browsecomp/0c8d91666385f05fd0a91ac6",
+      "research_split": "fit"
+    },
+    "55": {
+      "task_group_id": "browsecomp/cab5380d78c2540a7587755a",
+      "research_split": "fit"
+    },
+    "550": {
+      "task_group_id": "browsecomp/a4719a0a29d69d238f9d012b",
+      "research_split": "fit"
+    },
+    "551": {
+      "task_group_id": "browsecomp/4d1f060914c032f09f4a7d56",
+      "research_split": "tune"
+    },
+    "552": {
+      "task_group_id": "browsecomp/f52e45b41de19d98c908ab42",
+      "research_split": "fit"
+    },
+    "553": {
+      "task_group_id": "browsecomp/fb7a73f8a36c4cf07a2e22d2",
+      "research_split": "fit"
+    },
+    "555": {
+      "task_group_id": "browsecomp/0fccf14aa808b9df3a92034b",
+      "research_split": "calibration"
+    },
+    "556": {
+      "task_group_id": "browsecomp/492c31b8233a066a6ca36204",
+      "research_split": "tune"
+    },
+    "558": {
+      "task_group_id": "browsecomp/e7067187a3e68ad09382a669",
+      "research_split": "fit"
+    },
+    "56": {
+      "task_group_id": "browsecomp/776e7e383d2fc118dcdc7361",
+      "research_split": "fit"
+    },
+    "560": {
+      "task_group_id": "browsecomp/3914f2c167cd3bc916a9751d",
+      "research_split": "test"
+    },
+    "561": {
+      "task_group_id": "browsecomp/bb7c8ed383081ea490e10713",
+      "research_split": "calibration"
+    },
+    "562": {
+      "task_group_id": "browsecomp/99b8f1d56c40330de51b5d38",
+      "research_split": "fit"
+    },
+    "563": {
+      "task_group_id": "browsecomp/030564b21ca502addba13ce5",
+      "research_split": "fit"
+    },
+    "568": {
+      "task_group_id": "browsecomp/d198e075e53d33e2c328b6d2",
+      "research_split": "test"
+    },
+    "569": {
+      "task_group_id": "browsecomp/04a81c6b879f9a030f804fab",
+      "research_split": "calibration"
+    },
+    "570": {
+      "task_group_id": "browsecomp/01330382837d8117d9fa2134",
+      "research_split": "fit"
+    },
+    "571": {
+      "task_group_id": "browsecomp/a09cae8b21919a9c7aa04e3f",
+      "research_split": "calibration"
+    },
+    "572": {
+      "task_group_id": "browsecomp/2c96183637b50be69fe4d9fc",
+      "research_split": "dev"
+    },
+    "575": {
+      "task_group_id": "browsecomp/7f80bf9a65f3e0623a42d235",
+      "research_split": "fit"
+    },
+    "576": {
+      "task_group_id": "browsecomp/3e8a07c1cc5a79debfc7213e",
+      "research_split": "fit"
+    },
+    "577": {
+      "task_group_id": "browsecomp/e474c62f03d783ffc9e844a6",
+      "research_split": "fit"
+    },
+    "579": {
+      "task_group_id": "browsecomp/ff44f59b21bfe0cdf3b2b232",
+      "research_split": "fit"
+    },
+    "58": {
+      "task_group_id": "browsecomp/f2604e9d119575b515fbe2aa",
+      "research_split": "fit"
+    },
+    "580": {
+      "task_group_id": "browsecomp/4618d26bf599fac818cbe67f",
+      "research_split": "calibration"
+    },
+    "581": {
+      "task_group_id": "browsecomp/845cfc73a110cd24b320a483",
+      "research_split": "fit"
+    },
+    "582": {
+      "task_group_id": "browsecomp/3b7030d99bbd3eac5609c4e9",
+      "research_split": "fit"
+    },
+    "583": {
+      "task_group_id": "browsecomp/0ad158d8e99d855871491819",
+      "research_split": "fit"
+    },
+    "584": {
+      "task_group_id": "browsecomp/e39d2cf1acaaf0d3568dba24",
+      "research_split": "fit"
+    },
+    "587": {
+      "task_group_id": "browsecomp/c0d0c7211c332675d1732c93",
+      "research_split": "fit"
+    },
+    "588": {
+      "task_group_id": "browsecomp/647b5df08680d65ff6b8c499",
+      "research_split": "fit"
+    },
+    "59": {
+      "task_group_id": "browsecomp/7bca50a49df46e993b5a94dc",
+      "research_split": "fit"
+    },
+    "590": {
+      "task_group_id": "browsecomp/d7e8b42d67ab27473c314861",
+      "research_split": "tune"
+    },
+    "591": {
+      "task_group_id": "browsecomp/716c45454419067cae653475",
+      "research_split": "test"
+    },
+    "592": {
+      "task_group_id": "browsecomp/e03a4a8dfef332fd43c6c7ad",
+      "research_split": "fit"
+    },
+    "593": {
+      "task_group_id": "browsecomp/94c5db2ea69c2ba1c855a76a",
+      "research_split": "fit"
+    },
+    "594": {
+      "task_group_id": "browsecomp/9a66fbd680aaa6b3b3fed8ad",
+      "research_split": "tune"
+    },
+    "595": {
+      "task_group_id": "browsecomp/e8136cc236ca930f112b2ddc",
+      "research_split": "test"
+    },
+    "596": {
+      "task_group_id": "browsecomp/a7e2c11ad1271dfbc9f3cbe4",
+      "research_split": "tune"
+    },
+    "598": {
+      "task_group_id": "browsecomp/6893740a9ea4419374e2338c",
+      "research_split": "tune"
+    },
+    "599": {
+      "task_group_id": "browsecomp/380c3d98cbed529ddc166aa3",
+      "research_split": "fit"
+    },
+    "6": {
+      "task_group_id": "browsecomp/0e71c9d61a801b86235274df",
+      "research_split": "fit"
+    },
+    "60": {
+      "task_group_id": "browsecomp/94ab087f60890852e463f1d5",
+      "research_split": "fit"
+    },
+    "600": {
+      "task_group_id": "browsecomp/26e647976657a62bc8051a14",
+      "research_split": "fit"
+    },
+    "601": {
+      "task_group_id": "browsecomp/03c8de6e35120f960673c96a",
+      "research_split": "fit"
+    },
+    "602": {
+      "task_group_id": "browsecomp/1fd135c7597681b2a6ba676a",
+      "research_split": "fit"
+    },
+    "603": {
+      "task_group_id": "browsecomp/2fe60ba4951e76d1102949d9",
+      "research_split": "fit"
+    },
+    "605": {
+      "task_group_id": "browsecomp/c5c3135b112e6721180adaa7",
+      "research_split": "dev"
+    },
+    "607": {
+      "task_group_id": "browsecomp/db1fca83206d3c17cd8a9c24",
+      "research_split": "test"
+    },
+    "61": {
+      "task_group_id": "browsecomp/52bb8623bcac42b589598ed3",
+      "research_split": "fit"
+    },
+    "610": {
+      "task_group_id": "browsecomp/6e4b5b338c2393a0d07b22af",
+      "research_split": "tune"
+    },
+    "611": {
+      "task_group_id": "browsecomp/8563c786dc56bc3541690287",
+      "research_split": "test"
+    },
+    "614": {
+      "task_group_id": "browsecomp/a85c7dc16622c4f6e334bf7f",
+      "research_split": "fit"
+    },
+    "618": {
+      "task_group_id": "browsecomp/09028d0cc0e104c507f64748",
+      "research_split": "fit"
+    },
+    "619": {
+      "task_group_id": "browsecomp/cc246da2a0655340fcff97d3",
+      "research_split": "fit"
+    },
+    "62": {
+      "task_group_id": "browsecomp/b6bfffcc9ea0e97491a69b0d",
+      "research_split": "fit"
+    },
+    "620": {
+      "task_group_id": "browsecomp/c160cf7caf32e28eb53754f2",
+      "research_split": "fit"
+    },
+    "621": {
+      "task_group_id": "browsecomp/262844a7211b8531f96bb867",
+      "research_split": "fit"
+    },
+    "624": {
+      "task_group_id": "browsecomp/f5a72737fb3a9f3b2956f69e",
+      "research_split": "tune"
+    },
+    "625": {
+      "task_group_id": "browsecomp/286a8cac83dfd6ca202d3d37",
+      "research_split": "tune"
+    },
+    "627": {
+      "task_group_id": "browsecomp/9655c5a2f9ff464296ebc435",
+      "research_split": "fit"
+    },
+    "628": {
+      "task_group_id": "browsecomp/22aaf7794a909d824e05bb4e",
+      "research_split": "fit"
+    },
+    "629": {
+      "task_group_id": "browsecomp/67ddcbffce8c1a44d3cc35ad",
+      "research_split": "dev"
+    },
+    "63": {
+      "task_group_id": "browsecomp/3f054a8e6d320a8089542944",
+      "research_split": "fit"
+    },
+    "630": {
+      "task_group_id": "browsecomp/6b6f84f642ea7ae48d575584",
+      "research_split": "fit"
+    },
+    "631": {
+      "task_group_id": "browsecomp/a9f30d088c5c2529b437e142",
+      "research_split": "test"
+    },
+    "632": {
+      "task_group_id": "browsecomp/4c38e73149e33aa9d735a454",
+      "research_split": "test"
+    },
+    "633": {
+      "task_group_id": "browsecomp/fd5bfc889b393e1c770f36d7",
+      "research_split": "fit"
+    },
+    "635": {
+      "task_group_id": "browsecomp/dd859f29de7a2d9374982c73",
+      "research_split": "fit"
+    },
+    "636": {
+      "task_group_id": "browsecomp/92ab432d6b64d04177a4653f",
+      "research_split": "test"
+    },
+    "637": {
+      "task_group_id": "browsecomp/106366b8439d0b4288778779",
+      "research_split": "tune"
+    },
+    "638": {
+      "task_group_id": "browsecomp/a3fea1ba5fa418a5af03702a",
+      "research_split": "fit"
+    },
+    "639": {
+      "task_group_id": "browsecomp/1765ccd8eca931fbb83253a7",
+      "research_split": "dev"
+    },
+    "64": {
+      "task_group_id": "browsecomp/5f035bae856e785c882b28d1",
+      "research_split": "fit"
+    },
+    "642": {
+      "task_group_id": "browsecomp/c532ea4307002a2440cd6246",
+      "research_split": "test"
+    },
+    "643": {
+      "task_group_id": "browsecomp/73ca47d10efa66a739b9d71b",
+      "research_split": "fit"
+    },
+    "644": {
+      "task_group_id": "browsecomp/05f81ba34e05d52986a3a174",
+      "research_split": "calibration"
+    },
+    "645": {
+      "task_group_id": "browsecomp/5a13fc8b66fdb61c5b684fcf",
+      "research_split": "fit"
+    },
+    "650": {
+      "task_group_id": "browsecomp/889e011ad3e90e50e50d1ffe",
+      "research_split": "calibration"
+    },
+    "651": {
+      "task_group_id": "browsecomp/6a8532499fae1bd7995d9513",
+      "research_split": "tune"
+    },
+    "652": {
+      "task_group_id": "browsecomp/deb282ef0b7106b8b98cc380",
+      "research_split": "tune"
+    },
+    "653": {
+      "task_group_id": "browsecomp/3caee24bf910c247cb8be721",
+      "research_split": "test"
+    },
+    "655": {
+      "task_group_id": "browsecomp/0d90e04a38c36fee9bbf86ca",
+      "research_split": "fit"
+    },
+    "661": {
+      "task_group_id": "browsecomp/db7ce892916778dc4a425927",
+      "research_split": "calibration"
+    },
+    "662": {
+      "task_group_id": "browsecomp/6072141545af5e24c0f031e9",
+      "research_split": "fit"
+    },
+    "664": {
+      "task_group_id": "browsecomp/24d0da25c6016a91797a6cdf",
+      "research_split": "tune"
+    },
+    "665": {
+      "task_group_id": "browsecomp/1e5ee2552850c0cea6063a5a",
+      "research_split": "fit"
+    },
+    "666": {
+      "task_group_id": "browsecomp/0c9014848e5c38444dc67008",
+      "research_split": "test"
+    },
+    "669": {
+      "task_group_id": "browsecomp/fbf88ec62a41bd860c4256d7",
+      "research_split": "fit"
+    },
+    "67": {
+      "task_group_id": "browsecomp/f2ed1fc989e0012c7aa86e1e",
+      "research_split": "fit"
+    },
+    "670": {
+      "task_group_id": "browsecomp/8da3b14ae0fbf6f0d2168889",
+      "research_split": "fit"
+    },
+    "671": {
+      "task_group_id": "browsecomp/236734caf159751c00812226",
+      "research_split": "test"
+    },
+    "672": {
+      "task_group_id": "browsecomp/93205d1f1658473541b38c83",
+      "research_split": "fit"
+    },
+    "673": {
+      "task_group_id": "browsecomp/bfa0a1d7951d43ae7e7b720c",
+      "research_split": "fit"
+    },
+    "674": {
+      "task_group_id": "browsecomp/948b8584cb7a21920281ddaf",
+      "research_split": "tune"
+    },
+    "675": {
+      "task_group_id": "browsecomp/499b5c36aff2f477774504a1",
+      "research_split": "calibration"
+    },
+    "678": {
+      "task_group_id": "browsecomp/ccad5e644f4021facd73dc99",
+      "research_split": "tune"
+    },
+    "679": {
+      "task_group_id": "browsecomp/3120bf5b525cf77558eb0ae5",
+      "research_split": "test"
+    },
+    "68": {
+      "task_group_id": "browsecomp/d9f93b3f7455fed473c640d4",
+      "research_split": "tune"
+    },
+    "681": {
+      "task_group_id": "browsecomp/2f6660f74f98258a1009ec58",
+      "research_split": "fit"
+    },
+    "682": {
+      "task_group_id": "browsecomp/a856f2748ed4d597bbcf64fb",
+      "research_split": "fit"
+    },
+    "684": {
+      "task_group_id": "browsecomp/b0f0e4c6c0b79d8f3681a1ba",
+      "research_split": "fit"
+    },
+    "685": {
+      "task_group_id": "browsecomp/ea0d54dd9a56ba81cbe676c4",
+      "research_split": "fit"
+    },
+    "686": {
+      "task_group_id": "browsecomp/3189b793dab361749e415918",
+      "research_split": "fit"
+    },
+    "688": {
+      "task_group_id": "browsecomp/8e83dab3f2063baa574dc982",
+      "research_split": "fit"
+    },
+    "689": {
+      "task_group_id": "browsecomp/f640014870e773d18a38351b",
+      "research_split": "fit"
+    },
+    "69": {
+      "task_group_id": "browsecomp/c597a9d371e8fdb58b4e2993",
+      "research_split": "fit"
+    },
+    "692": {
+      "task_group_id": "browsecomp/2dc1c0423f9cdd771072257e",
+      "research_split": "fit"
+    },
+    "694": {
+      "task_group_id": "browsecomp/3fdb6d1ad1bb8ae714f6f210",
+      "research_split": "fit"
+    },
+    "695": {
+      "task_group_id": "browsecomp/ec93d8ad80fc3e1ba413e700",
+      "research_split": "fit"
+    },
+    "696": {
+      "task_group_id": "browsecomp/85edf147b5e72559ba0f755d",
+      "research_split": "fit"
+    },
+    "7": {
+      "task_group_id": "browsecomp/2aaa0d08e3a122ebeb3a8ad5",
+      "research_split": "fit"
+    },
+    "70": {
+      "task_group_id": "browsecomp/bafd88b51b54d7cac1d7d69b",
+      "research_split": "fit"
+    },
+    "700": {
+      "task_group_id": "browsecomp/f1d7fb60dc7ca03f0d2e0a91",
+      "research_split": "fit"
+    },
+    "701": {
+      "task_group_id": "browsecomp/236dd19ae4decb13e2a9b129",
+      "research_split": "calibration"
+    },
+    "702": {
+      "task_group_id": "browsecomp/21a3a45a870737aabd55c02d",
+      "research_split": "tune"
+    },
+    "703": {
+      "task_group_id": "browsecomp/8e30aa4689dd066c611624b4",
+      "research_split": "fit"
+    },
+    "706": {
+      "task_group_id": "browsecomp/f54e0d3a207c77f66ca37cf3",
+      "research_split": "fit"
+    },
+    "707": {
+      "task_group_id": "browsecomp/a35e3f52281cd8b42f18081d",
+      "research_split": "fit"
+    },
+    "708": {
+      "task_group_id": "browsecomp/b8dd027fe4380f8fedf6e397",
+      "research_split": "tune"
+    },
+    "709": {
+      "task_group_id": "browsecomp/ad2e5d81a80e6d21371707b7",
+      "research_split": "test"
+    },
+    "71": {
+      "task_group_id": "browsecomp/1767e5f7b7ed10b6bbcffece",
+      "research_split": "fit"
+    },
+    "710": {
+      "task_group_id": "browsecomp/577e8c74d78dd288d243a469",
+      "research_split": "calibration"
+    },
+    "711": {
+      "task_group_id": "browsecomp/ddebd5af7c4418f844d5f3cf",
+      "research_split": "fit"
+    },
+    "712": {
+      "task_group_id": "browsecomp/05a8ed61b8773182c8688fe3",
+      "research_split": "test"
+    },
+    "713": {
+      "task_group_id": "browsecomp/16897344df9e919b01e3f41f",
+      "research_split": "test"
+    },
+    "714": {
+      "task_group_id": "browsecomp/fe57a3e1cd4c24037689c558",
+      "research_split": "fit"
+    },
+    "715": {
+      "task_group_id": "browsecomp/993d9788018f0419029e1c18",
+      "research_split": "fit"
+    },
+    "716": {
+      "task_group_id": "browsecomp/9ed68feb89916a14d22a3c7d",
+      "research_split": "fit"
+    },
+    "717": {
+      "task_group_id": "browsecomp/4835eedd0211ed0fb44c7c8a",
+      "research_split": "dev"
+    },
+    "718": {
+      "task_group_id": "browsecomp/b54ede420bdf0c4ec88820d9",
+      "research_split": "fit"
+    },
+    "719": {
+      "task_group_id": "browsecomp/a58083771de537007028039c",
+      "research_split": "tune"
+    },
+    "72": {
+      "task_group_id": "browsecomp/99420af1f361625dc3a556df",
+      "research_split": "test"
+    },
+    "720": {
+      "task_group_id": "browsecomp/bfd58a215fce12e3d7a799ac",
+      "research_split": "tune"
+    },
+    "722": {
+      "task_group_id": "browsecomp/e7e0304d77c11c6dacac664b",
+      "research_split": "dev"
+    },
+    "723": {
+      "task_group_id": "browsecomp/e0375e115fd160d1bfcf2a7e",
+      "research_split": "tune"
+    },
+    "724": {
+      "task_group_id": "browsecomp/62708847d8169cf583feaadd",
+      "research_split": "fit"
+    },
+    "725": {
+      "task_group_id": "browsecomp/7a95928d4398afb1de090db0",
+      "research_split": "test"
+    },
+    "726": {
+      "task_group_id": "browsecomp/d5d0ab0769fa21bad5a31bc3",
+      "research_split": "dev"
+    },
+    "728": {
+      "task_group_id": "browsecomp/f36c86005be2df597a2d9518",
+      "research_split": "dev"
+    },
+    "729": {
+      "task_group_id": "browsecomp/441d22c66ac032c6fa12bb9c",
+      "research_split": "test"
+    },
+    "730": {
+      "task_group_id": "browsecomp/60870ed4cf7f64c1d1e9687a",
+      "research_split": "fit"
+    },
+    "731": {
+      "task_group_id": "browsecomp/b00e7cf55e8adc784bfc6bd2",
+      "research_split": "fit"
+    },
+    "732": {
+      "task_group_id": "browsecomp/d0563e08d6807f04622dd29c",
+      "research_split": "fit"
+    },
+    "734": {
+      "task_group_id": "browsecomp/8e790924c0c1ff6564059894",
+      "research_split": "fit"
+    },
+    "735": {
+      "task_group_id": "browsecomp/c03b77d054d80d4fdcb527a2",
+      "research_split": "test"
+    },
+    "737": {
+      "task_group_id": "browsecomp/5c01018ecb22fdbd24f9f45b",
+      "research_split": "dev"
+    },
+    "738": {
+      "task_group_id": "browsecomp/674dd9953fc1bfe42d72be11",
+      "research_split": "fit"
+    },
+    "739": {
+      "task_group_id": "browsecomp/cb39d53aa60bb81e30e42c35",
+      "research_split": "tune"
+    },
+    "74": {
+      "task_group_id": "browsecomp/aa76be21114cce0ca46ac752",
+      "research_split": "dev"
+    },
+    "741": {
+      "task_group_id": "browsecomp/111c2073b2378bdcc94389f5",
+      "research_split": "tune"
+    },
+    "742": {
+      "task_group_id": "browsecomp/f63fa71f6bf2d23e7fa9d090",
+      "research_split": "test"
+    },
+    "744": {
+      "task_group_id": "browsecomp/72ccc32d705c0ce82ca5e720",
+      "research_split": "fit"
+    },
+    "745": {
+      "task_group_id": "browsecomp/53364fcce8984dec49ee2ec9",
+      "research_split": "test"
+    },
+    "746": {
+      "task_group_id": "browsecomp/c160cf7caf32e28eb53754f2",
+      "research_split": "fit"
+    },
+    "747": {
+      "task_group_id": "browsecomp/d61e5bc315ecbffb2105e116",
+      "research_split": "fit"
+    },
+    "749": {
+      "task_group_id": "browsecomp/29e0db30f9267b5c17e584b9",
+      "research_split": "fit"
+    },
+    "751": {
+      "task_group_id": "browsecomp/a40086fe070b5e7aef4611fd",
+      "research_split": "fit"
+    },
+    "753": {
+      "task_group_id": "browsecomp/7636acbc5f2e5ee3850d6cfc",
+      "research_split": "fit"
+    },
+    "754": {
+      "task_group_id": "browsecomp/599ba82623356fdbe843b8ff",
+      "research_split": "fit"
+    },
+    "756": {
+      "task_group_id": "browsecomp/53ab2eb19b78a591c5526381",
+      "research_split": "fit"
+    },
+    "757": {
+      "task_group_id": "browsecomp/a50531bc6d5f41c4698adf5f",
+      "research_split": "fit"
+    },
+    "758": {
+      "task_group_id": "browsecomp/ddbd5339a87cca2cf290a499",
+      "research_split": "tune"
+    },
+    "759": {
+      "task_group_id": "browsecomp/0c747abb43ecd9f1677894d6",
+      "research_split": "dev"
+    },
+    "760": {
+      "task_group_id": "browsecomp/26d91b2db0fc528298467765",
+      "research_split": "fit"
+    },
+    "761": {
+      "task_group_id": "browsecomp/62bd004b5ecf027320294d1d",
+      "research_split": "fit"
+    },
+    "763": {
+      "task_group_id": "browsecomp/a3978067a3a3e8a4879cd812",
+      "research_split": "fit"
+    },
+    "764": {
+      "task_group_id": "browsecomp/d7e89d2a650d6cbb38f2ef40",
+      "research_split": "fit"
+    },
+    "768": {
+      "task_group_id": "browsecomp/161910a69a436d39464cbcba",
+      "research_split": "fit"
+    },
+    "769": {
+      "task_group_id": "browsecomp/8820503477283d5c289b2ea5",
+      "research_split": "historical_dev"
+    },
+    "770": {
+      "task_group_id": "browsecomp/7db2cd8861c7eed85b2f0886",
+      "research_split": "historical_dev"
+    },
+    "771": {
+      "task_group_id": "browsecomp/3f1429b3ebf2b284e4bb308a",
+      "research_split": "historical_dev"
+    },
+    "772": {
+      "task_group_id": "browsecomp/c7130c6fb2027a174487c0a9",
+      "research_split": "historical_dev"
+    },
+    "773": {
+      "task_group_id": "browsecomp/b47b601513ff0a32b7f6ef5d",
+      "research_split": "historical_dev"
+    },
+    "774": {
+      "task_group_id": "browsecomp/e958af3ced81f3230441e428",
+      "research_split": "historical_dev"
+    },
+    "775": {
+      "task_group_id": "browsecomp/2db502cf531f74fcd56ffa0a",
+      "research_split": "historical_dev"
+    },
+    "776": {
+      "task_group_id": "browsecomp/2f229fd845335a4b61aaf2cb",
+      "research_split": "historical_dev"
+    },
+    "778": {
+      "task_group_id": "browsecomp/ce6b88ab264da598f850f1e2",
+      "research_split": "fit"
+    },
+    "78": {
+      "task_group_id": "browsecomp/04a91a5d89d6187488c81c54",
+      "research_split": "fit"
+    },
+    "781": {
+      "task_group_id": "browsecomp/d1c6e0ae05ae7886859ba986",
+      "research_split": "fit"
+    },
+    "783": {
+      "task_group_id": "browsecomp/2d9ca163863f5d870adcbf87",
+      "research_split": "fit"
+    },
+    "784": {
+      "task_group_id": "browsecomp/5be070ab85ed096e71d4fba7",
+      "research_split": "fit"
+    },
+    "785": {
+      "task_group_id": "browsecomp/327f77db04309bab3484448c",
+      "research_split": "tune"
+    },
+    "786": {
+      "task_group_id": "browsecomp/e1597ca68c029fe4a2b41c59",
+      "research_split": "fit"
+    },
+    "787": {
+      "task_group_id": "browsecomp/de33e46124ae06393ae894d3",
+      "research_split": "tune"
+    },
+    "788": {
+      "task_group_id": "browsecomp/a216a9917245bdaac9a961c9",
+      "research_split": "tune"
+    },
+    "79": {
+      "task_group_id": "browsecomp/5b84a78a2ca15b6acd5e51f1",
+      "research_split": "dev"
+    },
+    "790": {
+      "task_group_id": "browsecomp/9f1eaee7db4d57516f05b881",
+      "research_split": "fit"
+    },
+    "791": {
+      "task_group_id": "browsecomp/e018f570b99209e3a6b710b0",
+      "research_split": "tune"
+    },
+    "792": {
+      "task_group_id": "browsecomp/1bd4550d7d1f76ee4e3610b0",
+      "research_split": "fit"
+    },
+    "793": {
+      "task_group_id": "browsecomp/ff2528cfafad9539e0a3a061",
+      "research_split": "fit"
+    },
+    "794": {
+      "task_group_id": "browsecomp/1449311d0a620c9231e8500c",
+      "research_split": "fit"
+    },
+    "796": {
+      "task_group_id": "browsecomp/1b94ce3d96f2d223de774a7d",
+      "research_split": "fit"
+    },
+    "797": {
+      "task_group_id": "browsecomp/7bc0176ce76c2b2f769299ff",
+      "research_split": "fit"
+    },
+    "798": {
+      "task_group_id": "browsecomp/93e92e8c9ded19077cac6ac5",
+      "research_split": "fit"
+    },
+    "8": {
+      "task_group_id": "browsecomp/953d1c8161d6c2eaf8834e68",
+      "research_split": "tune"
+    },
+    "800": {
+      "task_group_id": "browsecomp/95a87717d6f6a36c86382fa5",
+      "research_split": "fit"
+    },
+    "801": {
+      "task_group_id": "browsecomp/65266edc1a46f959b0773e62",
+      "research_split": "tune"
+    },
+    "802": {
+      "task_group_id": "browsecomp/562e291a1edb4b0973e3e808",
+      "research_split": "tune"
+    },
+    "804": {
+      "task_group_id": "browsecomp/1b33313c24109f1c0c0c176b",
+      "research_split": "fit"
+    },
+    "805": {
+      "task_group_id": "browsecomp/7478cd1b8f2e441f33d77658",
+      "research_split": "tune"
+    },
+    "806": {
+      "task_group_id": "browsecomp/0fa5ae1feaf16229882f7562",
+      "research_split": "fit"
+    },
+    "809": {
+      "task_group_id": "browsecomp/c40a8219ebaaf94df3068bd3",
+      "research_split": "fit"
+    },
+    "81": {
+      "task_group_id": "browsecomp/04947cbe68a5a9143c3d1a05",
+      "research_split": "tune"
+    },
+    "810": {
+      "task_group_id": "browsecomp/c574ba960d4cd7f748e23744",
+      "research_split": "fit"
+    },
+    "811": {
+      "task_group_id": "browsecomp/ad4043c02817bbdec740fb7e",
+      "research_split": "calibration"
+    },
+    "814": {
+      "task_group_id": "browsecomp/edf006b6c38130c4772c3789",
+      "research_split": "tune"
+    },
+    "815": {
+      "task_group_id": "browsecomp/f2714bcb317b8af4502f77cd",
+      "research_split": "fit"
+    },
+    "816": {
+      "task_group_id": "browsecomp/f2d83adef63678ae8ad1f094",
+      "research_split": "fit"
+    },
+    "819": {
+      "task_group_id": "browsecomp/f38639aed9385dd9c5a67b5d",
+      "research_split": "calibration"
+    },
+    "82": {
+      "task_group_id": "browsecomp/85626d36d1b1ef8169be3961",
+      "research_split": "fit"
+    },
+    "820": {
+      "task_group_id": "browsecomp/e5923e1ac76a2c16b45a650b",
+      "research_split": "tune"
+    },
+    "821": {
+      "task_group_id": "browsecomp/fb124b48804ac68ee515970d",
+      "research_split": "test"
+    },
+    "822": {
+      "task_group_id": "browsecomp/952e4125cccb99cfe3665028",
+      "research_split": "fit"
+    },
+    "823": {
+      "task_group_id": "browsecomp/dcb16058c1cce5a593564f89",
+      "research_split": "test"
+    },
+    "826": {
+      "task_group_id": "browsecomp/33a9c44198bc8b98b69e88a1",
+      "research_split": "tune"
+    },
+    "827": {
+      "task_group_id": "browsecomp/19d25b2784309d30b81e4ec7",
+      "research_split": "calibration"
+    },
+    "828": {
+      "task_group_id": "browsecomp/22569d1e2ba9a042118c1c97",
+      "research_split": "fit"
+    },
+    "83": {
+      "task_group_id": "browsecomp/c4447882001e28cc28f4c76e",
+      "research_split": "fit"
+    },
+    "830": {
+      "task_group_id": "browsecomp/c0d7281341c32b54569eeb73",
+      "research_split": "fit"
+    },
+    "832": {
+      "task_group_id": "browsecomp/fb541031d104ae6162d7529f",
+      "research_split": "test"
+    },
+    "833": {
+      "task_group_id": "browsecomp/fbff27be99d297ba3e2cb003",
+      "research_split": "fit"
+    },
+    "834": {
+      "task_group_id": "browsecomp/af4b1d44848f51d04dcbfa1a",
+      "research_split": "dev"
+    },
+    "835": {
+      "task_group_id": "browsecomp/5109328a66f0be14e310a504",
+      "research_split": "fit"
+    },
+    "836": {
+      "task_group_id": "browsecomp/2678bc88a13b11d1080d3bdd",
+      "research_split": "fit"
+    },
+    "838": {
+      "task_group_id": "browsecomp/9c1aa24d8856b1a9b5942420",
+      "research_split": "dev"
+    },
+    "840": {
+      "task_group_id": "browsecomp/7c9300673aec8c27b9678796",
+      "research_split": "fit"
+    },
+    "843": {
+      "task_group_id": "browsecomp/d617cdd01253eb4f240d28e9",
+      "research_split": "fit"
+    },
+    "844": {
+      "task_group_id": "browsecomp/11c6bdddef69365ac5049552",
+      "research_split": "tune"
+    },
+    "847": {
+      "task_group_id": "browsecomp/1f6a2320c30fe1ba16ff47e3",
+      "research_split": "calibration"
+    },
+    "85": {
+      "task_group_id": "browsecomp/6487ea8bd086a04490c4a77f",
+      "research_split": "calibration"
+    },
+    "850": {
+      "task_group_id": "browsecomp/a4db44ff77dc235f5486429f",
+      "research_split": "tune"
+    },
+    "851": {
+      "task_group_id": "browsecomp/cfe956d412dd5a1bb72b6b9a",
+      "research_split": "fit"
+    },
+    "852": {
+      "task_group_id": "browsecomp/797f0086e1c21dc75d6f991a",
+      "research_split": "tune"
+    },
+    "853": {
+      "task_group_id": "browsecomp/f126f92803e89253a426570d",
+      "research_split": "tune"
+    },
+    "854": {
+      "task_group_id": "browsecomp/62f9f58749f0cd675223cefc",
+      "research_split": "dev"
+    },
+    "856": {
+      "task_group_id": "browsecomp/17e1fc611682fc426f348956",
+      "research_split": "fit"
+    },
+    "86": {
+      "task_group_id": "browsecomp/095ec38cef869cf49065c8c7",
+      "research_split": "fit"
+    },
+    "861": {
+      "task_group_id": "browsecomp/105aeeed3519053d3f550e21",
+      "research_split": "fit"
+    },
+    "863": {
+      "task_group_id": "browsecomp/1a4b6170aff5f71eda8507fa",
+      "research_split": "test"
+    },
+    "864": {
+      "task_group_id": "browsecomp/ad441a37ecf6e827ab9f5031",
+      "research_split": "fit"
+    },
+    "865": {
+      "task_group_id": "browsecomp/22fd1dc262df9e9b924987ae",
+      "research_split": "test"
+    },
+    "867": {
+      "task_group_id": "browsecomp/c5790dd250e79b8764ca2368",
+      "research_split": "fit"
+    },
+    "869": {
+      "task_group_id": "browsecomp/e9f878c0456ee64a2dd1100f",
+      "research_split": "test"
+    },
+    "87": {
+      "task_group_id": "browsecomp/ab03bf74d075ca68d8c56177",
+      "research_split": "calibration"
+    },
+    "870": {
+      "task_group_id": "browsecomp/0ee1b20bf33ff007de68c34b",
+      "research_split": "dev"
+    },
+    "871": {
+      "task_group_id": "browsecomp/36bf6c822f321db731b82e07",
+      "research_split": "fit"
+    },
+    "872": {
+      "task_group_id": "browsecomp/578a3ea3e299f17955635287",
+      "research_split": "fit"
+    },
+    "873": {
+      "task_group_id": "browsecomp/3414b57a63649aeb7c0a5917",
+      "research_split": "test"
+    },
+    "875": {
+      "task_group_id": "browsecomp/dcb90b95013e8f0ba22504af",
+      "research_split": "fit"
+    },
+    "876": {
+      "task_group_id": "browsecomp/28db34d5120f7d3ada529dc0",
+      "research_split": "test"
+    },
+    "88": {
+      "task_group_id": "browsecomp/909e212a8c16c0c05952bd47",
+      "research_split": "fit"
+    },
+    "882": {
+      "task_group_id": "browsecomp/1d379e4de505584b1db85e31",
+      "research_split": "fit"
+    },
+    "883": {
+      "task_group_id": "browsecomp/f1414641c65e71ddd7bf24c1",
+      "research_split": "fit"
+    },
+    "884": {
+      "task_group_id": "browsecomp/4ebb81133b42b453df38b5d5",
+      "research_split": "test"
+    },
+    "885": {
+      "task_group_id": "browsecomp/73230074628a0a3516f9f416",
+      "research_split": "fit"
+    },
+    "886": {
+      "task_group_id": "browsecomp/e2a5830141edb663ef4f1a5e",
+      "research_split": "dev"
+    },
+    "887": {
+      "task_group_id": "browsecomp/646c93232116abf38d3cd131",
+      "research_split": "fit"
+    },
+    "89": {
+      "task_group_id": "browsecomp/8ecd5fbb13fc6f6c74ca57c9",
+      "research_split": "fit"
+    },
+    "893": {
+      "task_group_id": "browsecomp/3cfb78fcff1cdfab92f3ed94",
+      "research_split": "fit"
+    },
+    "894": {
+      "task_group_id": "browsecomp/7a03f84d820e6f6bea0f2c6c",
+      "research_split": "fit"
+    },
+    "895": {
+      "task_group_id": "browsecomp/6fe7f04acf8235c6f837d0bf",
+      "research_split": "fit"
+    },
+    "896": {
+      "task_group_id": "browsecomp/146d73d452077c7f1d1c9181",
+      "research_split": "test"
+    },
+    "897": {
+      "task_group_id": "browsecomp/f087fdc84f47036219736515",
+      "research_split": "fit"
+    },
+    "898": {
+      "task_group_id": "browsecomp/9d19ba8096e5de658fce21de",
+      "research_split": "fit"
+    },
+    "899": {
+      "task_group_id": "browsecomp/cf091b1d210d8ef471ed3688",
+      "research_split": "test"
+    },
+    "90": {
+      "task_group_id": "browsecomp/b0900483ac6760b7c6e1d592",
+      "research_split": "fit"
+    },
+    "904": {
+      "task_group_id": "browsecomp/449cb9e3df913ed124c68c96",
+      "research_split": "fit"
+    },
+    "905": {
+      "task_group_id": "browsecomp/623c182a87bdc75c26265449",
+      "research_split": "fit"
+    },
+    "906": {
+      "task_group_id": "browsecomp/2efe76df61ec57764aa41399",
+      "research_split": "fit"
+    },
+    "907": {
+      "task_group_id": "browsecomp/0ef107ea928655a13ed4618c",
+      "research_split": "fit"
+    },
+    "909": {
+      "task_group_id": "browsecomp/523e4b23f288f47958bf729a",
+      "research_split": "fit"
+    },
+    "910": {
+      "task_group_id": "browsecomp/e12c435020ce4dc6bb60ae77",
+      "research_split": "fit"
+    },
+    "912": {
+      "task_group_id": "browsecomp/bc62ba2cd20cdf249f8ca612",
+      "research_split": "fit"
+    },
+    "915": {
+      "task_group_id": "browsecomp/ffa4e9bff1049902c3dca6a8",
+      "research_split": "fit"
+    },
+    "916": {
+      "task_group_id": "browsecomp/0a5303e149dee8918cb45337",
+      "research_split": "fit"
+    },
+    "919": {
+      "task_group_id": "browsecomp/4c0a77d504ba07897c11608a",
+      "research_split": "test"
+    },
+    "92": {
+      "task_group_id": "browsecomp/71d5755fd1519716a9c991c9",
+      "research_split": "calibration"
+    },
+    "920": {
+      "task_group_id": "browsecomp/84e033aebf70598798ffbee8",
+      "research_split": "fit"
+    },
+    "921": {
+      "task_group_id": "browsecomp/d4cfec7be6b2326e28161f49",
+      "research_split": "fit"
+    },
+    "922": {
+      "task_group_id": "browsecomp/683bb8cff2b7cb8b6ba2cfcd",
+      "research_split": "fit"
+    },
+    "923": {
+      "task_group_id": "browsecomp/7c58228469322f484a492dcf",
+      "research_split": "fit"
+    },
+    "925": {
+      "task_group_id": "browsecomp/ab280566addaafeb82fbf67a",
+      "research_split": "fit"
+    },
+    "926": {
+      "task_group_id": "browsecomp/7f9a0fbf4517d7ab2b868a65",
+      "research_split": "tune"
+    },
+    "927": {
+      "task_group_id": "browsecomp/22cc0d0141a775af98b1d2c7",
+      "research_split": "calibration"
+    },
+    "928": {
+      "task_group_id": "browsecomp/878c1892549d90b980e27c4f",
+      "research_split": "test"
+    },
+    "93": {
+      "task_group_id": "browsecomp/2f7e6df2101ee5203d90b952",
+      "research_split": "calibration"
+    },
+    "930": {
+      "task_group_id": "browsecomp/189f01d2384a0031def028dc",
+      "research_split": "fit"
+    },
+    "932": {
+      "task_group_id": "browsecomp/2d9e6ac76ec4cabebad2b7b4",
+      "research_split": "fit"
+    },
+    "934": {
+      "task_group_id": "browsecomp/53b1c5f4d4d9583729dd4cb1",
+      "research_split": "tune"
+    },
+    "936": {
+      "task_group_id": "browsecomp/99c608ce65ab25308c94ec9c",
+      "research_split": "fit"
+    },
+    "941": {
+      "task_group_id": "browsecomp/be869b123d2cece487dd9477",
+      "research_split": "fit"
+    },
+    "942": {
+      "task_group_id": "browsecomp/608d52adc989d3f5fc467238",
+      "research_split": "fit"
+    },
+    "943": {
+      "task_group_id": "browsecomp/5c9e6f903efa563cfb6e3353",
+      "research_split": "fit"
+    },
+    "944": {
+      "task_group_id": "browsecomp/04513a99fe6d0fdbe38cbcdd",
+      "research_split": "fit"
+    },
+    "946": {
+      "task_group_id": "browsecomp/ec5253eb0e847f672a5a411d",
+      "research_split": "fit"
+    },
+    "947": {
+      "task_group_id": "browsecomp/bcf82d545b3ebded25ace5a4",
+      "research_split": "fit"
+    },
+    "948": {
+      "task_group_id": "browsecomp/163fc20dacfcdb61558461c4",
+      "research_split": "fit"
+    },
+    "95": {
+      "task_group_id": "browsecomp/52f19ac02bea45c844c93f38",
+      "research_split": "fit"
+    },
+    "950": {
+      "task_group_id": "browsecomp/9eebd2e8bce771f197dc84f2",
+      "research_split": "tune"
+    },
+    "951": {
+      "task_group_id": "browsecomp/f862549f5d8d0fa25c797a3b",
+      "research_split": "calibration"
+    },
+    "952": {
+      "task_group_id": "browsecomp/f9adff0a17f38dac4be3d667",
+      "research_split": "test"
+    },
+    "959": {
+      "task_group_id": "browsecomp/a82dfc2d9e3ea1f6b6438c2a",
+      "research_split": "fit"
+    },
+    "96": {
+      "task_group_id": "browsecomp/06ad59f993e2e498f3ff560e",
+      "research_split": "fit"
+    },
+    "960": {
+      "task_group_id": "browsecomp/b8bfea9cfc493250da662d38",
+      "research_split": "fit"
+    },
+    "961": {
+      "task_group_id": "browsecomp/76237e8bde905555271adbf6",
+      "research_split": "tune"
+    },
+    "962": {
+      "task_group_id": "browsecomp/a7d36cf64cd0ceb6cec69080",
+      "research_split": "fit"
+    },
+    "963": {
+      "task_group_id": "browsecomp/be7cbe8a3288e926bc37f148",
+      "research_split": "tune"
+    },
+    "966": {
+      "task_group_id": "browsecomp/808e6aa6ffc7d9144e917ba9",
+      "research_split": "tune"
+    },
+    "968": {
+      "task_group_id": "browsecomp/462d0de3134b1a105688203d",
+      "research_split": "fit"
+    },
+    "969": {
+      "task_group_id": "browsecomp/b38b4506122dd1f8ebacf05b",
+      "research_split": "fit"
+    },
+    "97": {
+      "task_group_id": "browsecomp/c169dafb9abff9b86a588569",
+      "research_split": "fit"
+    },
+    "970": {
+      "task_group_id": "browsecomp/ce6221cab8913d03e27412bc",
+      "research_split": "fit"
+    },
+    "971": {
+      "task_group_id": "browsecomp/b893c84132d706d3a915efb2",
+      "research_split": "fit"
+    },
+    "972": {
+      "task_group_id": "browsecomp/21972c31f610294ba28c4ad8",
+      "research_split": "fit"
+    },
+    "976": {
+      "task_group_id": "browsecomp/7c72787b306f78552395283a",
+      "research_split": "dev"
+    },
+    "978": {
+      "task_group_id": "browsecomp/3bf2b187b1f05351ac5ccce1",
+      "research_split": "calibration"
+    },
+    "979": {
+      "task_group_id": "browsecomp/5c44b4e1272f73e28411b088",
+      "research_split": "fit"
+    },
+    "98": {
+      "task_group_id": "browsecomp/ff39e8f554126bdb6dbf860e",
+      "research_split": "tune"
+    },
+    "980": {
+      "task_group_id": "browsecomp/64bc6ee0ad57a67e11a16264",
+      "research_split": "fit"
+    },
+    "981": {
+      "task_group_id": "browsecomp/b7fe8c0f65b10b9aea65f0d0",
+      "research_split": "fit"
+    },
+    "983": {
+      "task_group_id": "browsecomp/c18d1a077bd42e945603b100",
+      "research_split": "calibration"
+    },
+    "984": {
+      "task_group_id": "browsecomp/7bf104697f9fe184c1259931",
+      "research_split": "calibration"
+    },
+    "985": {
+      "task_group_id": "browsecomp/7ac7ab2d9b88da3aff346499",
+      "research_split": "fit"
+    },
+    "986": {
+      "task_group_id": "browsecomp/400d91d9a9c57988abd84a44",
+      "research_split": "calibration"
+    },
+    "987": {
+      "task_group_id": "browsecomp/9635d8aa6e0c293d567916a0",
+      "research_split": "fit"
+    },
+    "991": {
+      "task_group_id": "browsecomp/6d50c49cf7e8d72402b80429",
+      "research_split": "fit"
+    },
+    "992": {
+      "task_group_id": "browsecomp/5352ba70097d3776022b6e02",
+      "research_split": "fit"
+    },
+    "996": {
+      "task_group_id": "browsecomp/58b1731d998c7dc763c57a21",
+      "research_split": "tune"
+    },
+    "998": {
+      "task_group_id": "browsecomp/d6ffc05cc459956c1b0e6ded",
+      "research_split": "dev"
+    },
+    "999": {
+      "task_group_id": "browsecomp/7f9ccbdf4907f11e2e356cac",
+      "research_split": "fit"
+    }
+  }
+}

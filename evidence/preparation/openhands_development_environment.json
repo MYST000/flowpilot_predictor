@@ -1,0 +1,23 @@
+{
+  "python": "3.13.15",
+  "interpreter": "/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/.venv/bin/python",
+  "uv": "/home/qiulin/flowpilot_predictor/.venv-data/bin/uv",
+  "env_script": "/home/qiulin/flowpilot_predictor/scripts/openhands_env.sh",
+  "make_build": "passed",
+  "uv_lock_sha256": "fc7ed477eb670f456c93539de473376c86a8fc6de981a1d6bef2f66e681e710b",
+  "packages": {
+    "openhands-sdk": "1.31.1",
+    "openhands-tools": "1.31.1",
+    "openhands-workspace": "1.31.1",
+    "openhands-agent-server": "1.31.1",
+    "flowpilot-benchmark-adapters": "0.2.0",
+    "pytest": "9.0.3",
+    "ruff": "0.13.1",
+    "pre-commit": "4.3.0",
+    "pyarrow": "23.0.1",
+    "ujson": "5.13.0"
+  },
+  "baseline_commit": "a6db5dcba26a3acfaeac58c8ba5195433a0e223d",
+  "ql_commit": "8e8ed520c8abb09c4c4d3369492d3b02988e2c18",
+  "no_new_gpu_service": true
+}

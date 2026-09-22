@@ -1,0 +1,103 @@
+WARNING: Using incubator modules: jdk.incubator.vector
+/home/qiulin/flowpilot_predictor/.venv-retrieval/lib/python3.13/site-packages/fastmcp/server/auth/providers/bearer.py:6: AuthlibDeprecationWarning: authlib.jose module is deprecated, please use joserfc instead.
+It will be compatible before version 2.0.0.
+  from authlib.jose import JsonWebKey, JsonWebToken
+None of PyTorch, TensorFlow >= 2.0, or Flax have been found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Sep 22, 2026 3:31:08 PM org.apache.lucene.store.MemorySegmentIndexInputProvider <init>
+INFO: Using MemorySegmentIndexInput with Java 21; to disable start with -Dorg.apache.lucene.store.MMapDirectory.enableMemorySegments=false
+{"event": "native_bm25_ready", "pid": 1941774, "documents": 100195, "url": "http://127.0.0.1:8123/mcp", "k": 5, "snippet_max_tokens": 512}
+[09/22/26 15:31:08] INFO     Starting MCP server 'search-server'  server.py:1358
+                             with transport 'streamable-http' on                
+                             http://127.0.0.1:8123/mcp/                         
+
+2026-09-22 15:31:08,655 - FastMCP.fastmcp.server.server - INFO - Starting MCP server 'search-server' with transport 'streamable-http' on http://127.0.0.1:8123/mcp/
+INFO:     Started server process [1941774]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8123 (Press CTRL+C to quit)
+INFO:     127.0.0.1:40796 - "POST /mcp HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:40802 - "POST /mcp HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:40796 - "POST /mcp/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40816 - "POST /mcp HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:40818 - "POST /mcp HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:40802 - "POST /mcp/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40818 - "POST /mcp/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40816 - "POST /mcp/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40832 - "POST /mcp HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:40846 - "GET /mcp HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:40832 - "POST /mcp/ HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:40846 - "GET /mcp/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40860 - "POST /mcp HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:40852 - "POST /mcp HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:40866 - "GET /mcp HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:40860 - "POST /mcp/ HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:40908 - "POST /mcp HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:40892 - "POST /mcp HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:40878 - "GET /mcp HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:40866 - "GET /mcp/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40852 - "POST /mcp/ HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:40878 - "GET /mcp/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40914 - "GET /mcp HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:40908 - "POST /mcp/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40928 - "POST /mcp HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:40932 - "POST /mcp HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:40892 - "POST /mcp/ HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:40928 - "POST /mcp/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40914 - "GET /mcp/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40932 - "POST /mcp/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40942 - "POST /mcp HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:40942 - "POST /mcp/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40958 - "POST /mcp HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:40970 - "POST /mcp HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:40982 - "POST /mcp HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:40976 - "POST /mcp HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:40958 - "POST /mcp/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40982 - "POST /mcp/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40970 - "POST /mcp/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40976 - "POST /mcp/ HTTP/1.1" 200 OK
+Token indices sequence length is longer than the specified maximum sequence length for this model (349713 > 131072). Running this sequence through the model will result in indexing errors
+INFO:     127.0.0.1:40996 - "DELETE /mcp HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:40996 - "DELETE /mcp/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41030 - "DELETE /mcp HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:41006 - "POST /mcp HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:41014 - "DELETE /mcp HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:41006 - "POST /mcp/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41030 - "DELETE /mcp/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41014 - "DELETE /mcp/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41044 - "DELETE /mcp HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:41044 - "DELETE /mcp/ HTTP/1.1" 200 OK
+INFO:     Shutting down
+ERROR:    Cancel 0 running task(s), timeout graceful shutdown exceeded
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1941774]
+Traceback (most recent call last):
+  File "/home/qiulin/flowpilot_predictor/.python/cpython-3.13.15-linux-x86_64-gnu/lib/python3.13/asyncio/runners.py", line 119, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/qiulin/flowpilot_predictor/.python/cpython-3.13.15-linux-x86_64-gnu/lib/python3.13/asyncio/base_events.py", line 726, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/qiulin/flowpilot_predictor/runtime/browsecomp-native/serve.py", line 50, in <module>
+    main()
+    ~~~~^^
+  File "/home/qiulin/flowpilot_predictor/runtime/browsecomp-native/serve.py", line 47, in main
+    server.run(transport='streamable-http',host='127.0.0.1',port=args.port,path='/mcp')
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/qiulin/flowpilot_predictor/.venv-retrieval/lib/python3.13/site-packages/fastmcp/server/server.py", line 317, in run
+    anyio.run(partial(self.run_async, transport, **transport_kwargs))
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/qiulin/flowpilot_predictor/.venv-retrieval/lib/python3.13/site-packages/anyio/_core/_eventloop.py", line 83, in run
+    return async_backend.run(func, args, {}, backend_options)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/qiulin/flowpilot_predictor/.venv-retrieval/lib/python3.13/site-packages/anyio/_backends/_asyncio.py", line 2548, in run
+    return runner.run(wrapper())
+           ~~~~~~~~~~^^^^^^^^^^^
+  File "/home/qiulin/flowpilot_predictor/.python/cpython-3.13.15-linux-x86_64-gnu/lib/python3.13/asyncio/runners.py", line 124, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt

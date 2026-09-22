@@ -1,0 +1,39 @@
+{
+  "timestamp": "2026-09-21T14:48:11.824277+00:00",
+  "identity": {
+    "exit_code": 0,
+    "stdout": "uid=1015(qiulin) gid=1015(qiulin) groups=1015(qiulin),27(sudo)",
+    "stderr": ""
+  },
+  "gpu": {
+    "exit_code": 0,
+    "stdout": "0, NVIDIA GeForce RTX 4090, 550.144.03, 24564 MiB, 8135 MiB, 0 %\n1, NVIDIA GeForce RTX 4090, 550.144.03, 24564 MiB, 10681 MiB, 0 %\n2, NVIDIA GeForce RTX 4090, 550.144.03, 24564 MiB, 10069 MiB, 14 %\n3, NVIDIA GeForce RTX 4090, 550.144.03, 24564 MiB, 8437 MiB, 14 %\n4, NVIDIA GeForce RTX 4090, 550.144.03, 24564 MiB, 7964 MiB, 0 %",
+    "stderr": ""
+  },
+  "topology": {
+    "exit_code": 0,
+    "stdout": "\u001b[4mGPU0\tGPU1\tGPU2\tGPU3\tGPU4\tCPU Affinity\tNUMA Affinity\tGPU NUMA ID\u001b[0m\nGPU0\t X \tPIX\tPIX\tSYS\tSYS\t0-31,64-95\t0\t\tN/A\nGPU1\tPIX\t X \tPIX\tSYS\tSYS\t0-31,64-95\t0\t\tN/A\nGPU2\tPIX\tPIX\t X \tSYS\tSYS\t0-31,64-95\t0\t\tN/A\nGPU3\tSYS\tSYS\tSYS\t X \tPIX\t32-63,96-127\t1\t\tN/A\nGPU4\tSYS\tSYS\tSYS\tPIX\t X \t32-63,96-127\t1\t\tN/A\n\nLegend:\n\n  X    = Self\n  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)\n  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node\n  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)\n  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)\n  PIX  = Connection traversing at most a single PCIe bridge\n  NV#  = Connection traversing a bonded set of # NVLinks",
+    "stderr": ""
+  },
+  "docker": {
+    "exit_code": 0,
+    "stdout": "\"\"",
+    "stderr": "Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?"
+  },
+  "sudo_noninteractive": {
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "sudo: a password is required"
+  },
+  "qwen_model_path": "/home/qiulin/HF_Model/Qwen3.5-9B",
+  "qwen_structure_check": "qwen35_local_file_structure.json",
+  "existing_local_port8000": "FlowGuard HTML web application; not OpenAI compatible model endpoint",
+  "gpu_services_started": false,
+  "recommendation": "CPU-only fixture microtest now; real code sandbox requires root with dedicated task UIDs or usable container backend; real Qwen validation after GPUs free",
+  "vllm_wheel_requirements": {
+    "python": ">=3.10,<3.15",
+    "torch": "==2.13.0",
+    "transformers": ">=5.10.4",
+    "flashinfer-python": "==0.6.18"
+  }
+}

@@ -1,0 +1,11 @@
+..................................s.s..................ss............... [ 29%]
+........................................................................ [ 59%]
+........................................................................ [ 89%]
+.........................                                                [100%]
+=============================== warnings summary ===============================
+tests/test_sdk_runner.py: 10 warnings
+  /home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/openhands-sdk/openhands/sdk/llm/utils/telemetry.py:285: UserWarning: Cost calculation failed: This model isn't mapped yet. model=test-model, custom_llm_provider=openai. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.
+    warnings.warn(f"Cost calculation failed: {e}")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+237 passed, 4 skipped, 10 warnings in 41.66s

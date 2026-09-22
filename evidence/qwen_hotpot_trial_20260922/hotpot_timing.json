@@ -1,0 +1,402 @@
+{
+  "schema_version": 1,
+  "attempt_dir": "/home/qiulin/flowpilot_predictor/runs/campaigns/hotpot_one_question_tp2_c1_20260922/tasks/hotpot--5a8b57f25542995d1e6f1371/attempt-001",
+  "identity": {
+    "task_id": "5a8b57f25542995d1e6f1371",
+    "dataset_id": "hotpotqa",
+    "dataset_revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+    "run_id": "hotpot_one_question_tp2_c1_20260922",
+    "attempt_id": "attempt-001"
+  },
+  "execution_status": "completed",
+  "termination_reason": "finished",
+  "task_total_ms": 49446.33302371949,
+  "task_total_s": 49.44633302371949,
+  "counts": {
+    "llm_requests_prepared": 9,
+    "llm_responses": 9,
+    "llm_errors": 0,
+    "llm_requests_not_sent": 0,
+    "tools": 10,
+    "tools_by_name": {
+      "search": 8,
+      "read_document": 2
+    }
+  },
+  "llm_client_transport": {
+    "summary": {
+      "observed_sum_ms": 41991.101033,
+      "observed_count": 9,
+      "missing_count": 0,
+      "complete_sum_ms": 41991.101033
+    },
+    "calls": [
+      {
+        "index": 1,
+        "request_id": "8a847bc2491148f79e83f0f023234fe7",
+        "terminal_event": "llm_response",
+        "error_type": null,
+        "client_transport_duration_ms": 5664.508076,
+        "duration_observed": true,
+        "response_received": true,
+        "start_event_present": true,
+        "terminal_event_present": true
+      },
+      {
+        "index": 2,
+        "request_id": "95c73173e8fa4f2da938c2bf12044d24",
+        "terminal_event": "llm_response",
+        "error_type": null,
+        "client_transport_duration_ms": 8084.21603,
+        "duration_observed": true,
+        "response_received": true,
+        "start_event_present": true,
+        "terminal_event_present": true
+      },
+      {
+        "index": 3,
+        "request_id": "7ed108d6b32440d1ab795ed2b1a8bcc1",
+        "terminal_event": "llm_response",
+        "error_type": null,
+        "client_transport_duration_ms": 2637.463924,
+        "duration_observed": true,
+        "response_received": true,
+        "start_event_present": true,
+        "terminal_event_present": true
+      },
+      {
+        "index": 4,
+        "request_id": "80670a124ab547ceae87a299a5a2ef9e",
+        "terminal_event": "llm_response",
+        "error_type": null,
+        "client_transport_duration_ms": 2888.765659,
+        "duration_observed": true,
+        "response_received": true,
+        "start_event_present": true,
+        "terminal_event_present": true
+      },
+      {
+        "index": 5,
+        "request_id": "69f16cbd5b8c49d3839fcdb9aa530c0f",
+        "terminal_event": "llm_response",
+        "error_type": null,
+        "client_transport_duration_ms": 2472.081196,
+        "duration_observed": true,
+        "response_received": true,
+        "start_event_present": true,
+        "terminal_event_present": true
+      },
+      {
+        "index": 6,
+        "request_id": "959864699a7d43f09558036041287853",
+        "terminal_event": "llm_response",
+        "error_type": null,
+        "client_transport_duration_ms": 2811.093961,
+        "duration_observed": true,
+        "response_received": true,
+        "start_event_present": true,
+        "terminal_event_present": true
+      },
+      {
+        "index": 7,
+        "request_id": "05132092218e4d9c93a345281ae939b4",
+        "terminal_event": "llm_response",
+        "error_type": null,
+        "client_transport_duration_ms": 2441.187942,
+        "duration_observed": true,
+        "response_received": true,
+        "start_event_present": true,
+        "terminal_event_present": true
+      },
+      {
+        "index": 8,
+        "request_id": "2171ef8b4b5042b09897fff9f8917088",
+        "terminal_event": "llm_response",
+        "error_type": null,
+        "client_transport_duration_ms": 6091.513055,
+        "duration_observed": true,
+        "response_received": true,
+        "start_event_present": true,
+        "terminal_event_present": true
+      },
+      {
+        "index": 9,
+        "request_id": "76a10211e6f44ca1ad8437000fef53bb",
+        "terminal_event": "llm_response",
+        "error_type": null,
+        "client_transport_duration_ms": 8900.27119,
+        "duration_observed": true,
+        "response_received": true,
+        "start_event_present": true,
+        "terminal_event_present": true
+      }
+    ]
+  },
+  "tools": {
+    "summary": {
+      "all": {
+        "calls": 10,
+        "executor": {
+          "observed_sum_ms": 7061.175697,
+          "observed_count": 10,
+          "missing_count": 0,
+          "complete_sum_ms": 7061.175697
+        },
+        "round_trip": {
+          "observed_sum_ms": 7062.817947000001,
+          "observed_count": 10,
+          "missing_count": 0,
+          "complete_sum_ms": 7062.817947000001
+        }
+      },
+      "search": {
+        "calls": 8,
+        "executor": {
+          "observed_sum_ms": 7060.018467999999,
+          "observed_count": 8,
+          "missing_count": 0,
+          "complete_sum_ms": 7060.018467999999
+        },
+        "round_trip": {
+          "observed_sum_ms": 7061.552917,
+          "observed_count": 8,
+          "missing_count": 0,
+          "complete_sum_ms": 7061.552917
+        }
+      },
+      "read": {
+        "calls": 2,
+        "executor": {
+          "observed_sum_ms": 1.157229,
+          "observed_count": 2,
+          "missing_count": 0,
+          "complete_sum_ms": 1.157229
+        },
+        "round_trip": {
+          "observed_sum_ms": 1.2650299999999999,
+          "observed_count": 2,
+          "missing_count": 0,
+          "complete_sum_ms": 1.2650299999999999
+        }
+      },
+      "other": {
+        "calls": 0,
+        "executor": {
+          "observed_sum_ms": 0,
+          "observed_count": 0,
+          "missing_count": 0,
+          "complete_sum_ms": 0
+        },
+        "round_trip": {
+          "observed_sum_ms": 0,
+          "observed_count": 0,
+          "missing_count": 0,
+          "complete_sum_ms": 0
+        }
+      }
+    },
+    "calls": [
+      {
+        "index": 1,
+        "tool_name": "search",
+        "category": "search",
+        "request_id": "8a847bc2491148f79e83f0f023234fe7",
+        "tool_call_id": "chatcmpl-tool-a87b666742ba0e15",
+        "terminal_event": "tool_end",
+        "executor_duration_ms": 81.228359,
+        "round_trip_ms": 81.338539,
+        "executor_duration_observed": true,
+        "round_trip_observed": true,
+        "timed_out": false,
+        "failed": false,
+        "error_type": null,
+        "start_event_present": true,
+        "terminal_event_present": true
+      },
+      {
+        "index": 2,
+        "tool_name": "search",
+        "category": "search",
+        "request_id": "8a847bc2491148f79e83f0f023234fe7",
+        "tool_call_id": "chatcmpl-tool-93d37a70bd017b97",
+        "terminal_event": "tool_end",
+        "executor_duration_ms": 96.871351,
+        "round_trip_ms": 96.982304,
+        "executor_duration_observed": true,
+        "round_trip_observed": true,
+        "timed_out": false,
+        "failed": false,
+        "error_type": null,
+        "start_event_present": true,
+        "terminal_event_present": true
+      },
+      {
+        "index": 3,
+        "tool_name": "read_document",
+        "category": "read",
+        "request_id": "95c73173e8fa4f2da938c2bf12044d24",
+        "tool_call_id": "chatcmpl-tool-9bd41e0bfdbc452c",
+        "terminal_event": "tool_end",
+        "executor_duration_ms": 0.466641,
+        "round_trip_ms": 0.522389,
+        "executor_duration_observed": true,
+        "round_trip_observed": true,
+        "timed_out": false,
+        "failed": false,
+        "error_type": null,
+        "start_event_present": true,
+        "terminal_event_present": true
+      },
+      {
+        "index": 4,
+        "tool_name": "search",
+        "category": "search",
+        "request_id": "95c73173e8fa4f2da938c2bf12044d24",
+        "tool_call_id": "chatcmpl-tool-afa3061c5a308782",
+        "terminal_event": "tool_end",
+        "executor_duration_ms": 2440.551439,
+        "round_trip_ms": 2440.861174,
+        "executor_duration_observed": true,
+        "round_trip_observed": true,
+        "timed_out": false,
+        "failed": false,
+        "error_type": null,
+        "start_event_present": true,
+        "terminal_event_present": true
+      },
+      {
+        "index": 5,
+        "tool_name": "search",
+        "category": "search",
+        "request_id": "7ed108d6b32440d1ab795ed2b1a8bcc1",
+        "tool_call_id": "chatcmpl-tool-894d0312be6759d8",
+        "terminal_event": "tool_end",
+        "executor_duration_ms": 1735.685757,
+        "round_trip_ms": 1735.932589,
+        "executor_duration_observed": true,
+        "round_trip_observed": true,
+        "timed_out": false,
+        "failed": false,
+        "error_type": null,
+        "start_event_present": true,
+        "terminal_event_present": true
+      },
+      {
+        "index": 6,
+        "tool_name": "search",
+        "category": "search",
+        "request_id": "80670a124ab547ceae87a299a5a2ef9e",
+        "tool_call_id": "chatcmpl-tool-bfc3458ae87ff5fd",
+        "terminal_event": "tool_end",
+        "executor_duration_ms": 1860.13569,
+        "round_trip_ms": 1860.493677,
+        "executor_duration_observed": true,
+        "round_trip_observed": true,
+        "timed_out": false,
+        "failed": false,
+        "error_type": null,
+        "start_event_present": true,
+        "terminal_event_present": true
+      },
+      {
+        "index": 7,
+        "tool_name": "search",
+        "category": "search",
+        "request_id": "69f16cbd5b8c49d3839fcdb9aa530c0f",
+        "tool_call_id": "chatcmpl-tool-b79594857a7c84bb",
+        "terminal_event": "tool_end",
+        "executor_duration_ms": 145.84041,
+        "round_trip_ms": 145.931561,
+        "executor_duration_observed": true,
+        "round_trip_observed": true,
+        "timed_out": false,
+        "failed": false,
+        "error_type": null,
+        "start_event_present": true,
+        "terminal_event_present": true
+      },
+      {
+        "index": 8,
+        "tool_name": "search",
+        "category": "search",
+        "request_id": "959864699a7d43f09558036041287853",
+        "tool_call_id": "chatcmpl-tool-a6b850f9bab1a200",
+        "terminal_event": "tool_end",
+        "executor_duration_ms": 311.746349,
+        "round_trip_ms": 311.845123,
+        "executor_duration_observed": true,
+        "round_trip_observed": true,
+        "timed_out": false,
+        "failed": false,
+        "error_type": null,
+        "start_event_present": true,
+        "terminal_event_present": true
+      },
+      {
+        "index": 9,
+        "tool_name": "search",
+        "category": "search",
+        "request_id": "05132092218e4d9c93a345281ae939b4",
+        "tool_call_id": "chatcmpl-tool-82c48b681f20f5ef",
+        "terminal_event": "tool_end",
+        "executor_duration_ms": 387.959113,
+        "round_trip_ms": 388.16795,
+        "executor_duration_observed": true,
+        "round_trip_observed": true,
+        "timed_out": false,
+        "failed": false,
+        "error_type": null,
+        "start_event_present": true,
+        "terminal_event_present": true
+      },
+      {
+        "index": 10,
+        "tool_name": "read_document",
+        "category": "read",
+        "request_id": "2171ef8b4b5042b09897fff9f8917088",
+        "tool_call_id": "chatcmpl-tool-b0050c4e2ce15e8e",
+        "terminal_event": "tool_end",
+        "executor_duration_ms": 0.690588,
+        "round_trip_ms": 0.742641,
+        "executor_duration_observed": true,
+        "round_trip_observed": true,
+        "timed_out": false,
+        "failed": false,
+        "error_type": null,
+        "start_event_present": true,
+        "terminal_event_present": true
+      }
+    ]
+  },
+  "llm_not_sent_errors": [],
+  "serial_evidence": {
+    "campaign": {
+      "path": "/home/qiulin/flowpilot_predictor/runs/campaigns/hotpot_one_question_tp2_c1_20260922/campaign.json",
+      "sha256": "15dd980bc487e475a6ca20597dc7ab09eed2555a665d2294474c82d21b731321",
+      "concurrency": 1,
+      "intra_task_tool_concurrency": 1
+    },
+    "c1_confirmed": true,
+    "intra_task_tool_concurrency_one": true,
+    "nonoverlapping_event_order": true
+  },
+  "additive_decomposition": {
+    "available": true,
+    "unavailable_reasons": [],
+    "llm_client_transport_ms": 41991.101033,
+    "tool_client_round_trip_ms": 7062.817947000001,
+    "other_ms": 392.4140437194892
+  },
+  "definitions": {
+    "task_total": "run_task duration through artifact export and environment cleanup; excludes model startup, campaign validation, scheduling wait and worker import/setup before run_task",
+    "llm_client_transport": "Recorded client _transport_call duration including request preparation, client/network overhead and server waiting/inference; not pure GPU compute time or an exact HTTP-only interval",
+    "tool_round_trip": "Client-observed tool invocation duration; executor duration is its internal detail and must not be added again",
+    "executor_missing": "null means unobserved, not zero; the native BrowseComp MCP bridge cannot observe server execution time",
+    "other": "For a complete successful C1 serial trace only: task total minus summed LLM client transport and tool round trips; includes setup, SDK orchestration, tracing, export and cleanup, not isolated scheduling overhead",
+    "failure": "Failed or missing LLM calls have null duration; available measured partial sums are reported but never substituted for a complete additive decomposition"
+  },
+  "source_sha256": {
+    "events.jsonl": "13ccb61d5660d548eda41a583988390d4dd3be77cb41e7b27f85a8ebe2480f9a",
+    "result.json": "05db6218b4798c6cea298ddfe64ae9bb3117452816cec7db95f0ade8a42d609e"
+  }
+}

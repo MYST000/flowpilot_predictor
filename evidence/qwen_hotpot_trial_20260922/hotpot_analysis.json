@@ -1,0 +1,380 @@
+{
+  "source_events_sha256": "13ccb61d5660d548eda41a583988390d4dd3be77cb41e7b27f85a8ebe2480f9a",
+  "tool_calls": [
+    {
+      "tool_name": "search",
+      "effective_arguments": {
+        "query": "Scott Derrickson nationality",
+        "top_k": 5,
+        "kind": "SearchAction"
+      },
+      "round_trip_ms": 81.338539,
+      "executor_duration_ms": 81.228359,
+      "result_count": 5,
+      "result_titles": [
+        "Sinister (film)",
+        "Scott Derrickson",
+        "Sinister 2",
+        "The Exorcism of Emily Rose",
+        "Hellraiser: Inferno"
+      ],
+      "observation_sha256": "cb62dee176c5817c86ff9b701026b1fb697dec82b8202ec81ab31b0adfd9735f"
+    },
+    {
+      "tool_name": "search",
+      "effective_arguments": {
+        "query": "Ed Wood nationality",
+        "top_k": 5,
+        "kind": "SearchAction"
+      },
+      "round_trip_ms": 96.982304,
+      "executor_duration_ms": 96.871351,
+      "result_count": 5,
+      "result_titles": [
+        "Hollywood Rat Race",
+        "Ed Wood filmography",
+        "Ed Wood (engineer)",
+        "Necromania",
+        "Ed Wood (film)"
+      ],
+      "observation_sha256": "d31e328df272287efcd54e80c98be37f77d27641f7b72372a476dcda48731646"
+    },
+    {
+      "tool_name": "read_document",
+      "effective_arguments": {
+        "doc_id": "2816539",
+        "start_sentence": 0,
+        "max_sentences": 5,
+        "kind": "HotpotReadAction"
+      },
+      "round_trip_ms": 0.522389,
+      "executor_duration_ms": 0.466641,
+      "result_count": null,
+      "result_titles": null,
+      "observation_sha256": "64f201b8b5cdc833e956ebeb806de0493bf2029c5c1c882e3f5973ca93b28542"
+    },
+    {
+      "tool_name": "search",
+      "effective_arguments": {
+        "query": "Ed Wood Jr American nationality born",
+        "top_k": 5,
+        "kind": "SearchAction"
+      },
+      "round_trip_ms": 2440.861174,
+      "executor_duration_ms": 2440.551439,
+      "result_count": 5,
+      "result_titles": [
+        "Hollywood Rat Race",
+        "Whatever Works",
+        "Ed Cuff Jr.",
+        "Ed Xiques",
+        "Ed Perry"
+      ],
+      "observation_sha256": "6b3e81adb52ec21686183f76032baf903d490e761c5d455d673ad35b2f5c0445"
+    },
+    {
+      "tool_name": "search",
+      "effective_arguments": {
+        "query": "Ed Wood filmmaker born nationality",
+        "top_k": 5,
+        "kind": "SearchAction"
+      },
+      "round_trip_ms": 1735.932589,
+      "executor_duration_ms": 1735.685757,
+      "result_count": 5,
+      "result_titles": [
+        "Ed Wood (film)",
+        "Fernando Vallejo",
+        "Kim Wood",
+        "Ed Wood (engineer)",
+        "Johnny Carpenter"
+      ],
+      "observation_sha256": "17511fc34d28c7427207ab19a9b6284c8821f925abe6aa53f45782d602177aa6"
+    },
+    {
+      "tool_name": "search",
+      "effective_arguments": {
+        "query": "Ed Wood director biography born",
+        "top_k": 5,
+        "kind": "SearchAction"
+      },
+      "round_trip_ms": 1860.493677,
+      "executor_duration_ms": 1860.13569,
+      "result_count": 5,
+      "result_titles": [
+        "Encyclopedia of American Biography",
+        "The Young Marrieds (film)",
+        "Loretta King Hadler",
+        "William Bemrose",
+        "Ed Wood (engineer)"
+      ],
+      "observation_sha256": "5606e7fe8a829388d5b5e802ab03fb99b3b69428b063b284fc635ffb4832d3c2"
+    },
+    {
+      "tool_name": "search",
+      "effective_arguments": {
+        "query": "Ed Wood filmmaker Wikipedia page",
+        "top_k": 5,
+        "kind": "SearchAction"
+      },
+      "round_trip_ms": 145.931561,
+      "executor_duration_ms": 145.84041,
+      "result_count": 5,
+      "result_titles": [
+        "List of curves",
+        "List of inequalities",
+        "List of surfaces",
+        "List of convexity topics",
+        "List of geometry topics"
+      ],
+      "observation_sha256": "a8ee960cac3fb6a916fd4616cf58cba715ec9c4de3d1ffd1e6433d44dd856c53"
+    },
+    {
+      "tool_name": "search",
+      "effective_arguments": {
+        "query": "Ed Wood director biography",
+        "top_k": 5,
+        "kind": "SearchAction"
+      },
+      "round_trip_ms": 311.845123,
+      "executor_duration_ms": 311.746349,
+      "result_count": 5,
+      "result_titles": [
+        "Encyclopedia of American Biography",
+        "The Young Marrieds (film)",
+        "Loretta King Hadler",
+        "William Bemrose",
+        "Hollywood Rat Race"
+      ],
+      "observation_sha256": "12716615bd9e943cba2744091c22bc7a0a23c35c958bc2910246989bad9080e8"
+    },
+    {
+      "tool_name": "search",
+      "effective_arguments": {
+        "query": "Ed Wood Jr. director nationality",
+        "top_k": 5,
+        "kind": "SearchAction"
+      },
+      "round_trip_ms": 388.16795,
+      "executor_duration_ms": 387.959113,
+      "result_count": 5,
+      "result_titles": [
+        "Hollywood Rat Race",
+        "Whatever Works",
+        "The Young Marrieds (film)",
+        "Ed Wood",
+        "Loretta King Hadler"
+      ],
+      "observation_sha256": "d955c3d96ce1efb8667ae2c37a6e727645b51dec0914e3c98a8e39174fdd757e"
+    },
+    {
+      "tool_name": "read_document",
+      "effective_arguments": {
+        "doc_id": "10520",
+        "start_sentence": 0,
+        "max_sentences": 3,
+        "kind": "HotpotReadAction"
+      },
+      "round_trip_ms": 0.742641,
+      "executor_duration_ms": 0.690588,
+      "result_count": null,
+      "result_titles": null,
+      "observation_sha256": "65970782450290e94e2af082480ac87fe852ecae92704d2d53c5980b0c481836"
+    }
+  ],
+  "llm_calls": [
+    {
+      "request_id": "8a847bc2491148f79e83f0f023234fe7",
+      "duration_ms": 5664.508076,
+      "usage": {
+        "completion_tokens": 134,
+        "prompt_tokens": 1216,
+        "total_tokens": 1350,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 55,
+          "rejected_prediction_tokens": null
+        },
+        "prompt_tokens_details": null
+      }
+    },
+    {
+      "request_id": "95c73173e8fa4f2da938c2bf12044d24",
+      "duration_ms": 8084.21603,
+      "usage": {
+        "completion_tokens": 204,
+        "prompt_tokens": 2434,
+        "total_tokens": 2638,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 116,
+          "rejected_prediction_tokens": null
+        },
+        "prompt_tokens_details": null
+      }
+    },
+    {
+      "request_id": "7ed108d6b32440d1ab795ed2b1a8bcc1",
+      "duration_ms": 2637.463924,
+      "usage": {
+        "completion_tokens": 64,
+        "prompt_tokens": 3077,
+        "total_tokens": 3141,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 24,
+          "rejected_prediction_tokens": null
+        },
+        "prompt_tokens_details": null
+      }
+    },
+    {
+      "request_id": "80670a124ab547ceae87a299a5a2ef9e",
+      "duration_ms": 2888.765659,
+      "usage": {
+        "completion_tokens": 71,
+        "prompt_tokens": 3641,
+        "total_tokens": 3712,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 31,
+          "rejected_prediction_tokens": null
+        },
+        "prompt_tokens_details": null
+      }
+    },
+    {
+      "request_id": "69f16cbd5b8c49d3839fcdb9aa530c0f",
+      "duration_ms": 2472.081196,
+      "usage": {
+        "completion_tokens": 59,
+        "prompt_tokens": 4170,
+        "total_tokens": 4229,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 19,
+          "rejected_prediction_tokens": null
+        },
+        "prompt_tokens_details": null
+      }
+    },
+    {
+      "request_id": "959864699a7d43f09558036041287853",
+      "duration_ms": 2811.093961,
+      "usage": {
+        "completion_tokens": 67,
+        "prompt_tokens": 4520,
+        "total_tokens": 4587,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 28,
+          "rejected_prediction_tokens": null
+        },
+        "prompt_tokens_details": null
+      }
+    },
+    {
+      "request_id": "05132092218e4d9c93a345281ae939b4",
+      "duration_ms": 2441.187942,
+      "usage": {
+        "completion_tokens": 58,
+        "prompt_tokens": 5033,
+        "total_tokens": 5091,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 17,
+          "rejected_prediction_tokens": null
+        },
+        "prompt_tokens_details": null
+      }
+    },
+    {
+      "request_id": "2171ef8b4b5042b09897fff9f8917088",
+      "duration_ms": 6091.513055,
+      "usage": {
+        "completion_tokens": 153,
+        "prompt_tokens": 5551,
+        "total_tokens": 5704,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 108,
+          "rejected_prediction_tokens": null
+        },
+        "prompt_tokens_details": null
+      }
+    },
+    {
+      "request_id": "76a10211e6f44ca1ad8437000fef53bb",
+      "duration_ms": 8900.27119,
+      "usage": {
+        "completion_tokens": 226,
+        "prompt_tokens": 5687,
+        "total_tokens": 5913,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 157,
+          "rejected_prediction_tokens": null
+        },
+        "prompt_tokens_details": null
+      }
+    }
+  ],
+  "exact_cache_diagnostic": {
+    "calls": 10,
+    "unique_tool_argument_keys": 10,
+    "repeated_same_key_calls_within_attempt": 0,
+    "assumption": "Fixed corpus/retriever version, exact arguments, cache initially empty; no cross-task claims"
+  },
+  "tool_fraction_of_task": 0.14283805320026371,
+  "perfect_zero_cost_all_tool_hit_speedup_bound": 1.1666406841012458,
+  "perfect_zero_cost_all_tool_hit_task_seconds": 42.38351507671948,
+  "official_evaluation": {
+    "evaluator": "hotpot",
+    "command": [
+      "/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/.venv/bin/python",
+      "/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/vendor/hotpot/hotpot_evaluate_v1.py",
+      "/home/qiulin/flowpilot_predictor/runs/campaigns/hotpot_one_question_tp2_c1_20260922/tasks/hotpot--5a8b57f25542995d1e6f1371/attempt-001/evaluation/predictions.json",
+      "/home/qiulin/flowpilot_predictor/runs/campaigns/hotpot_one_question_tp2_c1_20260922/tasks/hotpot--5a8b57f25542995d1e6f1371/attempt-001/evaluation/evaluations/eval_5a3db75d354e1c586b67/gold.json"
+    ],
+    "cwd": "/home/qiulin/flowpilot_predictor/runs/campaigns/hotpot_one_question_tp2_c1_20260922/tasks/hotpot--5a8b57f25542995d1e6f1371/attempt-001/evaluation/evaluations/eval_5a3db75d354e1c586b67",
+    "task_ids": [
+      "5a8b57f25542995d1e6f1371"
+    ],
+    "evaluation_status": "scored",
+    "evaluator_identity": {
+      "commit": "3635853403a8735609ee997664e1528f4480762a",
+      "script_sha256": "d35fc91a6db21d791dbdda11daf3856e9359f5701d54e3eefba20d88fecc02c0"
+    },
+    "requires_local_judge_model": false,
+    "returncode": 0,
+    "metrics": {
+      "em": 0.0,
+      "f1": 0.0,
+      "prec": 0.0,
+      "recall": 0.0,
+      "sp_em": 1.0,
+      "sp_f1": 1.0,
+      "sp_prec": 1.0,
+      "sp_recall": 1.0,
+      "joint_em": 0.0,
+      "joint_f1": 0.0,
+      "joint_prec": 0.0,
+      "joint_recall": 0.0
+    }
+  },
+  "limitations": [
+    "One historical development question, TP2 C1; not C4 capacity or latency distribution.",
+    "Actual cache was not enabled; bound is fixed-path direct saving only.",
+    "LLM durations are client transport stages, not pure GPU compute.",
+    "Hotpot uses custom SQLite FTS5 body-only OR/BM25 profile."
+  ]
+}

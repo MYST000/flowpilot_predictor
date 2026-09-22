@@ -1,0 +1,19 @@
+Using Python 3.12.14 environment at: .venv-vllm
+WARN Fixing invalid version specifier by inserting missing dot (before: `>=2.7,!=3.0*,!=3.1*,!=3.2*`; after: `>=2.7,!=3.0.*,!=3.1.*,!=3.2.*`)
+WARN Retry attempt #0. Sleeping 1.12835022s before the next attempt
+WARN Retry attempt #0. Sleeping 1.005758072s before the next attempt
+WARN Retry attempt #0. Sleeping 1.519212142s before the next attempt
+WARN Retry attempt #0. Sleeping 1.563008867s before the next attempt
+WARN Retry attempt #1. Sleeping 3.435558231s before the next attempt
+WARN Retry attempt #1. Sleeping 1.958496171s before the next attempt
+WARN Retry attempt #1. Sleeping 3.390047244s before the next attempt
+WARN Retry attempt #1. Sleeping 1.191659025s before the next attempt
+WARN Retry attempt #2. Sleeping 7.13523714s before the next attempt
+WARN Retry attempt #2. Sleeping 2.483814247s before the next attempt
+WARN Retry attempt #2. Sleeping 3.629779443s before the next attempt
+WARN Retry attempt #2. Sleeping 2.548647502s before the next attempt
+error: Request failed after 4 retries in 65.1s
+  cause: Failed to fetch: `https://pypi.org/simple/grpcio/`
+  cause: error sending request for url (https://pypi.org/simple/grpcio/)
+  cause: client error (Connect)
+  cause: operation timed out

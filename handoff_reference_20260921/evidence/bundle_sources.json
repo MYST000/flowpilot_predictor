@@ -1,0 +1,21 @@
+{
+  "snapshot_date": "2026-09-21",
+  "sdk_bundle_head": "8e8ed520c8abb09c4c4d3369492d3b02988e2c18",
+  "sdk_core_commit": "a6db5dcba26a3acfaeac58c8ba5195433a0e223d",
+  "sdk_origin": "https://github.com/Fate0123/Openhands-software-agent-sdk.git",
+  "browsecomp_upstream_code_commit": "046949032b0328319cc9a02663a759ec601d9402",
+  "original_lcb_adapter_sha256": "b6b0ef3659523e44b7a19de2ccd1b4d33ee1ce3f183adc73b54b71f04d0a4aa5",
+  "contains_raw_benchmarks": false,
+  "contains_model_weights": false,
+  "contains_collected_trajectories": false,
+  "contains_python_environments": false,
+  "contains_protocol_metadata": true,
+  "local_changes_preserved_in": [
+    "source/code_adapter",
+    "browsecomp/adapter"
+  ],
+  "distribution_mode": "readable-single-markdown",
+  "contains_sdk_git_bundle": false,
+  "sdk_download_url": "https://github.com/Fate0123/Openhands-software-agent-sdk.git",
+  "local_original_archive": "handoff_predictor_4090_20260921.tar.gz; not needed for this edition"
+}

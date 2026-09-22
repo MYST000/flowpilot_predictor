@@ -1,0 +1,109 @@
+{
+  "checked_at_utc": "2026-09-21",
+  "document_bytes": 52571,
+  "document_lines": 641,
+  "checks": [
+    {
+      "check": "md_bash_block_1",
+      "passed": true,
+      "output": ""
+    },
+    {
+      "check": "md_bash_block_2",
+      "passed": true,
+      "output": ""
+    },
+    {
+      "check": "md_bash_block_3",
+      "passed": true,
+      "output": ""
+    },
+    {
+      "check": "md_bash_block_4",
+      "passed": true,
+      "output": ""
+    },
+    {
+      "check": "md_bash_block_5",
+      "passed": true,
+      "output": ""
+    },
+    {
+      "check": "md_bash_block_6",
+      "passed": true,
+      "output": ""
+    },
+    {
+      "check": "md_bash_block_7",
+      "passed": true,
+      "output": ""
+    },
+    {
+      "check": "md_python_heredoc_7_1",
+      "passed": true
+    },
+    {
+      "check": "md_bash_block_8",
+      "passed": true,
+      "output": ""
+    },
+    {
+      "check": "md_python_heredoc_8_1",
+      "passed": true
+    },
+    {
+      "check": "md_bash_block_9",
+      "passed": true,
+      "output": ""
+    },
+    {
+      "check": "md_bash_block_10",
+      "passed": true,
+      "output": ""
+    },
+    {
+      "check": "md_bash_block_12",
+      "passed": true,
+      "output": ""
+    },
+    {
+      "check": "source/code_adapter/src unchanged snapshot",
+      "passed": true
+    },
+    {
+      "check": "browsecomp/adapter/src unchanged snapshot",
+      "passed": true
+    },
+    {
+      "check": "original research split hash",
+      "passed": true
+    },
+    {
+      "check": "bundled SDK clones and checks out clean pinned core commit",
+      "passed": true
+    },
+    {
+      "check": "no raw benchmark/model/index/run payload in source staging",
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "boundary": "syntax/source/hash checks only; no new server install or GPU/data collection",
+  "final_document_syntax_checks": [
+    "bash_1",
+    "bash_2",
+    "bash_3",
+    "bash_4",
+    "bash_5",
+    "bash_6",
+    "bash_7",
+    "bash_8",
+    "python_heredoc_8_1",
+    "bash_9",
+    "python_heredoc_9_1",
+    "bash_10",
+    "bash_11",
+    "bash_13"
+  ],
+  "markdown_links_checked": 3
+}

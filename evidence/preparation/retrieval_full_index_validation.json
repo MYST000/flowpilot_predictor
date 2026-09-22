@@ -1,0 +1,24 @@
+[
+  {
+    "benchmark": "hotpot",
+    "index_path": "/home/qiulin/flowpilot_predictor/data/indexes/hotpot_20171001_sqlite_v1.sqlite3",
+    "bytes": 5136465920,
+    "document_count": 5233329,
+    "empty_text_count": 94,
+    "index_sha256": "c4035a998d10ceb525ee43dac31436fa5b90f7c5ea9b5443d7d58d844e6d91a6",
+    "checksum_and_runtime_prepare": "passed",
+    "generic_search_read": "passed",
+    "validation_seconds": 8.045598268508911
+  },
+  {
+    "benchmark": "browsecomp",
+    "index_path": "/home/qiulin/flowpilot_predictor/data/indexes/browsecomp_b27b02_sqlite_v1.sqlite3",
+    "bytes": 4674367488,
+    "document_count": 100195,
+    "empty_text_count": null,
+    "index_sha256": "ad832b2095fc6e14bcbdbcc65251e1c8918323e69406ecacf6572b2dde83e73b",
+    "checksum_and_runtime_prepare": "passed",
+    "generic_search_read": "passed",
+    "validation_seconds": 5.092844724655151
+  }
+]

@@ -1,0 +1,7 @@
+Using Python 3.12.14 environment at: .venv-vllm
+error: No solution found when resolving dependencies
+  cause: Because only packaging<=24.1 is available and flashinfer-python==0.6.18 depends on packaging>=24.2, we can conclude that flashinfer-python==0.6.18 cannot be used.
+         And because vllm==0.29.0+cu129 depends on flashinfer-python==0.6.18, we can conclude that vllm==0.29.0+cu129 cannot be used.
+         And because only vllm==0.29.0+cu129 is available and you require vllm, we can conclude that your requirements are unsatisfiable.
+
+hint: `packaging` was found on https://download.pytorch.org/whl/cu129, but not at the requested version (packaging>=24.2). A compatible version may be available on a subsequent index (e.g., https://pypi.org/simple). By default, uv will only consider versions that are published on the first index that contains a given package, to avoid dependency confusion attacks. If all indexes are equally trusted, use `--index-strategy unsafe-best-match` to consider all versions from all indexes, regardless of the order in which they were defined.

@@ -1,0 +1,9 @@
+{
+  "pid": 1949942,
+  "process_group": 1949942,
+  "started_at_unix": 1790064641.501317,
+  "proc_start_ticks": "442959709",
+  "base_url": "http://127.0.0.1:8100/v1",
+  "owner_dir": "/home/qiulin/flowpilot_predictor/evidence/qwen_hotpot_trial_20260922",
+  "profile": "/home/qiulin/flowpilot_predictor/evidence/qwen_hotpot_trial_20260922/service_profile.json"
+}

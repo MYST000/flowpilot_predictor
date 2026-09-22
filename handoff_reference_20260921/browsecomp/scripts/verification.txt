@@ -1,0 +1,46 @@
+CPU-only launcher verification; no actual GPU/model/service launch or package installation.
+
+COMMAND: python3 /root/flowpilot_predictor/handoff_browsecomp_4090_20260920/scripts/test_launcher.py
+EXIT: 0
+.........
+----------------------------------------------------------------------
+Ran 9 tests in 0.388s
+
+OK
+
+COMMAND: bash -n /root/flowpilot_predictor/handoff_browsecomp_4090_20260920/scripts/collector.sh
+EXIT: 0
+
+COMMAND: bash -n /root/flowpilot_predictor/handoff_browsecomp_4090_20260920/scripts/common.sh
+EXIT: 0
+
+COMMAND: bash -n /root/flowpilot_predictor/handoff_browsecomp_4090_20260920/scripts/env.sh
+EXIT: 0
+
+COMMAND: bash -n /root/flowpilot_predictor/handoff_browsecomp_4090_20260920/scripts/install_controller.sh
+EXIT: 0
+
+COMMAND: bash -n /root/flowpilot_predictor/handoff_browsecomp_4090_20260920/scripts/launch_two_tmux.sh
+EXIT: 0
+
+COMMAND: bash -n /root/flowpilot_predictor/handoff_browsecomp_4090_20260920/scripts/service.sh
+EXIT: 0
+
+COMMAND: bash -n /root/flowpilot_predictor/handoff_browsecomp_4090_20260920/scripts/stop_owned_service.sh
+EXIT: 0
+
+COMMAND: bash -n /root/flowpilot_predictor/handoff_browsecomp_4090_20260920/config/env.example.sh
+EXIT: 0
+
+COMMAND: bash /root/flowpilot_predictor/handoff_browsecomp_4090_20260920/scripts/launch_two_tmux.sh --help
+EXIT: 0
+Usage: launch_two_tmux.sh CONFIG_JSON SPLIT [--resume] [--retry-infrastructure] [--limit N] [--release-test]
+
+COMMAND: bash /root/flowpilot_predictor/handoff_browsecomp_4090_20260920/scripts/stop_owned_service.sh --help
+EXIT: 0
+Usage: stop_owned_service.sh OWNER_DIRECTORY (printed by launch_two_tmux.sh)
+
+COMMAND: bash /root/flowpilot_predictor/handoff_browsecomp_4090_20260920/scripts/install_controller.sh --help
+EXIT: 0
+Usage: bash scripts/install_controller.sh
+Requires restored .envs/controller-base; clones fixed SDK into sdk and installs editables only into .venv-controller.

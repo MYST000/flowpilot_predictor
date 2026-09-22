@@ -1,0 +1,12 @@
+{
+  "hotpot_question_loaded": 1,
+  "browsecomp_question_loaded": 1,
+  "hotpot_document_has_original_sentences": true,
+  "hotpot_text_matches_original_sentence_join": true,
+  "browsecomp_document_fields": [
+    "docid",
+    "text",
+    "url"
+  ],
+  "validation": "Only adapter/schema reading; no LLM calls, no full index, no trajectories collected"
+}

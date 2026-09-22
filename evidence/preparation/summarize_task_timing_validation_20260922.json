@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "script": "/home/qiulin/flowpilot_predictor/scripts/summarize_task_timing.py",
+  "script_sha256": "b89986ab26860a05240a150249fabeca893f11b4e335ee6da9d09a4695c8cbc1",
+  "fixture": "/home/qiulin/flowpilot_predictor/runs/final_adapter_profile_followup_20260922/test_real_sdk_four_same_profil0/mixed/mixed-2/attempt",
+  "checks": [
+    "actual C4 fixture: 3 LLM calls, 1 search, 1 read; additive decomposition rejected",
+    "CLI output equals read-only API output",
+    "synthetic C1 metadata copy: complete successful decomposition adds to total, executor not double-counted",
+    "synthetic failed LLM: null duration and false observed mask, no additive residual",
+    "synthetic missing tool terminal: missing RTT mask and no additive residual",
+    "synthetic unobserved executor: remains null while observed RTT supports serial decomposition",
+    "source fixture events/result bytes unchanged"
+  ],
+  "synthetic_cases": "Metadata/error copies are analysis-only tests, not measured C1 benchmark results. No model or task was executed."
+}

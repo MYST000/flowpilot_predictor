@@ -1,0 +1,18 @@
+{
+  "command": [
+    "uv",
+    "run",
+    "pytest",
+    "benchmarks/flowpilot/tests",
+    "-q",
+    "--basetemp",
+    "/home/qiulin/flowpilot_predictor/runs/final_adapter_check_20260922_verified",
+    "--junitxml",
+    "/home/qiulin/flowpilot_predictor/evidence/preparation/final_adapter_validation_20260922.junit.xml"
+  ],
+  "started_at": "2026-09-22T07:27:09.239247+00:00",
+  "finished_at": "2026-09-22T07:27:52.932873+00:00",
+  "exit_code": 0,
+  "basetemp": "/home/qiulin/flowpilot_predictor/runs/final_adapter_check_20260922_verified",
+  "localhost_proxy_bypass": true
+}

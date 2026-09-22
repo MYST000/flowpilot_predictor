@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="6" skipped="4" tests="241" time="52.019" timestamp="2026-09-22T15:21:37.300004+08:00" hostname="22aba0981a4a"><testcase classname="tests.test_adapter_registry" name="test_declared_identity_selects_only_its_environment_capabilities[livecodebench-expected_tools0-True]" time="0.001" /><testcase classname="tests.test_adapter_registry" name="test_declared_identity_selects_only_its_environment_capabilities[quixbugs-expected_tools1-True]" time="0.001" /><testcase classname="tests.test_adapter_registry" name="test_declared_identity_selects_only_its_environment_capabilities[hotpot-expected_tools2-False]" time="0.001" /><testcase classname="tests.test_adapter_registry" name="test_declared_identity_selects_only_its_environment_capabilities[browsecomp-expected_tools3-False]" time="0.001" /><testcase classname="tests.test_adapter_registry" name="test_unknown_adapter_and_mismatched_identity_are_rejected" time="0.000" /><testcase classname="tests.test_adapter_registry" name="test_registry_requires_explicit_nonempty_unique_selection[ids0-hotpot]" time="0.003" /><testcase classname="tests.test_adapter_registry" name="test_registry_requires_explicit_nonempty_unique_selection[ids0-browsecomp]" time="0.002" /><testcase classname="tests.test_adapter_registry" name="test_registry_requires_explicit_nonempty_unique_selection[None-hotpot]" time="0.002" /><testcase classname="tests.test_adapter_registry" name="test_registry_requires_explicit_nonempty_unique_selection[None-browsecomp]" time="0.002" /><testcase classname="tests.test_adapter_registry" name="test_registry_requires_explicit_nonempty_unique_selection[ids2-hotpot]" time="0.002" /><testcase classname="tests.test_adapter_registry" name="test_registry_requires_explicit_nonempty_unique_selection[ids2-browsecomp]" time="0.002" /><testcase classname="tests.test_adapter_registry" name="test_retrieval_routing_preserves_order_and_hides_private_annotations[hotpot]" time="0.002" /><testcase classname="tests.test_adapter_registry" name="test_retrieval_routing_preserves_order_and_hides_private_annotations[browsecomp]" time="0.002" /><testcase classname="tests.test_adapter_registry" name="test_code_routing_delegates_identity_checks_to_code_loader[livecodebench]" time="0.001" /><testcase classname="tests.test_adapter_registry" name="test_code_routing_delegates_identity_checks_to_code_loader[quixbugs]" time="0.000" /><testcase classname="tests.test_cleanup_deadline" name="test_cleanup_allows_delayed_kernel_reaping" time="0.002" /><testcase classname="tests.test_cleanup_deadline" name="test_unreapable_descendants_still_fail_within_outer_grace" time="0.004" /><testcase classname="tests.test_cli_evaluation" name="test_evaluation_plan_uses_only_selected_local_gold" time="0.270" /><testcase classname="tests.test_cli_evaluation" name="test_swe_aggregate_distinguishes_empty_patches_and_evaluation_errors" time="0.002" /><testcase classname="tests.test_cli_evaluation" name="test_export_keeps_failed_tasks_in_denominator" time="0.005" /><testcase classname="tests.test_cli_evaluation" name="test_original_dev_image_build_uses_local_harness_and_selected_tasks" time="0.003" /><testcase classname="tests.test_cli_evaluation" name="test_image_build_reports_missing_image_even_when_harness_exits_zero" time="0.057" /><testcase classname="tests.test_cli_evaluation" name="test_build_images_cli_writes_offline_plan" time="0.004" /><testcase classname="tests.test_cli_evaluation" name="test_resume_rejects_changed_adapter_source" time="0.009" /><testcase classname="tests.test_code_tasks" name="test_class_public_projection_and_evaluation_are_separate" time="0.061" /><testcase classname="tests.test_code_tasks" name="test_lcb_public_cases_do_not_expose_private_cases" time="0.001" /><testcase classname="tests.test_code_tasks" name="test_quix_evaluation_restores_tests_and_exports_only_selected_source" time="0.009" /><testcase classname="tests.test_code_tasks" name="test_export_refuses_symlink_and_returns_actual_file" time="0.082" /><testcase classname="tests.test_code_tasks" name="test_command_supervisor_cannot_be_shadowed_by_actor_python_modules" time="0.169" /><testcase classname="tests.test_code_tasks" name="test_submission_timeout_is_a_measured_failure_not_an_infrastructure_error" time="0.071" /><testcase classname="tests.test_code_tasks" name="test_audit_censors_deadline_timeout_without_inventing_a_next_action[budget_exhausted-task_timeout]" time="0.005" /><testcase classname="tests.test_code_tasks" name="test_audit_censors_deadline_timeout_without_inventing_a_next_action[llm_error-Timeout]" time="0.004" /><testcase classname="tests.test_collection_entrypoint" name="test_adapter_only_commits_allowed_but_runtime_changes_rejected" time="0.130" /><testcase classname="tests.test_collection_entrypoint" name="test_untracked_runtime_module_is_rejected" time="0.083" /><testcase classname="tests.test_collection_entrypoint" name="test_explicit_quix_selection_restores_protocol_and_freezes_input" time="0.001"><skipped type="pytest.skip" message="Local collector must probe separate task UIDs">/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/tests/test_collection_entrypoint.py:56: Local collector must probe separate task UIDs</skipped></testcase><testcase classname="tests.test_collection_entrypoint" name="test_lcb_explicit_ids_do_not_expose_private_data_or_silently_change_subset" time="0.007" /><testcase classname="tests.test_collection_entrypoint" name="test_public_controller_source_rejected_and_new_output_is_private" time="0.005"><skipped type="pytest.skip" message="Local collection privacy preflight requires root to drop UID">/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/tests/test_collection_entrypoint.py:140: Local collection privacy preflight requires root to drop UID</skipped></testcase><testcase classname="tests.test_docker_contract" name="test_docker_prepare_preserves_setup_baseline_and_removes_only_owned_container" time="0.494" /><testcase classname="tests.test_docker_contract" name="test_container_start_failure_still_leaves_handle_for_cleanup" time="0.005" /><testcase classname="tests.test_docker_contract" name="test_repeated_attempts_get_fresh_labeled_containers_and_close_is_idempotent" time="0.013" /><testcase classname="tests.test_docker_contract" name="test_kept_container_is_stopped_and_never_reused" time="0.002" /><testcase classname="tests.test_docker_contract" name="test_cleanup_failure_can_be_retried_without_reopening_actor[False]" time="0.002" /><testcase classname="tests.test_docker_contract" name="test_cleanup_failure_can_be_retried_without_reopening_actor[True]" time="0.002" /><testcase classname="tests.test_execution" name="test_command_timeout_and_bounded_output" time="0.210" /><testcase classname="tests.test_execution" name="test_file_edit_is_literal_and_cannot_follow_symlink_outside_repo" time="0.077" /><testcase classname="tests.test_execution" name="test_trace_preserves_prompt_keys_but_omits_transport_credentials" time="0.007" /><testcase classname="tests.test_execution" name="test_budget_rejects_call_after_deadline" time="0.001" /><testcase classname="tests.test_execution" name="test_foreground_only_command_does_not_leave_background_writers" time="0.566" /><testcase classname="tests.test_execution" name="test_response_decision_distinguishes_control_no_tool_and_environment[names0-no_tool-False]" time="0.008" /><testcase classname="tests.test_execution" name="test_response_decision_distinguishes_control_no_tool_and_environment[names1-finish-False]" time="0.003" /><testcase classname="tests.test_execution" name="test_response_decision_distinguishes_control_no_tool_and_environment[names2-think-False]" time="0.003" /><testcase classname="tests.test_execution" name="test_response_decision_distinguishes_control_no_tool_and_environment[names3-environment_tool-True]" time="0.003" /><testcase classname="tests.test_execution" name="test_response_decision_distinguishes_control_no_tool_and_environment[names4-think-True]" time="0.003" /><testcase classname="tests.test_execution" name="test_response_decision_distinguishes_control_no_tool_and_environment[names5-unknown_tool-None]" time="0.003" /><testcase classname="tests.test_execution" name="test_incomplete_model_response_does_not_create_no_tool_negative" time="0.003" /><testcase classname="tests.test_live_docker_isolation" name="test_real_swe_containers_do_not_share_changes" time="0.000"><skipped type="pytest.skip" message="Set BENCHMARK_ADAPTERS_DOCKER_TEST_CONFIG to a prepared SWE config for real Docker acceptance">/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/tests/test_live_docker_isolation.py:12: Set BENCHMARK_ADAPTERS_DOCKER_TEST_CONFIG to a prepared SWE config for real Docker acceptance</skipped></testcase><testcase classname="tests.test_local_environment" name="test_local_pilot_executes_real_edits_as_unprivileged_user_and_exports_patch" time="0.000"><skipped type="pytest.skip" message="Local pilot drops root to a dedicated unprivileged UID">/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/tests/test_local_environment.py:10: Local pilot drops root to a dedicated unprivileged UID</skipped></testcase><testcase classname="tests.test_native_browsecomp" name="test_native_bridge_preserves_server_schema_and_full_observations" time="0.045" /><testcase classname="tests.test_parallel_collection" name="test_prepare_freezes_public_tasks_queue_and_rejects_input_tampering" time="0.014" /><testcase classname="tests.test_parallel_collection" name="test_prepared_campaign_rejects_adapter_drift_and_existing_run" time="0.006" /><testcase classname="tests.test_parallel_collection" name="test_prepare_rejects_empty_or_repeated_selection[empty_queue]" time="0.005" /><testcase classname="tests.test_parallel_collection" name="test_prepare_rejects_empty_or_repeated_selection[empty_ids]" time="0.005" /><testcase classname="tests.test_parallel_collection" name="test_prepare_rejects_empty_or_repeated_selection[duplicate_ids]" time="0.005" /><testcase classname="tests.test_parallel_collection" name="test_prepare_rejects_empty_or_repeated_selection[duplicate_entry]" time="0.006" /><testcase classname="tests.test_parallel_collection" name="test_research_manifest_cannot_inject_gold_or_rewrite_actor_task" time="0.002" /><testcase classname="tests.test_parallel_collection" name="test_research_manifest_rejects_cross_split_leakage_in_unselected_rows[group]" time="0.002" /><testcase classname="tests.test_parallel_collection" name="test_research_manifest_rejects_cross_split_leakage_in_unselected_rows[identical_text]" time="0.002" /><testcase classname="tests.test_parallel_collection" name="test_research_manifest_rejects_cross_split_leakage_in_unselected_rows[historical_exposure]" time="0.002" /><testcase classname="tests.test_parallel_collection" name="test_formal_split_requires_unchanged_manifest_and_preserves_quixbugs_auxiliary" time="0.003" /><testcase classname="tests.test_parallel_collection" name="test_nonroot_code_gate_rejects_before_any_actor_or_validation_work[validate_campaign]" time="0.002" /><testcase classname="tests.test_parallel_collection" name="test_nonroot_code_gate_rejects_before_any_actor_or_validation_work[run_campaign]" time="0.002" /><testcase classname="tests.test_parallel_collection" name="test_four_workers_have_distinct_actor_and_evaluator_uids" time="0.000" /><testcase classname="tests.test_parallel_collection" name="test_campaign_passes_each_validated_index_to_its_worker" time="0.008" /><testcase classname="tests.test_parallel_collection" name="test_collect_job_passes_verified_index_to_factory_and_closes_environment" time="0.008" /><testcase classname="tests.test_parallel_runtime" name="test_four_same_adapter_tasks_overlap_and_fifth_reuses_finished_slot" time="0.787" /><testcase classname="tests.test_parallel_runtime" name="test_adapter_limit_skips_blocked_head_without_blocking_other_adapters" time="1.126" /><testcase classname="tests.test_parallel_runtime" name="test_returned_actor_failure_is_kept_and_next_job_runs" time="0.599" /><testcase classname="tests.test_parallel_runtime" name="test_worker_exception_delivers_receipt_and_aborts_unknown_cleanup_slot" time="0.363" /><testcase classname="tests.test_parallel_runtime" name="test_controller_timeout_interrupts_worker_and_does_not_reuse_slot" time="2.223" /><testcase classname="tests.test_parallel_runtime" name="test_abrupt_worker_exit_aborts_without_admitting_pending_job" time="2.392" /><testcase classname="tests.test_parallel_runtime" name="test_invalid_global_capacity_rejected_before_spawning[0]" time="0.001" /><testcase classname="tests.test_parallel_runtime" name="test_invalid_global_capacity_rejected_before_spawning[-1]" time="0.001" /><testcase classname="tests.test_parallel_runtime" name="test_invalid_global_capacity_rejected_before_spawning[True]" time="0.001" /><testcase classname="tests.test_parallel_runtime" name="test_invalid_global_capacity_rejected_before_spawning[1.5]" time="0.001" /><testcase classname="tests.test_parallel_runtime" name="test_invalid_global_capacity_rejected_before_spawning[65]" time="0.001" /><testcase classname="tests.test_parallel_runtime" name="test_empty_or_duplicate_jobs_rejected_before_spawning[jobs0]" time="0.001" /><testcase classname="tests.test_parallel_runtime" name="test_empty_or_duplicate_jobs_rejected_before_spawning[jobs1]" time="0.001" /><testcase classname="tests.test_parallel_runtime" name="test_activity_restores_phase_and_snapshots_do_not_mutate" time="0.001" /><testcase classname="tests.test_parallel_runtime" name="test_request_freezes_global_load_before_future_state_changes" time="0.006" /><testcase classname="tests.test_parallel_runtime" name="test_production_uid_mapping_rejects_overlap_with_reserved_ranges[True-0]" time="0.000" /><testcase classname="tests.test_parallel_runtime" name="test_production_uid_mapping_rejects_overlap_with_reserved_ranges[63200-True]" time="0.000" /><testcase classname="tests.test_parallel_runtime" name="test_production_uid_mapping_rejects_overlap_with_reserved_ranges[63200--1]" time="0.000" /><testcase classname="tests.test_parallel_runtime" name="test_production_uid_mapping_rejects_overlap_with_reserved_ranges[59999-0]" time="0.000" /><testcase classname="tests.test_parallel_runtime" name="test_production_uid_mapping_rejects_overlap_with_reserved_ranges[64999-0]" time="0.000" /><testcase classname="tests.test_parallel_runtime" name="test_production_uid_mapping_rejects_overlap_with_reserved_ranges[64998-1]" time="0.000" /><testcase classname="tests.test_parallel_runtime" name="test_invalid_adapter_capacity_rejected_before_spawning[limits0]" time="0.000" /><testcase classname="tests.test_parallel_runtime" name="test_invalid_adapter_capacity_rejected_before_spawning[limits1]" time="0.000" /><testcase classname="tests.test_parallel_runtime" name="test_invalid_adapter_capacity_rejected_before_spawning[limits2]" time="0.000" /><testcase classname="tests.test_parallel_runtime" name="test_invalid_adapter_capacity_rejected_before_spawning[limits3]" time="0.000" /><testcase classname="tests.test_parallel_runtime" name="test_invalid_adapter_capacity_rejected_before_spawning[limits4]" time="0.000" /><testcase classname="tests.test_parallel_runtime" name="test_cleanup_continues_when_workers_exit_between_liveness_check_and_signal" time="0.008" /><testcase classname="tests.test_parallel_runtime" name="test_manager_state_lock_timeout_is_bounded_and_release_recovers" time="0.239" /><testcase classname="tests.test_parallel_sdk" name="test_real_sdk_four_same_profile_and_four_mixed_fixtures" time="17.180" /><testcase classname="tests.test_prediction_export" name="test_export_preserves_every_request_batch_arguments_and_censoring" time="0.009" /><testcase classname="tests.test_prediction_export" name="test_output_cap_masks_labels_even_if_provider_reports_tool_calls" time="0.005" /><testcase classname="tests.test_prediction_export" name="test_invalid_arguments_remain_proposals_without_invented_execution" time="0.005" /><testcase classname="tests.test_prediction_export" name="test_future_changes_do_not_change_t0_features" time="0.007" /><testcase classname="tests.test_prediction_export" name="test_corrupted_linkages_or_blobs_are_rejected[duplicate_request]" time="0.005" /><testcase classname="tests.test_prediction_export" name="test_corrupted_linkages_or_blobs_are_rejected[orphan_end]" time="0.005" /><testcase classname="tests.test_prediction_export" name="test_corrupted_linkages_or_blobs_are_rejected[cross_request]" time="0.005" /><testcase classname="tests.test_prediction_export" name="test_corrupted_linkages_or_blobs_are_rejected[blob]" time="0.005" /><testcase classname="tests.test_prediction_export" name="test_export_writes_separate_inputs_targets_and_hashes" time="0.007" /><testcase classname="tests.test_prediction_export" name="test_response_summary_rejection_and_trace_identity_are_canonical[stale_complete]" time="0.005" /><testcase classname="tests.test_prediction_export" name="test_response_summary_rejection_and_trace_identity_are_canonical[stale_finish_reason]" time="0.005" /><testcase classname="tests.test_prediction_export" name="test_response_summary_rejection_and_trace_identity_are_canonical[response_id]" time="0.005" /><testcase classname="tests.test_prediction_export" name="test_response_summary_rejection_and_trace_identity_are_canonical[response_blob_id]" time="0.005" /><testcase classname="tests.test_prediction_export" name="test_response_summary_rejection_and_trace_identity_are_canonical[mixed_attempt]" time="0.005" /><testcase classname="tests.test_prediction_export" name="test_response_summary_rejection_and_trace_identity_are_canonical[duplicate_rejection]" time="0.004" /><testcase classname="tests.test_prediction_export" name="test_response_summary_rejection_and_trace_identity_are_canonical[foreign_rejection]" time="0.005" /><testcase classname="tests.test_prediction_export" name="test_response_summary_rejection_and_trace_identity_are_canonical[early_rejection]" time="0.005" /><testcase classname="tests.test_prediction_export" name="test_undeclared_tool_and_nonfinite_arguments_are_not_trainable_targets[NaN]" time="0.006" /><testcase classname="tests.test_prediction_export" name="test_undeclared_tool_and_nonfinite_arguments_are_not_trainable_targets[Infinity]" time="0.006" /><testcase classname="tests.test_prediction_export" name="test_undeclared_tool_and_nonfinite_arguments_are_not_trainable_targets[-Infinity]" time="0.005" /><testcase classname="tests.test_prediction_export" name="test_undeclared_tool_and_nonfinite_arguments_are_not_trainable_targets[1e400]" time="0.006" /><testcase classname="tests.test_prediction_export" name="test_export_rejects_duplicate_sources_and_duplicate_request_identity" time="0.012" /><testcase classname="tests.test_prediction_export" name="test_public_task_identity_must_match_trace[task_id]" time="0.005" /><testcase classname="tests.test_prediction_export" name="test_public_task_identity_must_match_trace[dataset_id]" time="0.005" /><testcase classname="tests.test_prediction_export" name="test_public_task_identity_must_match_trace[revision]" time="0.005" /><testcase classname="tests.test_prediction_export" name="test_public_task_identity_must_match_trace[split]" time="0.005" /><testcase classname="tests.test_prediction_export" name="test_public_task_identity_must_match_trace[research_split]" time="0.005" /><testcase classname="tests.test_prediction_export" name="test_llm_duration_labels_are_distinct_and_missing_response_is_null" time="0.005" /><testcase classname="tests.test_prediction_export" name="test_t0_history_contains_only_preceding_tool_measurements[tool_end]" time="0.007" /><testcase classname="tests.test_prediction_export" name="test_t0_history_contains_only_preceding_tool_measurements[tool_error]" time="0.008" /><testcase classname="tests.test_prediction_export" name="test_invalid_llm_transport_durations_are_rejected[-1]" time="0.007" /><testcase classname="tests.test_prediction_export" name="test_invalid_llm_transport_durations_are_rejected[125.5]" time="0.012" /><testcase classname="tests.test_prediction_export" name="test_invalid_llm_transport_durations_are_rejected[True]" time="0.008" /><testcase classname="tests.test_prediction_export" name="test_future_response_and_usage_changes_do_not_enter_t0" time="0.007" /><testcase classname="tests.test_prediction_export" name="test_environment_and_conversation_identity_can_appear_after_start" time="0.006" /><testcase classname="tests.test_prediction_export" name="test_frozen_telemetry_uses_leaf_allowlist_and_stays_out_of_targets" time="0.008" /><testcase classname="tests.test_prediction_export" name="test_t0_telemetry_rejects_invalid_count_types[-1]" time="0.006" /><testcase classname="tests.test_prediction_export" name="test_t0_telemetry_rejects_invalid_count_types[True]" time="0.006" /><testcase classname="tests.test_prediction_export" name="test_t0_telemetry_rejects_invalid_count_types[2.5]" time="0.005" /><testcase classname="tests.test_prediction_export" name="test_t0_telemetry_rejects_invalid_count_types[invalid3]" time="0.005" /><testcase classname="tests.test_prediction_export" name="test_telemetry_sampled_after_t0_is_rejected" time="0.005" /><testcase classname="tests.test_prediction_export" name="test_parallel_identity_is_provenance_not_model_input" time="0.006" /><testcase classname="tests.test_prediction_export" name="test_parallel_identity_cannot_change_mid_attempt[clock_domain]" time="0.005" /><testcase classname="tests.test_prediction_export" name="test_parallel_identity_cannot_change_mid_attempt[worker_slot]" time="0.005" /><testcase classname="tests.test_prediction_export" name="test_parallel_identity_cannot_change_mid_attempt[task_group_id]" time="0.005" /><testcase classname="tests.test_prediction_export" name="test_public_group_conflict_with_trace_is_rejected" time="0.005" /><testcase classname="tests.test_prediction_export" name="test_unmeasured_duration_is_null_with_its_own_mask[executor_duration_ms]" time="0.006" /><testcase classname="tests.test_prediction_export" name="test_unmeasured_duration_is_null_with_its_own_mask[round_trip_ms]" time="0.006" /><testcase classname="tests.test_prediction_export" name="test_unmeasured_duration_is_null_with_its_own_mask[both]" time="0.006" /><testcase classname="tests.test_prediction_export" name="test_measured_tool_duration_still_requires_nonnegative_number[-1]" time="0.005" /><testcase classname="tests.test_prediction_export" name="test_measured_tool_duration_still_requires_nonnegative_number[1]" time="0.005" /><testcase classname="tests.test_prediction_export" name="test_measured_tool_duration_still_requires_nonnegative_number[True]" time="0.005" /><testcase classname="tests.test_prediction_export" name="test_runtime_effective_arguments_are_distinct_from_actor_proposal" time="0.005" /><testcase classname="tests.test_prediction_export" name="test_environment_identity_and_paths_stay_out_of_default_features" time="0.006" /><testcase classname="tests.test_research_splits" name="test_assigns_frozen_split_without_importing_manifest_content_into_actor" time="0.003" /><testcase classname="tests.test_research_splits" name="test_accepts_each_research_split_and_preserves_explicit_selection_order[fit]" time="0.003" /><testcase classname="tests.test_research_splits" name="test_accepts_each_research_split_and_preserves_explicit_selection_order[tune]" time="0.003" /><testcase classname="tests.test_research_splits" name="test_accepts_each_research_split_and_preserves_explicit_selection_order[calibration]" time="0.002" /><testcase classname="tests.test_research_splits" name="test_accepts_each_research_split_and_preserves_explicit_selection_order[test]" time="0.002" /><testcase classname="tests.test_research_splits" name="test_accepts_each_research_split_and_preserves_explicit_selection_order[historical_dev]" time="0.002" /><testcase classname="tests.test_research_splits" name="test_requires_explicit_matching_manifest_sha256[None]" time="0.002" /><testcase classname="tests.test_research_splits" name="test_requires_explicit_matching_manifest_sha256[]" time="0.002" /><testcase classname="tests.test_research_splits" name="test_requires_explicit_matching_manifest_sha256[zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz]" time="0.002" /><testcase classname="tests.test_research_splits" name="test_requires_explicit_matching_manifest_sha256[aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]" time="0.002" /><testcase classname="tests.test_research_splits" name="test_requires_explicit_matching_manifest_sha256[0000000000000000000000000000000000000000000000000000000000000000]" time="0.002" /><testcase classname="tests.test_research_splits" name="test_rejects_unknown_research_split[dev]" time="0.002" /><testcase classname="tests.test_research_splits" name="test_rejects_unknown_research_split[validation]" time="0.002" /><testcase classname="tests.test_research_splits" name="test_rejects_unknown_research_split[]" time="0.002" /><testcase classname="tests.test_research_splits" name="test_rejects_unknown_research_split[None]" time="0.002" /><testcase classname="tests.test_research_splits" name="test_rejects_unknown_research_split[split4]" time="0.002" /><testcase classname="tests.test_research_splits" name="test_rejects_task_not_in_manifest_or_in_different_split" time="0.003" /><testcase classname="tests.test_research_splits" name="test_rejects_duplicate_or_empty_selection" time="0.002" /><testcase classname="tests.test_research_splits" name="test_rejects_empty_or_malformed_manifest[]" time="0.003" /><testcase classname="tests.test_research_splits" name="test_rejects_empty_or_malformed_manifest[\n]" time="0.002" /><testcase classname="tests.test_research_splits" name="test_rejects_empty_or_malformed_manifest[[]\n]" time="0.002" /><testcase classname="tests.test_research_splits" name="test_rejects_empty_or_malformed_manifest[null\n]" time="0.002" /><testcase classname="tests.test_research_splits" name="test_rejects_empty_or_malformed_manifest[{invalid}\n]" time="0.002" /><testcase classname="tests.test_research_splits" name="test_rejects_duplicate_ids_in_whole_manifest_including_unselected_rows" time="0.003" /><testcase classname="tests.test_research_splits" name="test_rejects_cross_split_group_or_statement_anywhere_in_manifest[updates0-group.*split]" time="0.003" /><testcase classname="tests.test_research_splits" name="test_rejects_cross_split_group_or_statement_anywhere_in_manifest[updates1-statement.*split]" time="0.003" /><testcase classname="tests.test_research_splits" name="test_contest_siblings_cannot_evade_split_isolation_by_renaming_group" time="0.003" /><testcase classname="tests.test_research_splits" name="test_historical_exposure_forces_entire_group_into_historical_dev" time="0.004" /><testcase classname="tests.test_research_splits" name="test_rejects_invalid_schema_even_for_unselected_rows[question_id-../../escape]" time="0.003" /><testcase classname="tests.test_research_splits" name="test_rejects_invalid_schema_even_for_unselected_rows[question_id-123]" time="0.003" /><testcase classname="tests.test_research_splits" name="test_rejects_invalid_schema_even_for_unselected_rows[task_group_id-quixbugs/abc400]" time="0.003" /><testcase classname="tests.test_research_splits" name="test_rejects_invalid_schema_even_for_unselected_rows[task_group_id-livecodebench/abc400]" time="0.003" /><testcase classname="tests.test_research_splits" name="test_rejects_invalid_schema_even_for_unselected_rows[task_group_id-livecodebench/../escape]" time="0.003" /><testcase classname="tests.test_research_splits" name="test_rejects_invalid_schema_even_for_unselected_rows[task_group_id-livecodebench/atcoder:abc400\nINJECT]" time="0.003" /><testcase classname="tests.test_research_splits" name="test_rejects_invalid_schema_even_for_unselected_rows[research_split-dev]" time="0.003" /><testcase classname="tests.test_research_splits" name="test_rejects_invalid_schema_even_for_unselected_rows[historically_selected-false]" time="0.003" /><testcase classname="tests.test_research_splits" name="test_rejects_invalid_schema_even_for_unselected_rows[statement_sha256-bad-hash]" time="0.003" /><testcase classname="tests.test_research_splits" name="test_rejects_invalid_schema_even_for_unselected_rows[platform-value9]" time="0.003" /><testcase classname="tests.test_research_splits" name="test_rejects_invalid_schema_even_for_unselected_rows[difficulty-]" time="0.003" /><testcase classname="tests.test_research_splits" name="test_rejects_invalid_schema_even_for_unselected_rows[contest_date-not-a-date]" time="0.003" /><testcase classname="tests.test_research_splits" name="test_rejects_missing_required_manifest_fields[task_group_id]" time="0.002" /><testcase classname="tests.test_research_splits" name="test_rejects_missing_required_manifest_fields[historically_selected]" time="0.003" /><testcase classname="tests.test_research_splits" name="test_rejects_missing_required_manifest_fields[statement_sha256]" time="0.002" /><testcase classname="tests.test_research_splits" name="test_rejects_missing_required_manifest_fields[platform]" time="0.002" /><testcase classname="tests.test_research_splits" name="test_matches_manifest_metadata_to_selected_original_task[platform]" time="0.003" /><testcase classname="tests.test_research_splits" name="test_matches_manifest_metadata_to_selected_original_task[difficulty]" time="0.002" /><testcase classname="tests.test_research_splits" name="test_matches_manifest_metadata_to_selected_original_task[contest_date]" time="0.002" /><testcase classname="tests.test_research_splits" name="test_matches_manifest_metadata_to_selected_original_task[statement_sha256]" time="0.003" /><testcase classname="tests.test_research_splits" name="test_rejects_bundle_from_wrong_dataset_or_revision[dataset_id-other/dataset]" time="0.003" /><testcase classname="tests.test_research_splits" name="test_rejects_bundle_from_wrong_dataset_or_revision[revision-unfrozen]" time="0.003" /><testcase classname="tests.test_research_splits" name="test_rejects_incompatible_explicit_manifest_benchmark_or_revision[benchmark-quixbugs]" time="0.003" /><testcase classname="tests.test_research_splits" name="test_rejects_incompatible_explicit_manifest_benchmark_or_revision[dataset_id-other/dataset]" time="0.003" /><testcase classname="tests.test_research_splits" name="test_rejects_incompatible_explicit_manifest_benchmark_or_revision[revision-unfrozen]" time="0.003" /><testcase classname="tests.test_research_splits" name="test_rejects_incompatible_explicit_manifest_benchmark_or_revision[dataset_revision-unfrozen]" time="0.003" /><testcase classname="tests.test_research_splits" name="test_rejects_quixbugs_until_it_has_a_separate_research_policy" time="0.002" /><testcase classname="tests.test_research_splits" name="test_bundled_lock_matches_test_revision" time="0.000" /><testcase classname="tests.test_research_splits" name="test_accepts_duplicate_statements_merged_into_another_contest_group" time="0.003" /><testcase classname="tests.test_retrieval" name="test_fixed_index_preserves_sentence_ids_and_handles_literal_queries" time="0.201" /><testcase classname="tests.test_retrieval" name="test_browse_export_uses_observed_ids_and_true_completion" time="0.000" /><testcase classname="tests.test_retrieval_corpus" name="test_official_hotpot_shards_keep_sentence_boundaries" time="0.053" /><testcase classname="tests.test_retrieval_corpus" name="test_browsecomp_parquet_is_indexed_without_question_contexts" time="0.066" /><testcase classname="tests.test_retrieval_corpus" name="test_hf_hotpot_public_projection_and_native_evaluation" time="0.083" /><testcase classname="tests.test_retrieval_index_identity" name="test_worker_verified_index_skips_hash_and_sql_scans" time="0.049" /><testcase classname="tests.test_retrieval_index_identity" name="test_verified_index_identity_change_is_rejected[stat]" time="0.173" /><testcase classname="tests.test_retrieval_index_identity" name="test_verified_index_identity_change_is_rejected[manifest]" time="0.091" /><testcase classname="tests.test_retrieval_index_identity" name="test_verified_index_identity_change_is_rejected[kind]" time="0.096" /><testcase classname="tests.test_retrieval_tools" name="test_retrieval_tools_record_real_observations_and_preserve_failures" time="0.060" /><testcase classname="tests.test_sdk_runner" name="test_real_sdk_model_transport_tools_patch_and_trace[False-swe]" time="3.054"><failure message="AssertionError: {'artifact_status': 'empty', 'attempt_id': 'attempt', 'clock_domain': 'controller-monotonic:22aba0981a4a:89e967cd-3e01-49b8-ad6f-6e545dc26b83', 'container_id': 'container-fixture', ...}&#10;assert 'llm_error' == 'completed'&#10;  &#10;  - completed&#10;  + llm_error">tmp_path = PosixPath('/home/qiulin/flowpilot_predictor/runs/final_adapter_check_20260922/test_real_sdk_model_transport_0')
+malformed_first = False, kind = 'swe'
+
+    @pytest.mark.parametrize("kind", ["swe", "quixbugs"])
+    @pytest.mark.parametrize("malformed_first", [False, True])
+    def test_real_sdk_model_transport_tools_patch_and_trace(tmp_path, malformed_first, kind):
+        from benchmark_adapters.config import Config, DatasetConfig, LLMConfig, RuntimeConfig
+        from benchmark_adapters.contracts import CommandResult
+        from benchmark_adapters.environment import command_argv
+        from benchmark_adapters.runner import run_task
+        from benchmark_adapters.swe import SWEAdapter, export_patch_command
+    
+        repo = tmp_path / "repo"
+        repo.mkdir()
+    
+        def git(*args):
+            return subprocess.check_output(["git", "-C", str(repo), *args], text=True).strip()
+    
+        git("init", "-q")
+        git("config", "user.name", "Test")
+        git("config", "user.email", "test@example.invalid")
+        (repo / "answer.py").write_text("value = 0\n")
+        git("add", ".")
+        git("commit", "-qm", "base")
+        base = git("rev-parse", "HEAD")
+        received = []
+    
+        class Handler(BaseHTTPRequestHandler):
+            def do_POST(self):
+                body = json.loads(self.rfile.read(int(self.headers["Content-Length"])))
+                received.append(body)
+                if malformed_first and len(received) == 1:
+                    tool, args = (
+                        ("swe_file_editor" if kind == "swe" else "code_file_editor"),
+                        dict(command="NOT_VALID", summary="Malformed call"),
+                    )
+                elif len(received) == 1 + int(malformed_first):
+                    tool, args = (
+                        "swe_file_editor" if kind == "swe" else "code_file_editor",
+                        dict(
+                            command="str_replace",
+                            path="answer.py",
+                            old_str="value = 0",
+                            new_str="value = 1",
+                            summary="Fix value",
+                        ),
+                    )
+                else:
+                    tool, args = "finish", dict(message="Updated value.", summary="Finish")
+                payload = dict(
+                    id=f"chatcmpl-{len(received)}",
+                    object="chat.completion",
+                    created=1,
+                    model="test-model",
+                    choices=[
+                        dict(
+                            index=0,
+                            finish_reason="tool_calls",
+                            message=dict(
+                                role="assistant",
+                                content=None,
+                                tool_calls=[
+                                    dict(
+                                        id=f"call-{len(received)}",
+                                        type="function",
+                                        function=dict(name=tool, arguments=json.dumps(args)),
+                                    )
+                                ],
+                            ),
+                        )
+                    ],
+                    usage=dict(prompt_tokens=20, completion_tokens=10, total_tokens=30),
+                )
+                raw = json.dumps(payload).encode()
+                self.send_response(200)
+                self.send_header("Content-Type", "application/json")
+                self.send_header("Content-Length", str(len(raw)))
+                self.end_headers()
+                self.wfile.write(raw)
+    
+            def log_message(self, *args):
+                pass
+    
+        server = ThreadingHTTPServer(("127.0.0.1", 0), Handler)
+        thread = threading.Thread(target=server.serve_forever, daemon=True)
+        thread.start()
+    
+        class TestEnvironment:
+            repo_dir = str(repo)
+            baseline_commit = base
+            closed = False
+    
+            def prepare(self):
+                return {
+                    "backend": "test-fixture",
+                    "prepared_head": base,
+                    "environment_id": "environment-fixture",
+                    "container_id": "container-fixture",
+                }
+    
+            def execute(self, command, timeout=30, max_bytes=16000, **kwargs):
+                data = json.loads(
+                    subprocess.check_output(
+                        command_argv(command, str(repo), timeout, max_bytes), text=True
+                    )
+                )
+                return CommandResult(**data)
+    
+            def export_patch(self):
+                return subprocess.check_output(
+                    ["bash", "-c", export_patch_command(base)], cwd=repo, text=True
+                )
+    
+            def close(self):
+                self.closed = True
+    
+            def quiesce(self):
+                pass
+    
+        env = TestEnvironment()
+        config = Config(
+            dataset=DatasetConfig(kind=kind, path="unused", revision="fixture"),
+            llm=LLMConfig(
+                model="openai/test-model",
+                base_url=f"http://127.0.0.1:{server.server_port}/v1",
+                num_retries=0,
+            ),
+            runtime=replace(RuntimeConfig(), max_iterations=4, runs_dir=str(tmp_path / "runs")),
+        )
+        task = SWEAdapter.from_record(
+            dict(
+                instance_id="org__repo-1",
+                repo="org/repo",
+                base_commit=base,
+                problem_statement="Set value to one.",
+                patch="GOLD_DO_NOT_LEAK",
+            ),
+            dataset_id="princeton-nlp/SWE-bench",
+            revision="fixture",
+            split="dev",
+        )
+        if kind != "swe":
+            task = replace(task, public_metadata={**task.public_metadata, "solution_path": "answer.py"})
+        try:
+            result = run_task(config, task, tmp_path / "attempt", environment=env)
+        finally:
+            server.shutdown()
+            server.server_close()
+            thread.join()
+&gt;       assert result["execution_status"] == "completed", result
+E       AssertionError: {'artifact_status': 'empty', 'attempt_id': 'attempt', 'clock_domain': 'controller-monotonic:22aba0981a4a:89e967cd-3e01-49b8-ad6f-6e545dc26b83', 'container_id': 'container-fixture', ...}
+E       assert 'llm_error' == 'completed'
+E         
+E         - completed
+E         + llm_error
+
+benchmarks/flowpilot/tests/test_sdk_runner.py:160: AssertionError</failure></testcase><testcase classname="tests.test_sdk_runner" name="test_real_sdk_model_transport_tools_patch_and_trace[False-quixbugs]" time="4.588"><failure message="AssertionError: {'artifact_status': 'valid', 'attempt_id': 'attempt', 'clock_domain': 'controller-monotonic:22aba0981a4a:89e967cd-3e01-49b8-ad6f-6e545dc26b83', 'container_id': 'container-fixture', ...}&#10;assert 'llm_error' == 'completed'&#10;  &#10;  - completed&#10;  + llm_error">tmp_path = PosixPath('/home/qiulin/flowpilot_predictor/runs/final_adapter_check_20260922/test_real_sdk_model_transport_1')
+malformed_first = False, kind = 'quixbugs'
+
+    @pytest.mark.parametrize("kind", ["swe", "quixbugs"])
+    @pytest.mark.parametrize("malformed_first", [False, True])
+    def test_real_sdk_model_transport_tools_patch_and_trace(tmp_path, malformed_first, kind):
+        from benchmark_adapters.config import Config, DatasetConfig, LLMConfig, RuntimeConfig
+        from benchmark_adapters.contracts import CommandResult
+        from benchmark_adapters.environment import command_argv
+        from benchmark_adapters.runner import run_task
+        from benchmark_adapters.swe import SWEAdapter, export_patch_command
+    
+        repo = tmp_path / "repo"
+        repo.mkdir()
+    
+        def git(*args):
+            return subprocess.check_output(["git", "-C", str(repo), *args], text=True).strip()
+    
+        git("init", "-q")
+        git("config", "user.name", "Test")
+        git("config", "user.email", "test@example.invalid")
+        (repo / "answer.py").write_text("value = 0\n")
+        git("add", ".")
+        git("commit", "-qm", "base")
+        base = git("rev-parse", "HEAD")
+        received = []
+    
+        class Handler(BaseHTTPRequestHandler):
+            def do_POST(self):
+                body = json.loads(self.rfile.read(int(self.headers["Content-Length"])))
+                received.append(body)
+                if malformed_first and len(received) == 1:
+                    tool, args = (
+                        ("swe_file_editor" if kind == "swe" else "code_file_editor"),
+                        dict(command="NOT_VALID", summary="Malformed call"),
+                    )
+                elif len(received) == 1 + int(malformed_first):
+                    tool, args = (
+                        "swe_file_editor" if kind == "swe" else "code_file_editor",
+                        dict(
+                            command="str_replace",
+                            path="answer.py",
+                            old_str="value = 0",
+                            new_str="value = 1",
+                            summary="Fix value",
+                        ),
+                    )
+                else:
+                    tool, args = "finish", dict(message="Updated value.", summary="Finish")
+                payload = dict(
+                    id=f"chatcmpl-{len(received)}",
+                    object="chat.completion",
+                    created=1,
+                    model="test-model",
+                    choices=[
+                        dict(
+                            index=0,
+                            finish_reason="tool_calls",
+                            message=dict(
+                                role="assistant",
+                                content=None,
+                                tool_calls=[
+                                    dict(
+                                        id=f"call-{len(received)}",
+                                        type="function",
+                                        function=dict(name=tool, arguments=json.dumps(args)),
+                                    )
+                                ],
+                            ),
+                        )
+                    ],
+                    usage=dict(prompt_tokens=20, completion_tokens=10, total_tokens=30),
+                )
+                raw = json.dumps(payload).encode()
+                self.send_response(200)
+                self.send_header("Content-Type", "application/json")
+                self.send_header("Content-Length", str(len(raw)))
+                self.end_headers()
+                self.wfile.write(raw)
+    
+            def log_message(self, *args):
+                pass
+    
+        server = ThreadingHTTPServer(("127.0.0.1", 0), Handler)
+        thread = threading.Thread(target=server.serve_forever, daemon=True)
+        thread.start()
+    
+        class TestEnvironment:
+            repo_dir = str(repo)
+            baseline_commit = base
+            closed = False
+    
+            def prepare(self):
+                return {
+                    "backend": "test-fixture",
+                    "prepared_head": base,
+                    "environment_id": "environment-fixture",
+                    "container_id": "container-fixture",
+                }
+    
+            def execute(self, command, timeout=30, max_bytes=16000, **kwargs):
+                data = json.loads(
+                    subprocess.check_output(
+                        command_argv(command, str(repo), timeout, max_bytes), text=True
+                    )
+                )
+                return CommandResult(**data)
+    
+            def export_patch(self):
+                return subprocess.check_output(
+                    ["bash", "-c", export_patch_command(base)], cwd=repo, text=True
+                )
+    
+            def close(self):
+                self.closed = True
+    
+            def quiesce(self):
+                pass
+    
+        env = TestEnvironment()
+        config = Config(
+            dataset=DatasetConfig(kind=kind, path="unused", revision="fixture"),
+            llm=LLMConfig(
+                model="openai/test-model",
+                base_url=f"http://127.0.0.1:{server.server_port}/v1",
+                num_retries=0,
+            ),
+            runtime=replace(RuntimeConfig(), max_iterations=4, runs_dir=str(tmp_path / "runs")),
+        )
+        task = SWEAdapter.from_record(
+            dict(
+                instance_id="org__repo-1",
+                repo="org/repo",
+                base_commit=base,
+                problem_statement="Set value to one.",
+                patch="GOLD_DO_NOT_LEAK",
+            ),
+            dataset_id="princeton-nlp/SWE-bench",
+            revision="fixture",
+            split="dev",
+        )
+        if kind != "swe":
+            task = replace(task, public_metadata={**task.public_metadata, "solution_path": "answer.py"})
+        try:
+            result = run_task(config, task, tmp_path / "attempt", environment=env)
+        finally:
+            server.shutdown()
+            server.server_close()
+            thread.join()
+&gt;       assert result["execution_status"] == "completed", result
+E       AssertionError: {'artifact_status': 'valid', 'attempt_id': 'attempt', 'clock_domain': 'controller-monotonic:22aba0981a4a:89e967cd-3e01-49b8-ad6f-6e545dc26b83', 'container_id': 'container-fixture', ...}
+E       assert 'llm_error' == 'completed'
+E         
+E         - completed
+E         + llm_error
+
+benchmarks/flowpilot/tests/test_sdk_runner.py:160: AssertionError</failure></testcase><testcase classname="tests.test_sdk_runner" name="test_real_sdk_model_transport_tools_patch_and_trace[True-swe]" time="2.581"><failure message="AssertionError: {'artifact_status': 'empty', 'attempt_id': 'attempt', 'clock_domain': 'controller-monotonic:22aba0981a4a:89e967cd-3e01-49b8-ad6f-6e545dc26b83', 'container_id': 'container-fixture', ...}&#10;assert 'llm_error' == 'completed'&#10;  &#10;  - completed&#10;  + llm_error">tmp_path = PosixPath('/home/qiulin/flowpilot_predictor/runs/final_adapter_check_20260922/test_real_sdk_model_transport_2')
+malformed_first = True, kind = 'swe'
+
+    @pytest.mark.parametrize("kind", ["swe", "quixbugs"])
+    @pytest.mark.parametrize("malformed_first", [False, True])
+    def test_real_sdk_model_transport_tools_patch_and_trace(tmp_path, malformed_first, kind):
+        from benchmark_adapters.config import Config, DatasetConfig, LLMConfig, RuntimeConfig
+        from benchmark_adapters.contracts import CommandResult
+        from benchmark_adapters.environment import command_argv
+        from benchmark_adapters.runner import run_task
+        from benchmark_adapters.swe import SWEAdapter, export_patch_command
+    
+        repo = tmp_path / "repo"
+        repo.mkdir()
+    
+        def git(*args):
+            return subprocess.check_output(["git", "-C", str(repo), *args], text=True).strip()
+    
+        git("init", "-q")
+        git("config", "user.name", "Test")
+        git("config", "user.email", "test@example.invalid")
+        (repo / "answer.py").write_text("value = 0\n")
+        git("add", ".")
+        git("commit", "-qm", "base")
+        base = git("rev-parse", "HEAD")
+        received = []
+    
+        class Handler(BaseHTTPRequestHandler):
+            def do_POST(self):
+                body = json.loads(self.rfile.read(int(self.headers["Content-Length"])))
+                received.append(body)
+                if malformed_first and len(received) == 1:
+                    tool, args = (
+                        ("swe_file_editor" if kind == "swe" else "code_file_editor"),
+                        dict(command="NOT_VALID", summary="Malformed call"),
+                    )
+                elif len(received) == 1 + int(malformed_first):
+                    tool, args = (
+                        "swe_file_editor" if kind == "swe" else "code_file_editor",
+                        dict(
+                            command="str_replace",
+                            path="answer.py",
+                            old_str="value = 0",
+                            new_str="value = 1",
+                            summary="Fix value",
+                        ),
+                    )
+                else:
+                    tool, args = "finish", dict(message="Updated value.", summary="Finish")
+                payload = dict(
+                    id=f"chatcmpl-{len(received)}",
+                    object="chat.completion",
+                    created=1,
+                    model="test-model",
+                    choices=[
+                        dict(
+                            index=0,
+                            finish_reason="tool_calls",
+                            message=dict(
+                                role="assistant",
+                                content=None,
+                                tool_calls=[
+                                    dict(
+                                        id=f"call-{len(received)}",
+                                        type="function",
+                                        function=dict(name=tool, arguments=json.dumps(args)),
+                                    )
+                                ],
+                            ),
+                        )
+                    ],
+                    usage=dict(prompt_tokens=20, completion_tokens=10, total_tokens=30),
+                )
+                raw = json.dumps(payload).encode()
+                self.send_response(200)
+                self.send_header("Content-Type", "application/json")
+                self.send_header("Content-Length", str(len(raw)))
+                self.end_headers()
+                self.wfile.write(raw)
+    
+            def log_message(self, *args):
+                pass
+    
+        server = ThreadingHTTPServer(("127.0.0.1", 0), Handler)
+        thread = threading.Thread(target=server.serve_forever, daemon=True)
+        thread.start()
+    
+        class TestEnvironment:
+            repo_dir = str(repo)
+            baseline_commit = base
+            closed = False
+    
+            def prepare(self):
+                return {
+                    "backend": "test-fixture",
+                    "prepared_head": base,
+                    "environment_id": "environment-fixture",
+                    "container_id": "container-fixture",
+                }
+    
+            def execute(self, command, timeout=30, max_bytes=16000, **kwargs):
+                data = json.loads(
+                    subprocess.check_output(
+                        command_argv(command, str(repo), timeout, max_bytes), text=True
+                    )
+                )
+                return CommandResult(**data)
+    
+            def export_patch(self):
+                return subprocess.check_output(
+                    ["bash", "-c", export_patch_command(base)], cwd=repo, text=True
+                )
+    
+            def close(self):
+                self.closed = True
+    
+            def quiesce(self):
+                pass
+    
+        env = TestEnvironment()
+        config = Config(
+            dataset=DatasetConfig(kind=kind, path="unused", revision="fixture"),
+            llm=LLMConfig(
+                model="openai/test-model",
+                base_url=f"http://127.0.0.1:{server.server_port}/v1",
+                num_retries=0,
+            ),
+            runtime=replace(RuntimeConfig(), max_iterations=4, runs_dir=str(tmp_path / "runs")),
+        )
+        task = SWEAdapter.from_record(
+            dict(
+                instance_id="org__repo-1",
+                repo="org/repo",
+                base_commit=base,
+                problem_statement="Set value to one.",
+                patch="GOLD_DO_NOT_LEAK",
+            ),
+            dataset_id="princeton-nlp/SWE-bench",
+            revision="fixture",
+            split="dev",
+        )
+        if kind != "swe":
+            task = replace(task, public_metadata={**task.public_metadata, "solution_path": "answer.py"})
+        try:
+            result = run_task(config, task, tmp_path / "attempt", environment=env)
+        finally:
+            server.shutdown()
+            server.server_close()
+            thread.join()
+&gt;       assert result["execution_status"] == "completed", result
+E       AssertionError: {'artifact_status': 'empty', 'attempt_id': 'attempt', 'clock_domain': 'controller-monotonic:22aba0981a4a:89e967cd-3e01-49b8-ad6f-6e545dc26b83', 'container_id': 'container-fixture', ...}
+E       assert 'llm_error' == 'completed'
+E         
+E         - completed
+E         + llm_error
+
+benchmarks/flowpilot/tests/test_sdk_runner.py:160: AssertionError</failure></testcase><testcase classname="tests.test_sdk_runner" name="test_real_sdk_model_transport_tools_patch_and_trace[True-quixbugs]" time="3.575"><failure message="AssertionError: {'artifact_status': 'valid', 'attempt_id': 'attempt', 'clock_domain': 'controller-monotonic:22aba0981a4a:89e967cd-3e01-49b8-ad6f-6e545dc26b83', 'container_id': 'container-fixture', ...}&#10;assert 'llm_error' == 'completed'&#10;  &#10;  - completed&#10;  + llm_error">tmp_path = PosixPath('/home/qiulin/flowpilot_predictor/runs/final_adapter_check_20260922/test_real_sdk_model_transport_3')
+malformed_first = True, kind = 'quixbugs'
+
+    @pytest.mark.parametrize("kind", ["swe", "quixbugs"])
+    @pytest.mark.parametrize("malformed_first", [False, True])
+    def test_real_sdk_model_transport_tools_patch_and_trace(tmp_path, malformed_first, kind):
+        from benchmark_adapters.config import Config, DatasetConfig, LLMConfig, RuntimeConfig
+        from benchmark_adapters.contracts import CommandResult
+        from benchmark_adapters.environment import command_argv
+        from benchmark_adapters.runner import run_task
+        from benchmark_adapters.swe import SWEAdapter, export_patch_command
+    
+        repo = tmp_path / "repo"
+        repo.mkdir()
+    
+        def git(*args):
+            return subprocess.check_output(["git", "-C", str(repo), *args], text=True).strip()
+    
+        git("init", "-q")
+        git("config", "user.name", "Test")
+        git("config", "user.email", "test@example.invalid")
+        (repo / "answer.py").write_text("value = 0\n")
+        git("add", ".")
+        git("commit", "-qm", "base")
+        base = git("rev-parse", "HEAD")
+        received = []
+    
+        class Handler(BaseHTTPRequestHandler):
+            def do_POST(self):
+                body = json.loads(self.rfile.read(int(self.headers["Content-Length"])))
+                received.append(body)
+                if malformed_first and len(received) == 1:
+                    tool, args = (
+                        ("swe_file_editor" if kind == "swe" else "code_file_editor"),
+                        dict(command="NOT_VALID", summary="Malformed call"),
+                    )
+                elif len(received) == 1 + int(malformed_first):
+                    tool, args = (
+                        "swe_file_editor" if kind == "swe" else "code_file_editor",
+                        dict(
+                            command="str_replace",
+                            path="answer.py",
+                            old_str="value = 0",
+                            new_str="value = 1",
+                            summary="Fix value",
+                        ),
+                    )
+                else:
+                    tool, args = "finish", dict(message="Updated value.", summary="Finish")
+                payload = dict(
+                    id=f"chatcmpl-{len(received)}",
+                    object="chat.completion",
+                    created=1,
+                    model="test-model",
+                    choices=[
+                        dict(
+                            index=0,
+                            finish_reason="tool_calls",
+                            message=dict(
+                                role="assistant",
+                                content=None,
+                                tool_calls=[
+                                    dict(
+                                        id=f"call-{len(received)}",
+                                        type="function",
+                                        function=dict(name=tool, arguments=json.dumps(args)),
+                                    )
+                                ],
+                            ),
+                        )
+                    ],
+                    usage=dict(prompt_tokens=20, completion_tokens=10, total_tokens=30),
+                )
+                raw = json.dumps(payload).encode()
+                self.send_response(200)
+                self.send_header("Content-Type", "application/json")
+                self.send_header("Content-Length", str(len(raw)))
+                self.end_headers()
+                self.wfile.write(raw)
+    
+            def log_message(self, *args):
+                pass
+    
+        server = ThreadingHTTPServer(("127.0.0.1", 0), Handler)
+        thread = threading.Thread(target=server.serve_forever, daemon=True)
+        thread.start()
+    
+        class TestEnvironment:
+            repo_dir = str(repo)
+            baseline_commit = base
+            closed = False
+    
+            def prepare(self):
+                return {
+                    "backend": "test-fixture",
+                    "prepared_head": base,
+                    "environment_id": "environment-fixture",
+                    "container_id": "container-fixture",
+                }
+    
+            def execute(self, command, timeout=30, max_bytes=16000, **kwargs):
+                data = json.loads(
+                    subprocess.check_output(
+                        command_argv(command, str(repo), timeout, max_bytes), text=True
+                    )
+                )
+                return CommandResult(**data)
+    
+            def export_patch(self):
+                return subprocess.check_output(
+                    ["bash", "-c", export_patch_command(base)], cwd=repo, text=True
+                )
+    
+            def close(self):
+                self.closed = True
+    
+            def quiesce(self):
+                pass
+    
+        env = TestEnvironment()
+        config = Config(
+            dataset=DatasetConfig(kind=kind, path="unused", revision="fixture"),
+            llm=LLMConfig(
+                model="openai/test-model",
+                base_url=f"http://127.0.0.1:{server.server_port}/v1",
+                num_retries=0,
+            ),
+            runtime=replace(RuntimeConfig(), max_iterations=4, runs_dir=str(tmp_path / "runs")),
+        )
+        task = SWEAdapter.from_record(
+            dict(
+                instance_id="org__repo-1",
+                repo="org/repo",
+                base_commit=base,
+                problem_statement="Set value to one.",
+                patch="GOLD_DO_NOT_LEAK",
+            ),
+            dataset_id="princeton-nlp/SWE-bench",
+            revision="fixture",
+            split="dev",
+        )
+        if kind != "swe":
+            task = replace(task, public_metadata={**task.public_metadata, "solution_path": "answer.py"})
+        try:
+            result = run_task(config, task, tmp_path / "attempt", environment=env)
+        finally:
+            server.shutdown()
+            server.server_close()
+            thread.join()
+&gt;       assert result["execution_status"] == "completed", result
+E       AssertionError: {'artifact_status': 'valid', 'attempt_id': 'attempt', 'clock_domain': 'controller-monotonic:22aba0981a4a:89e967cd-3e01-49b8-ad6f-6e545dc26b83', 'container_id': 'container-fixture', ...}
+E       assert 'llm_error' == 'completed'
+E         
+E         - completed
+E         + llm_error
+
+benchmarks/flowpilot/tests/test_sdk_runner.py:160: AssertionError</failure></testcase><testcase classname="tests.test_sdk_runner" name="test_recorded_llm_disables_unobserved_http_retries" time="2.009"><failure message="assert 0 == 1&#10; +  where 0 = len([])">tmp_path = PosixPath('/home/qiulin/flowpilot_predictor/runs/final_adapter_check_20260922/test_recorded_llm_disables_uno0')
+
+    def test_recorded_llm_disables_unobserved_http_retries(tmp_path):
+        from openhands.sdk import Message, TextContent
+    
+        from benchmark_adapters.sdk_bridge import RecordedLLM
+        from benchmark_adapters.tracing import Budget, TraceRecorder
+    
+        calls = []
+    
+        class Handler(BaseHTTPRequestHandler):
+            def do_POST(self):
+                self.rfile.read(int(self.headers["Content-Length"]))
+                calls.append(1)
+                payload = json.dumps(
+                    {"error": {"message": "fixture failure", "type": "server_error"}}
+                ).encode()
+                self.send_response(500)
+                self.send_header("Content-Type", "application/json")
+                self.send_header("Content-Length", str(len(payload)))
+                self.end_headers()
+                self.wfile.write(payload)
+    
+            def log_message(self, *args):
+                pass
+    
+        server = ThreadingHTTPServer(("127.0.0.1", 0), Handler)
+        thread = threading.Thread(target=server.serve_forever, daemon=True)
+        thread.start()
+        recorder = TraceRecorder(tmp_path, {"task_id": "fixture"})
+        llm = RecordedLLM(
+            model="openai/test-model",
+            base_url=f"http://127.0.0.1:{server.server_port}/v1",
+            api_key="dummy",
+            num_retries=0,
+            timeout=3,
+        )
+        llm.attach(recorder, Budget(5, 5, 20))
+        try:
+            with pytest.raises(Exception):
+                llm.completion(messages=[Message(role="user", content=[TextContent(text="hi")])])
+        finally:
+            recorder.close()
+            server.shutdown()
+            server.server_close()
+            thread.join()
+&gt;       assert len(calls) == 1
+E       assert 0 == 1
+E        +  where 0 = len([])
+
+benchmarks/flowpilot/tests/test_sdk_runner.py:242: AssertionError</failure></testcase><testcase classname="tests.test_sdk_runner" name="test_real_sdk_timeout_wrapper_is_censored_by_audit" time="1.509"><failure message="assert 0 == 1&#10; +  where 0 = len([])">tmp_path = PosixPath('/home/qiulin/flowpilot_predictor/runs/final_adapter_check_20260922/test_real_sdk_timeout_wrapper_0')
+
+    def test_real_sdk_timeout_wrapper_is_censored_by_audit(tmp_path):
+        import time
+    
+        from benchmark_adapters.code_audit import audit_attempt
+        from benchmark_adapters.config import Config, DatasetConfig, LLMConfig, RuntimeConfig
+        from benchmark_adapters.contracts import CommandResult, Task
+        from benchmark_adapters.environment import command_argv
+        from benchmark_adapters.runner import run_task
+    
+        repo = tmp_path / "repo"
+        repo.mkdir()
+        (repo / "solution.py").write_text("pass\n")
+        calls = []
+    
+        class Handler(BaseHTTPRequestHandler):
+            def do_POST(self):
+                self.rfile.read(int(self.headers["Content-Length"]))
+                calls.append(1)
+                time.sleep(2)
+                self.send_response(500)
+                self.end_headers()
+    
+            def log_message(self, *args):
+                pass
+    
+        class Env:
+            repo_dir = str(repo)
+    
+            def prepare(self):
+                return {"environment_id": "fixture-environment"}
+    
+            def execute(self, command, timeout=30, max_bytes=16000):
+                return CommandResult(
+                    **json.loads(
+                        subprocess.check_output(
+                            command_argv(command, str(repo), timeout, max_bytes), text=True
+                        )
+                    )
+                )
+    
+            def quiesce(self):
+                pass
+    
+            def close(self):
+                return {}
+    
+        server = ThreadingHTTPServer(("127.0.0.1", 0), Handler)
+        thread = threading.Thread(target=server.serve_forever, daemon=True)
+        thread.start()
+        config = Config(
+            dataset=DatasetConfig(kind="quixbugs"),
+            llm=LLMConfig(
+                model="openai/test-model",
+                base_url=f"http://127.0.0.1:{server.server_port}/v1",
+                num_retries=0,
+                timeout=1,
+            ),
+            runtime=replace(RuntimeConfig(), task_timeout=30, max_iterations=2),
+        )
+        task = Task(
+            "fixture", "v", "dev", "timeout-fixture", "Say done", {"solution_path": "solution.py"}
+        )
+        try:
+            result = run_task(config, task, tmp_path / "attempt", environment=Env())
+        finally:
+            server.shutdown()
+            server.server_close()
+            thread.join()
+&gt;       assert len(calls) == 1
+E       assert 0 == 1
+E        +  where 0 = len([])
+
+benchmarks/flowpilot/tests/test_sdk_runner.py:313: AssertionError</failure></testcase><testcase classname="tests.test_swe_contract" name="test_swe_input_excludes_gold_and_validates_commit" time="0.000" /><testcase classname="tests.test_swe_contract" name="test_local_parquet_selection_is_exact" time="0.008" /><testcase classname="tests.test_swe_contract" name="test_patch_covers_commits_index_worktree_new_and_deleted_files" time="0.215" /><testcase classname="tests.test_swe_contract" name="test_config_rejects_unknown_keys_and_verified_train" time="0.005" /><testcase classname="tests.test_swe_contract" name="test_invalid_container_configuration[[docker]\nrepo_dir=&quot;relative&quot;\n-absolute]" time="0.005" /><testcase classname="tests.test_swe_contract" name="test_invalid_container_configuration[[docker]\nnano_cpus=-1\n-positive]" time="0.004" /><testcase classname="tests.test_swe_contract" name="test_unknown_dataset_identity_is_rejected" time="0.003" /><testcase classname="tests.test_swe_contract" name="test_evaluation_python_preserves_virtualenv_symlink" time="0.005" /><testcase classname="tests.test_swe_contract" name="test_config_rejects_unimplemented_setting" time="0.003" /><testcase classname="tests.test_swe_contract" name="test_patch_detects_same_size_edit_with_racy_git_index" time="0.102" /><testcase classname="tests.test_swe_contract" name="test_non_native_tool_calling_is_rejected_for_prediction_tracing" time="0.010" /></testsuite></testsuites>

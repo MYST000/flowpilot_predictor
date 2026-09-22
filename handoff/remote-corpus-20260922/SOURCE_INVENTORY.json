@@ -1,0 +1,385 @@
+{
+  "purpose": "Small corpus-server handoff; original source files unchanged",
+  "source_project_root": "/home/qiulin/flowpilot_predictor",
+  "openhands_repository_head": "8e8ed520c8abb09c4c4d3369492d3b02988e2c18",
+  "openhands_sdk_core_baseline": "a6db5dcba26a3acfaeac58c8ba5195433a0e223d",
+  "openhands_local_adapter_changes_included": true,
+  "browsecomp_upstream_commit": "046949032b0328319cc9a02663a759ec601d9402",
+  "required_project_root_for_unmodified_launchers": "/home/qiulin/flowpilot_predictor",
+  "hotpot_index_builder_environment": {
+    "python": "3.13.15",
+    "sqlite": "3.53.1",
+    "pyarrow": "23.0.1"
+  },
+  "excluded": [
+    "question and answer datasets",
+    "task trajectories",
+    "corpus files",
+    "models",
+    "indexes",
+    "virtual environments",
+    "SSH credentials",
+    "HF absolute-symlink caches",
+    "private evaluation assets"
+  ],
+  "hotpot_remote_rpc_status": "Not implemented; corpus and local index preparation only",
+  "files": [
+    {
+      "path": "data/indexes/hotpot_20171001_sqlite_v1.sqlite3.manifest.json",
+      "bytes": 653,
+      "sha256": "183cd7ce0a1c27474239a23c4a54dd1380c966f768ca5f38e615f0c281c23839",
+      "source": "/home/qiulin/flowpilot_predictor/data/indexes/hotpot_20171001_sqlite_v1.sqlite3.manifest.json",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "evidence/preparation/hotpot_corpus_preparation.json",
+      "bytes": 784,
+      "sha256": "260a211a2aff6b041ab213454451b719b02687a3a4f4aff354bebc99b9561ed0",
+      "source": "/home/qiulin/flowpilot_predictor/evidence/preparation/hotpot_corpus_preparation.json",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "evidence/preparation/vllm_environment_20260922.json",
+      "bytes": 1958,
+      "sha256": "49a1e7230bc5c64ccb9b8de303fc22931929d0c2a6a90a16ed2b9394482389e2",
+      "source": "/home/qiulin/flowpilot_predictor/evidence/preparation/vllm_environment_20260922.json",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "evidence/preparation/vllm_installed_20260922.txt",
+      "bytes": 4242,
+      "sha256": "9047b3bf42eecb42a399f5956e78ba1a1be858bab532ee4a02d8115d10c8da5b",
+      "source": "/home/qiulin/flowpilot_predictor/evidence/preparation/vllm_installed_20260922.txt",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "evidence/preparation/vllm_packages_20260922.lock.txt",
+      "bytes": 4162,
+      "sha256": "9d11d149cb9fd4f353e1fd3449c598566e1e71dd72680d0a01b27d02e3e35dcc",
+      "source": "/home/qiulin/flowpilot_predictor/evidence/preparation/vllm_packages_20260922.lock.txt",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "evidence/qwen_hotpot_trial_20260922/service_profile.json",
+      "bytes": 2935,
+      "sha256": "9b98967e8fb6cdd383bb2b97e5c0d054eb5523fa43d94d9baed011fd1bd3c72a",
+      "source": "/home/qiulin/flowpilot_predictor/evidence/qwen_hotpot_trial_20260922/service_profile.json",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "evidence/retrieval/flowpilot_bc_indexes_lock.json",
+      "bytes": 6377,
+      "sha256": "bb1b75798fde8973f5c650c8f3045cb36282a63beb1703638bf104198f2ef220",
+      "source": "/home/qiulin/flowpilot_predictor/evidence/retrieval/flowpilot_bc_indexes_lock.json",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "evidence/retrieval/flowpilot_java21_info.json",
+      "bytes": 1818,
+      "sha256": "18d482466ed01c57b0e88616e54e4129258d5fd21b69f37b2353ea3267e7f606",
+      "source": "/home/qiulin/flowpilot_predictor/evidence/retrieval/flowpilot_java21_info.json",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "evidence/retrieval/flowpilot_tokenizer_lock.json",
+      "bytes": 9940,
+      "sha256": "8fd258942a397e8e0edd6358131bf152604f61ad7e8468be5ab73d5ca32e68ff",
+      "source": "/home/qiulin/flowpilot_predictor/evidence/retrieval/flowpilot_tokenizer_lock.json",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "evidence/retrieval/native_installed_20260922.txt",
+      "bytes": 1053,
+      "sha256": "a9ef77450fd8793994c3647fdbb6151403a19644f385eabbabb92468174131b1",
+      "source": "/home/qiulin/flowpilot_predictor/evidence/retrieval/native_installed_20260922.txt",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "evidence/retrieval/native_runtime_provenance.json",
+      "bytes": 2939,
+      "sha256": "da8fd29ba801ba18db3337005c28995879b66e08e8f11c4e44a85989146d502e",
+      "source": "/home/qiulin/flowpilot_predictor/evidence/retrieval/native_runtime_provenance.json",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "evidence/retrieval/verified_native_assets.json",
+      "bytes": 10089,
+      "sha256": "0ef35eb92bec741744862cec1fd56345e76f11ca3140de76e6d6e6a77a3792b7",
+      "source": "/home/qiulin/flowpilot_predictor/evidence/retrieval/verified_native_assets.json",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "evidence/retrieval/verified_pyserini.json",
+      "bytes": 324,
+      "sha256": "2a0ef69b086f057fea49ce8803366619a195bfdfda48bca20cf4dd277f05f1bb",
+      "source": "/home/qiulin/flowpilot_predictor/evidence/retrieval/verified_pyserini.json",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "repos/Openhands-software-agent-sdk/benchmarks/flowpilot/pyproject.toml",
+      "bytes": 791,
+      "sha256": "6f02f2ee0c3a90b164773724a1429be69c80fec4a75f54b90da1df73aecfc205",
+      "source": "/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/pyproject.toml",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/__init__.py",
+      "bytes": 92,
+      "sha256": "4f92db8e59a666228186c27707270c1aadae52d1744cbc09ced4b217ba82d7bf",
+      "source": "/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/__init__.py",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/__main__.py",
+      "bytes": 48,
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "source": "/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/__main__.py",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/adapter_registry.py",
+      "bytes": 3474,
+      "sha256": "13d1f58f52b22cc6f13ac4332b1cf60b93d27f8f46fdc94147fcf2fd1f95c48d",
+      "source": "/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/adapter_registry.py",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/cli.py",
+      "bytes": 16326,
+      "sha256": "f1e8171551266f49158cb1005cd626beabd2e0551a8599bde0eb7e75e104c3f3",
+      "source": "/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/cli.py",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/code_audit.py",
+      "bytes": 9289,
+      "sha256": "60298efee2a4f2bdf945548a3d3c59e75b5f0d90da7ecef05665b8edb6379c96",
+      "source": "/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/code_audit.py",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/code_campaign.py",
+      "bytes": 20518,
+      "sha256": "662f6487248d8cea0bed51660a222338b38e322a965964bcef521754afb90768",
+      "source": "/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/code_campaign.py",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/code_collection.py",
+      "bytes": 6863,
+      "sha256": "c273e007ce779e9a05c3b949001fd7b560b2c53c87afc2e279b9101ac90a838b",
+      "source": "/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/code_collection.py",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/code_evaluation.py",
+      "bytes": 4104,
+      "sha256": "9e79aaa5ad71118e3e55be448fd3441fdc9fc8cef5c0f3d623eee2f5cd317f25",
+      "source": "/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/code_evaluation.py",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/code_tasks.py",
+      "bytes": 13252,
+      "sha256": "cae77740ac6abcf5c6f3c0294627ee85387431812a183d38df52fdd5fb634346",
+      "source": "/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/code_tasks.py",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/config.py",
+      "bytes": 9162,
+      "sha256": "351567643e9372f325aa4b66c7b09d0cfd9d8381276de0d8c264207f1d3851d8",
+      "source": "/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/config.py",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/contracts.py",
+      "bytes": 598,
+      "sha256": "24092481e32a05b08ee67472c18e8a2ccdd3e294010c93cc765e03f0f2a0d1c6",
+      "source": "/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/contracts.py",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/controller_paths.py",
+      "bytes": 1791,
+      "sha256": "73c9e807a342072b90bddd75e139306392dee085c077dd6703c7c29e6140b57e",
+      "source": "/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/controller_paths.py",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/data/lcb_release_v6.lock.json",
+      "bytes": 778,
+      "sha256": "e5330145a8f239afc2daf44e081048f1bbeedead34bc2f72aff79675a875552a",
+      "source": "/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/data/lcb_release_v6.lock.json",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/environment.py",
+      "bytes": 13838,
+      "sha256": "1e1463e8f57180c780360d8bb685ffa81a1744a8a46ef2d7d533dc7af06a049d",
+      "source": "/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/environment.py",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/evaluation.py",
+      "bytes": 6556,
+      "sha256": "acd8c9d91e316362ed966e25b831c7508e48e231928fd0a6e62ec33853bc228a",
+      "source": "/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/evaluation.py",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/images.py",
+      "bytes": 3955,
+      "sha256": "d7b8bd3da9f80758ce6f596461496b596ee78fc89476ef23e48fbcf8ff9fa59a",
+      "source": "/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/images.py",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/local_environment.py",
+      "bytes": 8756,
+      "sha256": "f14278bcb3475eefdd6d360089d6c832b47a59bf6fd83ce9667078bed385ae3b",
+      "source": "/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/local_environment.py",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/native_browsecomp.py",
+      "bytes": 4062,
+      "sha256": "4af310d9145592430fe8d6f7e644df2a7723aaa52f45dcaa23199ec12ca5f282",
+      "source": "/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/native_browsecomp.py",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/parallel_collection.py",
+      "bytes": 22609,
+      "sha256": "fabff586452853e3c6497bb806dadcf67605bcc017be87bc8b4266885d6e640c",
+      "source": "/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/parallel_collection.py",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/parallel_runtime.py",
+      "bytes": 8666,
+      "sha256": "6d83ed56a27895b514e3008cd4bd1b23643cf11f53bdd338c3a90c6fafa934fb",
+      "source": "/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/parallel_runtime.py",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/prediction_export.py",
+      "bytes": 29383,
+      "sha256": "05d1cdfbeeca2790420038e910f8aa9578d2722959665ff319a37847b2f8eb52",
+      "source": "/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/prediction_export.py",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/research_splits.py",
+      "bytes": 7790,
+      "sha256": "3d93f891226e95ed7545ca6d39fd16529a324ad6bab05b0423d7f0f44ad2f955",
+      "source": "/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/research_splits.py",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/retrieval.py",
+      "bytes": 17508,
+      "sha256": "d3e9920bd4a84b9c8f27cda38c02a4fd442a520bafb41238565f7adb4fb98fb2",
+      "source": "/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/retrieval.py",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/retrieval_corpus.py",
+      "bytes": 3856,
+      "sha256": "736a3f00414d8a94f0c85dade3183c42662a52062a2075392cedebbc7a56439c",
+      "source": "/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/retrieval_corpus.py",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/retrieval_evaluation.py",
+      "bytes": 2645,
+      "sha256": "99013873c32264d25fee3363e8570fc7614afde493663691f3bea27d9b9bf80d",
+      "source": "/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/retrieval_evaluation.py",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/retrieval_tools.py",
+      "bytes": 7437,
+      "sha256": "f1d9c0ee29e4a1b58b288a1f69005c84e8c4679453eb891f939cdf93a9c7fb02",
+      "source": "/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/retrieval_tools.py",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/runner.py",
+      "bytes": 11741,
+      "sha256": "a5f2e1bb2b78c716c747581c87649ab8d222b7b67a985ccb0e31b0f9559f7f66",
+      "source": "/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/runner.py",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/sdk_bridge.py",
+      "bytes": 8815,
+      "sha256": "0aca5961c1e5c1faf4c78676237482a8f6123628da4824cb112d708915ccfb3b",
+      "source": "/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/sdk_bridge.py",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/sdk_provenance.py",
+      "bytes": 1858,
+      "sha256": "fbdd98c1c36f17061dd9d14f1f546bbe06562bd90302ae4f4831ef3350ecbed2",
+      "source": "/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/sdk_provenance.py",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/swe.py",
+      "bytes": 4403,
+      "sha256": "e386bcb0b9edfee0249b8338d1c49d35efb5027c17d209a1b1cd450be5158af2",
+      "source": "/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/swe.py",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/tracing.py",
+      "bytes": 9745,
+      "sha256": "726b1a7770da4d41007bb6a9cc6f576d76b5e4261b1674f1bb8bd4485a320f52",
+      "source": "/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/tracing.py",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "runtime/browsecomp-native/README.md",
+      "bytes": 4873,
+      "sha256": "9bf0bafe453ac439564f5bf3599bde80a0d6c615de4146545e6ce9008efd22be",
+      "source": "/home/qiulin/flowpilot_predictor/runtime/browsecomp-native/README.md",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "runtime/browsecomp-native/minimal.in",
+      "bytes": 134,
+      "sha256": "18ccdfca891d30816d3778d3f9c9084cd3986466ff1e89115603c3c5024899d7",
+      "source": "/home/qiulin/flowpilot_predictor/runtime/browsecomp-native/minimal.in",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "runtime/browsecomp-native/requirements-cpu.lock",
+      "bytes": 87614,
+      "sha256": "eea44c12257eb70d687cef8d541c4bec25231410b840301cbb9fe6985a556832",
+      "source": "/home/qiulin/flowpilot_predictor/runtime/browsecomp-native/requirements-cpu.lock",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "runtime/browsecomp-native/serve.py",
+      "bytes": 2680,
+      "sha256": "0152d5f30c8ea33854bb73029b319695defad2ef945ab7fe66416c56585af8d3",
+      "source": "/home/qiulin/flowpilot_predictor/runtime/browsecomp-native/serve.py",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "scripts/prepare_hotpot_corpus.py",
+      "bytes": 3073,
+      "sha256": "f7460f7be1665452db91ca0e35831bf3115e189f3a156233c645fa32761e33d2",
+      "source": "/home/qiulin/flowpilot_predictor/scripts/prepare_hotpot_corpus.py",
+      "byte_identical_to_source": true
+    },
+    {
+      "path": "scripts/serve_browsecomp_native.sh",
+      "bytes": 588,
+      "sha256": "ca3cac35c4ec06b4bf3f5441bde216ccd412f6092abdb8c71c8fd2b138fcab44",
+      "source": "/home/qiulin/flowpilot_predictor/scripts/serve_browsecomp_native.sh",
+      "byte_identical_to_source": true
+    }
+  ]
+}

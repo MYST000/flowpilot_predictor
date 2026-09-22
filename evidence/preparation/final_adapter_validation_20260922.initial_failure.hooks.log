@@ -1,0 +1,28 @@
+Format YAML files....................................(no files to check)Skipped
+Ruff format..............................................................Passed
+Ruff lint................................................................Passed
+PEP8 style check (pycodestyle)...........................................Passed
+Type check with pyright..................................................Failed
+- hook id: pyright
+- exit code: 1
+
+/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/prediction_export.py
+  /home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/prediction_export.py:321:13 - error: 无法将“None”类型的参数分配给函数“__setitem__”中类型为“int”的参数“value”
+    “None”不可分配给“int” (reportArgumentType)
+  /home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/prediction_export.py:341:9 - error: 无法将“dict[Unknown, Unknown]”类型的参数分配给函数“__setitem__”中类型为“int”的参数“value”
+    “dict[Unknown, Unknown]”不可分配给“int” (reportArgumentType)
+/home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/tests/test_prediction_export.py
+  /home/qiulin/flowpilot_predictor/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/tests/test_prediction_export.py:21:28 - error: 无法为类“TraceRecorder”的属性“t0_features”赋值。
+    类型“() -> None”不可分配给类型“() -> dict[str, Unknown]”
+      函数返回类型"None"与类型"dict[str, Unknown]"不兼容
+        “None”不可分配给“dict[str, Unknown]” (reportAttributeAccessIssue)
+3 errors, 0 warnings, 0 informations
+0 errors, 0 warnings, 0 informations
+0 errors, 0 warnings, 0 informations
+0 errors, 0 warnings, 0 informations
+0 errors, 0 warnings, 0 informations
+0 errors, 0 warnings, 0 informations
+0 errors, 0 warnings, 0 informations
+
+Check import dependency rules............................................Passed
+Check Tool subclass registration.........................................Passed

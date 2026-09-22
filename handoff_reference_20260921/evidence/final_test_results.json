@@ -1,0 +1,29 @@
+{
+  "collector": {
+    "chunk_id": "e2e63c",
+    "wall_time_seconds": 0.00000356,
+    "exit_code": 0,
+    "original_token_count": 183,
+    "output": "...................                                              [100%]\n=============================== warnings summary ===============================\nflowpilot_predictor/handoff_browsecomp_4090_20260920/tests/test_browsecomp.py: 11 warnings\n  /root/flowpilot_predictor/repos/Openhands-software-agent-sdk/openhands-sdk/openhands/sdk/llm/utils/telemetry.py:285: UserWarning: Cost calculation failed: This model isn't mapped yet. model=qwen3.5-9b, custom_llm_provider=openai. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.\n    warnings.warn(f\"Cost calculation failed: {e}\")\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n27 passed, 11 warnings in 23.37s\n"
+  },
+  "launcher": {
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "1ac698",
+      "wall_time_seconds": 0.317851151,
+      "exit_code": 0,
+      "original_token_count": 27,
+      "output": ".........\n----------------------------------------------------------------------\nRan 9 tests in 0.380s\n\nOK\n"
+    }
+  },
+  "legacy_regression": {
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "be2c33",
+      "wall_time_seconds": 0.875809461,
+      "exit_code": 0,
+      "original_token_count": 25,
+      "output": ".....................................                                    [100%]\n37 passed in 0.25s\n"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "vllm_pypi": {
+    "url": "https://pypi.org/pypi/vllm/0.29.0/json",
+    "version": "0.29.0",
+    "requires_python": "<3.15,>=3.10",
+    "wheels": [
+      {
+        "filename": "vllm-0.29.0-cp38-abi3-manylinux_2_28_aarch64.whl",
+        "url": "https://files.pythonhosted.org/packages/b3/dc/de2ca88cfb6539c987bc4f6a69887deaa53eb5c4fd483e0923ca00ebd60a/vllm-0.29.0-cp38-abi3-manylinux_2_28_aarch64.whl"
+      },
+      {
+        "filename": "vllm-0.29.0-cp38-abi3-manylinux_2_28_x86_64.whl",
+        "url": "https://files.pythonhosted.org/packages/ca/09/7f79450e21bd1c2a0897ab946a544816a4f7e04c54f0ca49849b14b12d6a/vllm-0.29.0-cp38-abi3-manylinux_2_28_x86_64.whl"
+      }
+    ]
+  },
+  "vllm_release": {
+    "url": "https://api.github.com/repos/vllm-project/vllm/releases/tags/v0.29.0",
+    "tag": "v0.29.0",
+    "assets": [
+      {
+        "name": "vllm-0.29.0+cpu-cp312-cp312-macosx_11_0_arm64.whl",
+        "url": "https://github.com/vllm-project/vllm/releases/download/v0.29.0/vllm-0.29.0%2Bcpu-cp312-cp312-macosx_11_0_arm64.whl"
+      },
+      {
+        "name": "vllm-0.29.0+cpu-cp38-abi3-manylinux_2_34_aarch64.whl",
+        "url": "https://github.com/vllm-project/vllm/releases/download/v0.29.0/vllm-0.29.0%2Bcpu-cp38-abi3-manylinux_2_34_aarch64.whl"
+      },
+      {
+        "name": "vllm-0.29.0+cpu-cp38-abi3-manylinux_2_34_x86_64.whl",
+        "url": "https://github.com/vllm-project/vllm/releases/download/v0.29.0/vllm-0.29.0%2Bcpu-cp38-abi3-manylinux_2_34_x86_64.whl"
+      },
+      {
+        "name": "vllm-0.29.0+cu129-cp38-abi3-manylinux_2_28_aarch64.whl",
+        "url": "https://github.com/vllm-project/vllm/releases/download/v0.29.0/vllm-0.29.0%2Bcu129-cp38-abi3-manylinux_2_28_aarch64.whl"
+      },
+      {
+        "name": "vllm-0.29.0+cu129-cp38-abi3-manylinux_2_28_x86_64.whl",
+        "url": "https://github.com/vllm-project/vllm/releases/download/v0.29.0/vllm-0.29.0%2Bcu129-cp38-abi3-manylinux_2_28_x86_64.whl"
+      },
+      {
+        "name": "vllm-0.29.0+xpu-cp38-abi3-manylinux_2_34_x86_64.whl",
+        "url": "https://github.com/vllm-project/vllm/releases/download/v0.29.0/vllm-0.29.0%2Bxpu-cp38-abi3-manylinux_2_34_x86_64.whl"
+      },
+      {
+        "name": "vllm-0.29.0-cp38-abi3-manylinux_2_28_aarch64.whl",
+        "url": "https://github.com/vllm-project/vllm/releases/download/v0.29.0/vllm-0.29.0-cp38-abi3-manylinux_2_28_aarch64.whl"
+      },
+      {
+        "name": "vllm-0.29.0-cp38-abi3-manylinux_2_28_x86_64.whl",
+        "url": "https://github.com/vllm-project/vllm/releases/download/v0.29.0/vllm-0.29.0-cp38-abi3-manylinux_2_28_x86_64.whl"
+      },
+      {
+        "name": "vllm-0.29.0.tar.gz",
+        "url": "https://github.com/vllm-project/vllm/releases/download/v0.29.0/vllm-0.29.0.tar.gz"
+      }
+    ]
+  },
+  "qwen": {
+    "url": "https://huggingface.co/api/models/Qwen/Qwen3.5-9B",
+    "sha": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "id": "Qwen/Qwen3.5-9B"
+  },
+  "browsecomp": {
+    "url": "https://huggingface.co/api/datasets/Tevatron/browsecomp-plus",
+    "sha": "144cff8e35b5eaef7e526346aa60774a9deb941f",
+    "id": "Tevatron/browsecomp-plus"
+  },
+  "browsecomp_corpus": {
+    "url": "https://huggingface.co/api/datasets/Tevatron/browsecomp-plus-corpus",
+    "sha": "b27b02bc3e45511b8b82a13e6f90ce761df726f6",
+    "id": "Tevatron/browsecomp-plus-corpus"
+  }
+}
