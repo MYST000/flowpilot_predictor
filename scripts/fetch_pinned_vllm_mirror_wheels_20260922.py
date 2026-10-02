@@ -21,7 +21,7 @@ import urllib.request
 from pip._vendor.packaging.tags import sys_tags
 from pip._vendor.packaging.utils import parse_wheel_filename
 
-ROOT = Path("/home/qiulin/flowpilot_predictor")
+ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "downloads" / "vllm_pinned_dependency_wheels_20260922"
 CACHE = ROOT / "cache" / "uv" / "wheels-v6" / "pypi"
 LOG = ROOT / "evidence/preparation/vllm_install_20260922.cdn_direct.log"

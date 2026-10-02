@@ -7,7 +7,7 @@ from pathlib import Path
 import urllib.request
 import urllib.parse
 
-ROOT = Path('/home/qiulin/flowpilot_predictor')
+ROOT = Path(__file__).resolve().parents[1]
 EVIDENCE = ROOT / 'evidence/retrieval'
 DIRECT = urllib.request.build_opener(urllib.request.ProxyHandler({}))
 

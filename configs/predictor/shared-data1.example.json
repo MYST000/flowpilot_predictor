@@ -1,0 +1,33 @@
+{
+  "model_path": "/data1/ql_flowpilot_predictor/predictor_experiments/native27b_1077_v1/train/lightgbm/model.joblib",
+  "prepared_data": "/data1/ql_flowpilot_predictor/predictor_prepared/native27b_1077_v1",
+  "artifact_code_root": "/data1/ql_flowpilot_predictor/predictor_experiments/native27b_1077_v1/deployment_snapshot/code",
+  "selected_quantile": "q50",
+  "workers": 4,
+  "max_pending": 128,
+  "max_records": 4096,
+  "timeout_seconds": 0.25,
+  "prediction_ttl_seconds": 30,
+  "feedback_ttl_seconds": 600,
+  "online": true,
+  "online_method": "quantile_residual_v1",
+  "online_config": {
+    "alpha": 0.1,
+    "buffer_size": 1024,
+    "shrinkage_rows": 256,
+    "max_abs_log_offset": 0.6931471805599453,
+    "max_step_log": 0.02,
+    "min_rows": {
+      "q10": 32,
+      "q50": 32,
+      "q90": 100,
+      "q99": 1000
+    },
+    "min_task_groups": {
+      "q10": 4,
+      "q50": 4,
+      "q90": 10,
+      "q99": 30
+    }
+  }
+}

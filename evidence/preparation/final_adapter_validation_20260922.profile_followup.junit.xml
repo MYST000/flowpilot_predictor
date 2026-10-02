@@ -1,1 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="17.635" timestamp="2026-09-22T15:31:07.508946+08:00" hostname="22aba0981a4a"><testcase classname="tests.test_parallel_sdk" name="test_real_sdk_four_same_profile_and_four_mixed_fixtures" time="17.473" /></testsuite></testsuites>

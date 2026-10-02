@@ -1,0 +1,1833 @@
+{
+  "status": "prepared",
+  "git_push_executed": false,
+  "model_uploaded": false,
+  "total_files": 363,
+  "total_bytes": 4327410,
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 535,
+      "sha256": "534be7813213ff7269d5d26fb997064fbb7fa9daf77ff32b7f64e972812be424"
+    },
+    {
+      "path": "BENCHMARK_WORKLOAD_PLAN_20260926.md",
+      "bytes": 14786,
+      "sha256": "0b6cb28a7e27c84f88be6e849ad414884e2619b7b415b972b6857e40af2bb9bd"
+    },
+    {
+      "path": "DEPENDENCIES.json",
+      "bytes": 628,
+      "sha256": "840b20536468bb95f7b2f0e3abc052b6dda34d98186f56390c7abbbb79b8fcde"
+    },
+    {
+      "path": "MIXED_C4_COLLECTION.md",
+      "bytes": 12408,
+      "sha256": "5f70745e58f70a2b5f6a363986d7f7133d91d7d87813b2297eb7d45699c12565"
+    },
+    {
+      "path": "PREDICTOR_EXPERIMENT_REPORT_20260927.md",
+      "bytes": 22268,
+      "sha256": "bbd644556378c5244ea55cca211fc2ff6bb83a277b4b238054d0e86a3803c7ee"
+    },
+    {
+      "path": "PREDICTOR_HANDOFF_20260926.md",
+      "bytes": 55948,
+      "sha256": "fb23d2ea513a2a10304d0f592054c1ded299d4d8fe24d282137d18928df84d47"
+    },
+    {
+      "path": "PREDICTOR_INTEGRATION_PLAN_20260928.md",
+      "bytes": 14809,
+      "sha256": "637bed417ccee8e860cabd4bb225a89e2202d913f558b154308229d680cbd67f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2986,
+      "sha256": "bb04356316396eef09eb467420db74b188d7a5b66de123a96f73bda34d1491f0"
+    },
+    {
+      "path": "WORKLOAD_REUSE_MOTIVATION_20260926.md",
+      "bytes": 10415,
+      "sha256": "d1ba8389a6aeb23b96f7492c6e2f8e229dd5ae067ca824f90f6885bde33de563"
+    },
+    {
+      "path": "adapters/openhands_current/LICENSE",
+      "bytes": 1079,
+      "sha256": "14a9b631c658eee682c6c2973525fbdf808c3457176bc47513052c559cc5ce86"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/CHANGES.md",
+      "bytes": 3985,
+      "sha256": "d1e1a73f2c63dfb372e85a01cac07c927ed125bc39901156ee81c2b2de3be651"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/README.md",
+      "bytes": 8384,
+      "sha256": "8b764927c0e84fec84d00f950e7a3116562a038c486a6095e21aed14a09bf274"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/pyproject.toml",
+      "bytes": 791,
+      "sha256": "6f02f2ee0c3a90b164773724a1429be69c80fec4a75f54b90da1df73aecfc205"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/src/benchmark_adapters/__init__.py",
+      "bytes": 92,
+      "sha256": "4f92db8e59a666228186c27707270c1aadae52d1744cbc09ced4b217ba82d7bf"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/src/benchmark_adapters/__main__.py",
+      "bytes": 48,
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/src/benchmark_adapters/adapter_registry.py",
+      "bytes": 3864,
+      "sha256": "f4e3f2d079dbaea89ca00841ceccea5172205f0a0b1b72331d4109d89a3a4e44"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/src/benchmark_adapters/cli.py",
+      "bytes": 16505,
+      "sha256": "f10fd91704bbd78139a0f3eac75f0a243c803375858bbc88e2cc4797224bf4e0"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/src/benchmark_adapters/code_audit.py",
+      "bytes": 9289,
+      "sha256": "60298efee2a4f2bdf945548a3d3c59e75b5f0d90da7ecef05665b8edb6379c96"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/src/benchmark_adapters/code_campaign.py",
+      "bytes": 20518,
+      "sha256": "662f6487248d8cea0bed51660a222338b38e322a965964bcef521754afb90768"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/src/benchmark_adapters/code_collection.py",
+      "bytes": 6863,
+      "sha256": "c273e007ce779e9a05c3b949001fd7b560b2c53c87afc2e279b9101ac90a838b"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/src/benchmark_adapters/code_evaluation.py",
+      "bytes": 4104,
+      "sha256": "9e79aaa5ad71118e3e55be448fd3441fdc9fc8cef5c0f3d623eee2f5cd317f25"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/src/benchmark_adapters/code_tasks.py",
+      "bytes": 13365,
+      "sha256": "c30eea1991f20dadae53397a762d1b26567f089a6c18f51abd4d9307bf65667b"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/src/benchmark_adapters/config.py",
+      "bytes": 10728,
+      "sha256": "28c6e0be506ddb03a5bf24bbbad2a3127656bc19de7814c768f574deaa0f9137"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/src/benchmark_adapters/contracts.py",
+      "bytes": 598,
+      "sha256": "24092481e32a05b08ee67472c18e8a2ccdd3e294010c93cc765e03f0f2a0d1c6"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/src/benchmark_adapters/controller_paths.py",
+      "bytes": 1791,
+      "sha256": "73c9e807a342072b90bddd75e139306392dee085c077dd6703c7c29e6140b57e"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/src/benchmark_adapters/data/lcb_release_v6.lock.json",
+      "bytes": 778,
+      "sha256": "e5330145a8f239afc2daf44e081048f1bbeedead34bc2f72aff79675a875552a"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/src/benchmark_adapters/environment.py",
+      "bytes": 13838,
+      "sha256": "1e1463e8f57180c780360d8bb685ffa81a1744a8a46ef2d7d533dc7af06a049d"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/src/benchmark_adapters/evaluation.py",
+      "bytes": 6556,
+      "sha256": "acd8c9d91e316362ed966e25b831c7508e48e231928fd0a6e62ec33853bc228a"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/src/benchmark_adapters/hotpot_rpc.py",
+      "bytes": 7163,
+      "sha256": "82516bbf0cad5a39db86e160526b37f9a8c3636452f2733d62bbe7af64e83d25"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/src/benchmark_adapters/images.py",
+      "bytes": 3955,
+      "sha256": "d7b8bd3da9f80758ce6f596461496b596ee78fc89476ef23e48fbcf8ff9fa59a"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/src/benchmark_adapters/live_web.py",
+      "bytes": 13292,
+      "sha256": "e869cd51fb71e83fc8054d9873e3254e210a5c3c76ee3a6df1c7bb709c8fb0ec"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/src/benchmark_adapters/local_environment.py",
+      "bytes": 8756,
+      "sha256": "f14278bcb3475eefdd6d360089d6c832b47a59bf6fd83ce9667078bed385ae3b"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/src/benchmark_adapters/native_browsecomp.py",
+      "bytes": 4836,
+      "sha256": "a5e4424e53b457a890e3e641973b713e46509dd12a3546cb4e973a8d86e431c6"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/src/benchmark_adapters/parallel_collection.py",
+      "bytes": 22953,
+      "sha256": "16a2fbbf59a37006e7ba3534f2b2d59dfa89b3bd390a1f22202e0bd490354582"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/src/benchmark_adapters/parallel_runtime.py",
+      "bytes": 8666,
+      "sha256": "6d83ed56a27895b514e3008cd4bd1b23643cf11f53bdd338c3a90c6fafa934fb"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/src/benchmark_adapters/prediction_export.py",
+      "bytes": 29896,
+      "sha256": "fa2a2bf0fe5e834841dc078d7b3d2b93e894a214b5ec717d475ccedd6044579d"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/src/benchmark_adapters/predictor_integration.py",
+      "bytes": 10295,
+      "sha256": "c9248b65301ccb2a4987881356ddedfac27af75d14df9aeb8b22f769add874e4"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/src/benchmark_adapters/research_splits.py",
+      "bytes": 7790,
+      "sha256": "3d93f891226e95ed7545ca6d39fd16529a324ad6bab05b0423d7f0f44ad2f955"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/src/benchmark_adapters/retrieval.py",
+      "bytes": 18147,
+      "sha256": "1d4830618ce84f800fff53628594642884f298ee3bbd95be5e5a0af3172ed8a5"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/src/benchmark_adapters/retrieval_corpus.py",
+      "bytes": 3856,
+      "sha256": "736a3f00414d8a94f0c85dade3183c42662a52062a2075392cedebbc7a56439c"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/src/benchmark_adapters/retrieval_evaluation.py",
+      "bytes": 2645,
+      "sha256": "99013873c32264d25fee3363e8570fc7614afde493663691f3bea27d9b9bf80d"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/src/benchmark_adapters/retrieval_tools.py",
+      "bytes": 9487,
+      "sha256": "6710bb977300657a12bb29b536a18868cc5724289de60cb81d91f629a7c52b10"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/src/benchmark_adapters/runner.py",
+      "bytes": 13132,
+      "sha256": "11e7c88b633d7d22ee3909a5c34f24d74bfa588a8d84a9b0fde49dfaad370007"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/src/benchmark_adapters/sdk_bridge.py",
+      "bytes": 8815,
+      "sha256": "0aca5961c1e5c1faf4c78676237482a8f6123628da4824cb112d708915ccfb3b"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/src/benchmark_adapters/sdk_provenance.py",
+      "bytes": 1858,
+      "sha256": "fbdd98c1c36f17061dd9d14f1f546bbe06562bd90302ae4f4831ef3350ecbed2"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/src/benchmark_adapters/swe.py",
+      "bytes": 4403,
+      "sha256": "e386bcb0b9edfee0249b8338d1c49d35efb5027c17d209a1b1cd450be5158af2"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/src/benchmark_adapters/tracing.py",
+      "bytes": 11000,
+      "sha256": "02bc2902bc8a3804a1c70dfb73255e9b1ea215f1acbad15b1bc11dd14a4a6352"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/tests/test_adapter_registry.py",
+      "bytes": 4186,
+      "sha256": "49c1595d3cb851c7eb8b55162cc760ab9f1a64d2fb2184e96ec45aa38a82e836"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/tests/test_cleanup_deadline.py",
+      "bytes": 1893,
+      "sha256": "68ffe42397fa82208907c687b149f7b3fb3c34c0a9aa2faf39511953f48c5d7f"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/tests/test_cli_evaluation.py",
+      "bytes": 8928,
+      "sha256": "7cb9960cebbae2eebf7b5076ddf3c5aa5d794d2012a259fe07c6abc3ee167bd4"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/tests/test_code_tasks.py",
+      "bytes": 7731,
+      "sha256": "602240e16bfb4dcec407315bf47a9d7ed5cdd55caf716a593b292c3ac8a94503"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/tests/test_collection_entrypoint.py",
+      "bytes": 6158,
+      "sha256": "a737a83c208376590aaf510d312c7abbedc464fdd8217dcfa8b0aee1c177f183"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/tests/test_docker_contract.py",
+      "bytes": 9890,
+      "sha256": "ccb4a616a0301918ffa0bc092ae616a0d9ab352831eeb6e2e5f0a731dc0cb0ba"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/tests/test_execution.py",
+      "bytes": 5184,
+      "sha256": "1a95564013757d5d35592f3d290f6523dc36d7898d44ce978291421c5d14514b"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/tests/test_hotpot_rpc.py",
+      "bytes": 4122,
+      "sha256": "27eb1931ee28a1bff0ef220f388a9f76635070cedb9ffdf9f4c78d46ae4cc86f"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/tests/test_live_docker_isolation.py",
+      "bytes": 2361,
+      "sha256": "14de15df565e1249e2c2ea1c9151bef017625d83018aefcd35ad6e23e381a88b"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/tests/test_live_web.py",
+      "bytes": 6958,
+      "sha256": "f887350d5a549a27c12ea5755dde0235061c74a1955264a88d24725938ebcd47"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/tests/test_local_environment.py",
+      "bytes": 3147,
+      "sha256": "3337c2fe0c5ce2378432d8278a7ae3ad429c605441a2174e5d8d9d5ebf6de09b"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/tests/test_native_browsecomp.py",
+      "bytes": 2933,
+      "sha256": "e06b0e2f873f89461733fce17ab33603e25eb6e854b8c6cb49da554e6c96f784"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/tests/test_parallel_collection.py",
+      "bytes": 11983,
+      "sha256": "4c570ed7a3283b9ab73f730334163d927b670a4ea7d8d4313c087e691c35fbbb"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/tests/test_parallel_runtime.py",
+      "bytes": 11901,
+      "sha256": "ac8aed5cea8a4755414cce5c2eedf7c9d9ff08c1c6727cf83e46c716399c746c"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/tests/test_parallel_sdk.py",
+      "bytes": 17972,
+      "sha256": "9d7cf4b9e2f7792b9fe3e96bd29f3549501ce210b160660f1483a32c8443b76c"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/tests/test_prediction_export.py",
+      "bytes": 29886,
+      "sha256": "5834404286c0ec0ee3d4461aa51f2b34eb238847e847a76eb86c637ee17f3d86"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/tests/test_research_splits.py",
+      "bytes": 11739,
+      "sha256": "0a54056179bba91a9c9ec78b4682c79e15270a7355bbf6ad014653b5ebba7f28"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/tests/test_retrieval.py",
+      "bytes": 2488,
+      "sha256": "df503a182caf34054c40b916b608263a47a713add6688566b75408a3f1b48ec3"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/tests/test_retrieval_corpus.py",
+      "bytes": 5253,
+      "sha256": "b73f3b9bde7d2ead4d8e5109ed5aab8a4a404444cc0d2568c5b8685e9d56a37b"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/tests/test_retrieval_index_identity.py",
+      "bytes": 2940,
+      "sha256": "712078b6bceed3f5f848f64878b3ba3f41594fa555e6fe13af57e492add558be"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/tests/test_retrieval_tools.py",
+      "bytes": 2393,
+      "sha256": "1f40b48c2305cea2f92887345b368da8764f5b646aa9a8a02b18b99b09c3c042"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/tests/test_sdk_runner.py",
+      "bytes": 11627,
+      "sha256": "a91f1c48d69a1fe995c4d7885f3165d24c440f8a8c165019fdf571fecc4537d5"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/tests/test_swe_contract.py",
+      "bytes": 7448,
+      "sha256": "08ce9bc45782518561a5fadbd127c32cb7a13545850974f18118eff951212a3b"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/vendor/hotpot/LICENSE.txt",
+      "bytes": 11338,
+      "sha256": "9c264489d021e5905c0544f75e292c63f78dca56acd2aec395dd36dcc41940c7"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/vendor/hotpot/README.md",
+      "bytes": 385,
+      "sha256": "953e9aeeb666e46be42157bce7a2bd02c1ae52b2df6ad906fc59d1e1255616b6"
+    },
+    {
+      "path": "adapters/openhands_current/benchmarks/flowpilot/vendor/hotpot/hotpot_evaluate_v1.py",
+      "bytes": 4257,
+      "sha256": "d35fc91a6db21d791dbdda11daf3856e9359f5701d54e3eefba20d88fecc02c0"
+    },
+    {
+      "path": "adapters/openhands_current/tracked-changes.patch",
+      "bytes": 31782,
+      "sha256": "0dd87245f788eb4314ae2b7d4ab2bd9107858de6f6ea624807ea6ebb412f8b78"
+    },
+    {
+      "path": "adapters/openhands_legacy/LICENSE",
+      "bytes": 1079,
+      "sha256": "14a9b631c658eee682c6c2973525fbdf808c3457176bc47513052c559cc5ce86"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/CHANGES.md",
+      "bytes": 3985,
+      "sha256": "d1e1a73f2c63dfb372e85a01cac07c927ed125bc39901156ee81c2b2de3be651"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/README.md",
+      "bytes": 8384,
+      "sha256": "8b764927c0e84fec84d00f950e7a3116562a038c486a6095e21aed14a09bf274"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/pyproject.toml",
+      "bytes": 791,
+      "sha256": "6f02f2ee0c3a90b164773724a1429be69c80fec4a75f54b90da1df73aecfc205"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/src/benchmark_adapters/__init__.py",
+      "bytes": 92,
+      "sha256": "4f92db8e59a666228186c27707270c1aadae52d1744cbc09ced4b217ba82d7bf"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/src/benchmark_adapters/__main__.py",
+      "bytes": 48,
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/src/benchmark_adapters/adapter_registry.py",
+      "bytes": 3474,
+      "sha256": "13d1f58f52b22cc6f13ac4332b1cf60b93d27f8f46fdc94147fcf2fd1f95c48d"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/src/benchmark_adapters/cli.py",
+      "bytes": 16326,
+      "sha256": "f1e8171551266f49158cb1005cd626beabd2e0551a8599bde0eb7e75e104c3f3"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/src/benchmark_adapters/code_audit.py",
+      "bytes": 9289,
+      "sha256": "60298efee2a4f2bdf945548a3d3c59e75b5f0d90da7ecef05665b8edb6379c96"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/src/benchmark_adapters/code_campaign.py",
+      "bytes": 20518,
+      "sha256": "662f6487248d8cea0bed51660a222338b38e322a965964bcef521754afb90768"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/src/benchmark_adapters/code_collection.py",
+      "bytes": 6863,
+      "sha256": "c273e007ce779e9a05c3b949001fd7b560b2c53c87afc2e279b9101ac90a838b"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/src/benchmark_adapters/code_evaluation.py",
+      "bytes": 4104,
+      "sha256": "9e79aaa5ad71118e3e55be448fd3441fdc9fc8cef5c0f3d623eee2f5cd317f25"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/src/benchmark_adapters/code_tasks.py",
+      "bytes": 13365,
+      "sha256": "c30eea1991f20dadae53397a762d1b26567f089a6c18f51abd4d9307bf65667b"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/src/benchmark_adapters/config.py",
+      "bytes": 9745,
+      "sha256": "3c018c5e952a7b07ea5578c62eac1d8bed92bf7189b0d50bf26d374fa0a5b3d7"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/src/benchmark_adapters/contracts.py",
+      "bytes": 598,
+      "sha256": "24092481e32a05b08ee67472c18e8a2ccdd3e294010c93cc765e03f0f2a0d1c6"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/src/benchmark_adapters/controller_paths.py",
+      "bytes": 1791,
+      "sha256": "73c9e807a342072b90bddd75e139306392dee085c077dd6703c7c29e6140b57e"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/src/benchmark_adapters/data/lcb_release_v6.lock.json",
+      "bytes": 778,
+      "sha256": "e5330145a8f239afc2daf44e081048f1bbeedead34bc2f72aff79675a875552a"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/src/benchmark_adapters/environment.py",
+      "bytes": 13838,
+      "sha256": "1e1463e8f57180c780360d8bb685ffa81a1744a8a46ef2d7d533dc7af06a049d"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/src/benchmark_adapters/evaluation.py",
+      "bytes": 6556,
+      "sha256": "acd8c9d91e316362ed966e25b831c7508e48e231928fd0a6e62ec33853bc228a"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/src/benchmark_adapters/hotpot_rpc.py",
+      "bytes": 7163,
+      "sha256": "82516bbf0cad5a39db86e160526b37f9a8c3636452f2733d62bbe7af64e83d25"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/src/benchmark_adapters/images.py",
+      "bytes": 3955,
+      "sha256": "d7b8bd3da9f80758ce6f596461496b596ee78fc89476ef23e48fbcf8ff9fa59a"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/src/benchmark_adapters/local_environment.py",
+      "bytes": 8756,
+      "sha256": "f14278bcb3475eefdd6d360089d6c832b47a59bf6fd83ce9667078bed385ae3b"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/src/benchmark_adapters/native_browsecomp.py",
+      "bytes": 4697,
+      "sha256": "c58a4d73187db141d814cea8d03721ff182e5e16aa75233303f4af6b36d079e5"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/src/benchmark_adapters/parallel_collection.py",
+      "bytes": 22953,
+      "sha256": "16a2fbbf59a37006e7ba3534f2b2d59dfa89b3bd390a1f22202e0bd490354582"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/src/benchmark_adapters/parallel_runtime.py",
+      "bytes": 8666,
+      "sha256": "6d83ed56a27895b514e3008cd4bd1b23643cf11f53bdd338c3a90c6fafa934fb"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/src/benchmark_adapters/prediction_export.py",
+      "bytes": 29896,
+      "sha256": "fa2a2bf0fe5e834841dc078d7b3d2b93e894a214b5ec717d475ccedd6044579d"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/src/benchmark_adapters/research_splits.py",
+      "bytes": 7790,
+      "sha256": "3d93f891226e95ed7545ca6d39fd16529a324ad6bab05b0423d7f0f44ad2f955"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/src/benchmark_adapters/retrieval.py",
+      "bytes": 17508,
+      "sha256": "d3e9920bd4a84b9c8f27cda38c02a4fd442a520bafb41238565f7adb4fb98fb2"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/src/benchmark_adapters/retrieval_corpus.py",
+      "bytes": 3856,
+      "sha256": "736a3f00414d8a94f0c85dade3183c42662a52062a2075392cedebbc7a56439c"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/src/benchmark_adapters/retrieval_evaluation.py",
+      "bytes": 2645,
+      "sha256": "99013873c32264d25fee3363e8570fc7614afde493663691f3bea27d9b9bf80d"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/src/benchmark_adapters/retrieval_tools.py",
+      "bytes": 8207,
+      "sha256": "dd059f2cf801e2086b9c0777f6a7c04719d4716e9d61c3a22a07bfa5f5412cb2"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/src/benchmark_adapters/runner.py",
+      "bytes": 11799,
+      "sha256": "d40ceba3298f700306a1bd0fbee40248ae567cbaedc604bf5d0b9c9dcd73c060"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/src/benchmark_adapters/sdk_bridge.py",
+      "bytes": 8815,
+      "sha256": "0aca5961c1e5c1faf4c78676237482a8f6123628da4824cb112d708915ccfb3b"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/src/benchmark_adapters/sdk_provenance.py",
+      "bytes": 1858,
+      "sha256": "fbdd98c1c36f17061dd9d14f1f546bbe06562bd90302ae4f4831ef3350ecbed2"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/src/benchmark_adapters/swe.py",
+      "bytes": 4403,
+      "sha256": "e386bcb0b9edfee0249b8338d1c49d35efb5027c17d209a1b1cd450be5158af2"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/src/benchmark_adapters/tracing.py",
+      "bytes": 9745,
+      "sha256": "726b1a7770da4d41007bb6a9cc6f576d76b5e4261b1674f1bb8bd4485a320f52"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/tests/test_adapter_registry.py",
+      "bytes": 4186,
+      "sha256": "49c1595d3cb851c7eb8b55162cc760ab9f1a64d2fb2184e96ec45aa38a82e836"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/tests/test_cleanup_deadline.py",
+      "bytes": 1893,
+      "sha256": "68ffe42397fa82208907c687b149f7b3fb3c34c0a9aa2faf39511953f48c5d7f"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/tests/test_cli_evaluation.py",
+      "bytes": 8928,
+      "sha256": "7cb9960cebbae2eebf7b5076ddf3c5aa5d794d2012a259fe07c6abc3ee167bd4"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/tests/test_code_tasks.py",
+      "bytes": 7731,
+      "sha256": "602240e16bfb4dcec407315bf47a9d7ed5cdd55caf716a593b292c3ac8a94503"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/tests/test_collection_entrypoint.py",
+      "bytes": 6158,
+      "sha256": "a737a83c208376590aaf510d312c7abbedc464fdd8217dcfa8b0aee1c177f183"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/tests/test_docker_contract.py",
+      "bytes": 9890,
+      "sha256": "ccb4a616a0301918ffa0bc092ae616a0d9ab352831eeb6e2e5f0a731dc0cb0ba"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/tests/test_execution.py",
+      "bytes": 5184,
+      "sha256": "1a95564013757d5d35592f3d290f6523dc36d7898d44ce978291421c5d14514b"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/tests/test_hotpot_rpc.py",
+      "bytes": 4122,
+      "sha256": "27eb1931ee28a1bff0ef220f388a9f76635070cedb9ffdf9f4c78d46ae4cc86f"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/tests/test_live_docker_isolation.py",
+      "bytes": 2361,
+      "sha256": "14de15df565e1249e2c2ea1c9151bef017625d83018aefcd35ad6e23e381a88b"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/tests/test_local_environment.py",
+      "bytes": 3147,
+      "sha256": "3337c2fe0c5ce2378432d8278a7ae3ad429c605441a2174e5d8d9d5ebf6de09b"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/tests/test_native_browsecomp.py",
+      "bytes": 2933,
+      "sha256": "e06b0e2f873f89461733fce17ab33603e25eb6e854b8c6cb49da554e6c96f784"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/tests/test_parallel_collection.py",
+      "bytes": 11983,
+      "sha256": "4c570ed7a3283b9ab73f730334163d927b670a4ea7d8d4313c087e691c35fbbb"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/tests/test_parallel_runtime.py",
+      "bytes": 11901,
+      "sha256": "ac8aed5cea8a4755414cce5c2eedf7c9d9ff08c1c6727cf83e46c716399c746c"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/tests/test_parallel_sdk.py",
+      "bytes": 17972,
+      "sha256": "9d7cf4b9e2f7792b9fe3e96bd29f3549501ce210b160660f1483a32c8443b76c"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/tests/test_prediction_export.py",
+      "bytes": 29886,
+      "sha256": "5834404286c0ec0ee3d4461aa51f2b34eb238847e847a76eb86c637ee17f3d86"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/tests/test_research_splits.py",
+      "bytes": 11739,
+      "sha256": "0a54056179bba91a9c9ec78b4682c79e15270a7355bbf6ad014653b5ebba7f28"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/tests/test_retrieval.py",
+      "bytes": 2488,
+      "sha256": "df503a182caf34054c40b916b608263a47a713add6688566b75408a3f1b48ec3"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/tests/test_retrieval_corpus.py",
+      "bytes": 5253,
+      "sha256": "b73f3b9bde7d2ead4d8e5109ed5aab8a4a404444cc0d2568c5b8685e9d56a37b"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/tests/test_retrieval_index_identity.py",
+      "bytes": 2940,
+      "sha256": "712078b6bceed3f5f848f64878b3ba3f41594fa555e6fe13af57e492add558be"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/tests/test_retrieval_tools.py",
+      "bytes": 2393,
+      "sha256": "1f40b48c2305cea2f92887345b368da8764f5b646aa9a8a02b18b99b09c3c042"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/tests/test_sdk_runner.py",
+      "bytes": 11627,
+      "sha256": "a91f1c48d69a1fe995c4d7885f3165d24c440f8a8c165019fdf571fecc4537d5"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/tests/test_swe_contract.py",
+      "bytes": 7448,
+      "sha256": "08ce9bc45782518561a5fadbd127c32cb7a13545850974f18118eff951212a3b"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/vendor/hotpot/LICENSE.txt",
+      "bytes": 11338,
+      "sha256": "9c264489d021e5905c0544f75e292c63f78dca56acd2aec395dd36dcc41940c7"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/vendor/hotpot/README.md",
+      "bytes": 385,
+      "sha256": "953e9aeeb666e46be42157bce7a2bd02c1ae52b2df6ad906fc59d1e1255616b6"
+    },
+    {
+      "path": "adapters/openhands_legacy/benchmarks/flowpilot/vendor/hotpot/hotpot_evaluate_v1.py",
+      "bytes": 4257,
+      "sha256": "d35fc91a6db21d791dbdda11daf3856e9359f5701d54e3eefba20d88fecc02c0"
+    },
+    {
+      "path": "adapters/openhands_legacy/tracked-changes.patch",
+      "bytes": 14747,
+      "sha256": "b22d6c886cd88a221f04e5ac3af381bb5cd845b344b3054f3379639b3afb0129"
+    },
+    {
+      "path": "configs/predictor/default.json",
+      "bytes": 391,
+      "sha256": "d6e4a515990b55175478104e1ccc6d7988eef0e2d93866fe096a0a8020a2e326"
+    },
+    {
+      "path": "configs/predictor/shared-data1.example.json",
+      "bytes": 932,
+      "sha256": "b2fd43b67ccd33c389b2873748a25bcf82767722822b35688a683278812485ba"
+    },
+    {
+      "path": "docs/GITHUB_HANDOFF.md",
+      "bytes": 13217,
+      "sha256": "aded90ed24f7d382ff3b336865efd56751229f217f1ebbf17b6e27e9f4bd42ec"
+    },
+    {
+      "path": "flowpilot_predictor_bridge/README.rst",
+      "bytes": 13790,
+      "sha256": "9ee834266ffde3d8939210b5c59786334b3e85a50c536a530dd6a65919a476b1"
+    },
+    {
+      "path": "flowpilot_predictor_bridge/__init__.py",
+      "bytes": 834,
+      "sha256": "933a426234ae0c7edf61672da671bbe06a97d1ae288daa2d3a09deb6a5bb2745"
+    },
+    {
+      "path": "flowpilot_predictor_bridge/artifact.py",
+      "bytes": 2956,
+      "sha256": "834fa98d828baa75d2423610da9501071f82427e78cf068fd697aee8b8804a89"
+    },
+    {
+      "path": "flowpilot_predictor_bridge/context.py",
+      "bytes": 3184,
+      "sha256": "774a4ba94acc674e5c78d674844bbd5e072f945dce3af08414f9cf35ec96ca48"
+    },
+    {
+      "path": "flowpilot_predictor_bridge/contracts.py",
+      "bytes": 3617,
+      "sha256": "878befe40f6a670a2c3956fd4e9d033adf66c3936a7f99a3253dae7b49ea79f3"
+    },
+    {
+      "path": "flowpilot_predictor_bridge/flowpilot.py",
+      "bytes": 3124,
+      "sha256": "128be5d9a7040c6ec254630190c646790cf9be3a55f9662034c4f1b8e0a5bfeb"
+    },
+    {
+      "path": "flowpilot_predictor_bridge/framework.py",
+      "bytes": 11200,
+      "sha256": "7be462803924242245e6484c71a4bf890ca33b7e420b58c3fb037c72c0f72b75"
+    },
+    {
+      "path": "flowpilot_predictor_bridge/launch_gateway.py",
+      "bytes": 2175,
+      "sha256": "5aeee3ff1884cb367dd7613b7bbd9a3ad700601e0a9ebec807866603c4ddae5d"
+    },
+    {
+      "path": "flowpilot_predictor_bridge/online.py",
+      "bytes": 2165,
+      "sha256": "01aa9e144948dd3f1d7bc3f26a6c223ec6cfbc09d1cc850e9ae79a3dc5fe3102"
+    },
+    {
+      "path": "flowpilot_predictor_bridge/openhands.py",
+      "bytes": 6548,
+      "sha256": "b5bc87ea155b7802953ce32ae9ef1da092e7a16eb876e46583a88fb4aaaa5397"
+    },
+    {
+      "path": "flowpilot_predictor_bridge/quantile_online.py",
+      "bytes": 5782,
+      "sha256": "b7dd65b9f3100ec387caa4a9858cac1a33aac60d9bd380f7b3478a8b301039b5"
+    },
+    {
+      "path": "flowpilot_predictor_bridge/runtime.py",
+      "bytes": 22184,
+      "sha256": "44eb6ae73823030fb5bd735ca2761b9e9be82a0b322801992070a918cc930fdc"
+    },
+    {
+      "path": "flowpilot_predictor_bridge/serve.py",
+      "bytes": 1358,
+      "sha256": "a41f1e12ebff612cdc931d5852262ead49ce38f6e7ea19a7e56234c30fb7d66a"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/pyproject.toml",
+      "bytes": 791,
+      "sha256": "6f02f2ee0c3a90b164773724a1429be69c80fec4a75f54b90da1df73aecfc205"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/__init__.py",
+      "bytes": 92,
+      "sha256": "4f92db8e59a666228186c27707270c1aadae52d1744cbc09ced4b217ba82d7bf"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/__main__.py",
+      "bytes": 48,
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/adapter_registry.py",
+      "bytes": 3474,
+      "sha256": "13d1f58f52b22cc6f13ac4332b1cf60b93d27f8f46fdc94147fcf2fd1f95c48d"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/cli.py",
+      "bytes": 16326,
+      "sha256": "f1e8171551266f49158cb1005cd626beabd2e0551a8599bde0eb7e75e104c3f3"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/code_audit.py",
+      "bytes": 9289,
+      "sha256": "60298efee2a4f2bdf945548a3d3c59e75b5f0d90da7ecef05665b8edb6379c96"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/code_campaign.py",
+      "bytes": 20518,
+      "sha256": "662f6487248d8cea0bed51660a222338b38e322a965964bcef521754afb90768"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/code_collection.py",
+      "bytes": 6863,
+      "sha256": "c273e007ce779e9a05c3b949001fd7b560b2c53c87afc2e279b9101ac90a838b"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/code_evaluation.py",
+      "bytes": 4104,
+      "sha256": "9e79aaa5ad71118e3e55be448fd3441fdc9fc8cef5c0f3d623eee2f5cd317f25"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/code_tasks.py",
+      "bytes": 13252,
+      "sha256": "cae77740ac6abcf5c6f3c0294627ee85387431812a183d38df52fdd5fb634346"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/config.py",
+      "bytes": 9162,
+      "sha256": "351567643e9372f325aa4b66c7b09d0cfd9d8381276de0d8c264207f1d3851d8"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/contracts.py",
+      "bytes": 598,
+      "sha256": "24092481e32a05b08ee67472c18e8a2ccdd3e294010c93cc765e03f0f2a0d1c6"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/controller_paths.py",
+      "bytes": 1791,
+      "sha256": "73c9e807a342072b90bddd75e139306392dee085c077dd6703c7c29e6140b57e"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/environment.py",
+      "bytes": 13838,
+      "sha256": "1e1463e8f57180c780360d8bb685ffa81a1744a8a46ef2d7d533dc7af06a049d"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/evaluation.py",
+      "bytes": 6556,
+      "sha256": "acd8c9d91e316362ed966e25b831c7508e48e231928fd0a6e62ec33853bc228a"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/images.py",
+      "bytes": 3955,
+      "sha256": "d7b8bd3da9f80758ce6f596461496b596ee78fc89476ef23e48fbcf8ff9fa59a"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/local_environment.py",
+      "bytes": 8756,
+      "sha256": "f14278bcb3475eefdd6d360089d6c832b47a59bf6fd83ce9667078bed385ae3b"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/native_browsecomp.py",
+      "bytes": 4062,
+      "sha256": "4af310d9145592430fe8d6f7e644df2a7723aaa52f45dcaa23199ec12ca5f282"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/parallel_collection.py",
+      "bytes": 22609,
+      "sha256": "fabff586452853e3c6497bb806dadcf67605bcc017be87bc8b4266885d6e640c"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/parallel_runtime.py",
+      "bytes": 8666,
+      "sha256": "6d83ed56a27895b514e3008cd4bd1b23643cf11f53bdd338c3a90c6fafa934fb"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/prediction_export.py",
+      "bytes": 29383,
+      "sha256": "05d1cdfbeeca2790420038e910f8aa9578d2722959665ff319a37847b2f8eb52"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/research_splits.py",
+      "bytes": 7790,
+      "sha256": "3d93f891226e95ed7545ca6d39fd16529a324ad6bab05b0423d7f0f44ad2f955"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/retrieval.py",
+      "bytes": 17508,
+      "sha256": "d3e9920bd4a84b9c8f27cda38c02a4fd442a520bafb41238565f7adb4fb98fb2"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/retrieval_corpus.py",
+      "bytes": 3856,
+      "sha256": "736a3f00414d8a94f0c85dade3183c42662a52062a2075392cedebbc7a56439c"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/retrieval_evaluation.py",
+      "bytes": 2645,
+      "sha256": "99013873c32264d25fee3363e8570fc7614afde493663691f3bea27d9b9bf80d"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/retrieval_tools.py",
+      "bytes": 7437,
+      "sha256": "f1d9c0ee29e4a1b58b288a1f69005c84e8c4679453eb891f939cdf93a9c7fb02"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/runner.py",
+      "bytes": 11741,
+      "sha256": "a5f2e1bb2b78c716c747581c87649ab8d222b7b67a985ccb0e31b0f9559f7f66"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/sdk_bridge.py",
+      "bytes": 8815,
+      "sha256": "0aca5961c1e5c1faf4c78676237482a8f6123628da4824cb112d708915ccfb3b"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/sdk_provenance.py",
+      "bytes": 1858,
+      "sha256": "fbdd98c1c36f17061dd9d14f1f546bbe06562bd90302ae4f4831ef3350ecbed2"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/swe.py",
+      "bytes": 4403,
+      "sha256": "e386bcb0b9edfee0249b8338d1c49d35efb5027c17d209a1b1cd450be5158af2"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/repos/Openhands-software-agent-sdk/benchmarks/flowpilot/src/benchmark_adapters/tracing.py",
+      "bytes": 9745,
+      "sha256": "726b1a7770da4d41007bb6a9cc6f576d76b5e4261b1674f1bb8bd4485a320f52"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/runtime/browsecomp-native/requirements-cpu.lock",
+      "bytes": 87614,
+      "sha256": "eea44c12257eb70d687cef8d541c4bec25231410b840301cbb9fe6985a556832"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/runtime/browsecomp-native/serve.py",
+      "bytes": 2680,
+      "sha256": "0152d5f30c8ea33854bb73029b319695defad2ef945ab7fe66416c56585af8d3"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/scripts/prepare_hotpot_corpus.py",
+      "bytes": 3073,
+      "sha256": "f7460f7be1665452db91ca0e35831bf3115e189f3a156233c645fa32761e33d2"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/scripts/serve_browsecomp_native.sh",
+      "bytes": 588,
+      "sha256": "ca3cac35c4ec06b4bf3f5441bde216ccd412f6092abdb8c71c8fd2b138fcab44"
+    },
+    {
+      "path": "handoff/remote-corpus-20260922/scripts/smoke_remote_corpus.py",
+      "bytes": 8203,
+      "sha256": "b029db80a0605f3a2736ef70b433fe4567dc3ff6bc877fd80b55c60f9a7f5c42"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/adapter/pyproject.toml",
+      "bytes": 776,
+      "sha256": "8253116ba06ea2e26f07fefbef0c7aad8c7246f03b400fab2796a31c068a6f59"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/adapter/src/benchmark_adapters/__init__.py",
+      "bytes": 92,
+      "sha256": "4f92db8e59a666228186c27707270c1aadae52d1744cbc09ced4b217ba82d7bf"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/adapter/src/benchmark_adapters/__main__.py",
+      "bytes": 48,
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/adapter/src/benchmark_adapters/browsecomp_collection.py",
+      "bytes": 39639,
+      "sha256": "714942b045379ae7880befb34d5a26e4f75910a30c72a7fff0b654bfd096b04d"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/adapter/src/benchmark_adapters/cli.py",
+      "bytes": 16166,
+      "sha256": "625d05f7370f39fdd15f25f666fab15a4e0dce897c88496ea3bc183df8b8918a"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/adapter/src/benchmark_adapters/code_audit.py",
+      "bytes": 9364,
+      "sha256": "ae6b46b3ef35bc67c243f76df83854ee436573696af98aaeb15b816f3d47860a"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/adapter/src/benchmark_adapters/code_campaign.py",
+      "bytes": 20518,
+      "sha256": "662f6487248d8cea0bed51660a222338b38e322a965964bcef521754afb90768"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/adapter/src/benchmark_adapters/code_collection.py",
+      "bytes": 11940,
+      "sha256": "cc58da4f87266ba190a78278abbd9b24186509b33c3fdab56e812a2bca0e29ab"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/adapter/src/benchmark_adapters/code_evaluation.py",
+      "bytes": 4104,
+      "sha256": "9e79aaa5ad71118e3e55be448fd3441fdc9fc8cef5c0f3d623eee2f5cd317f25"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/adapter/src/benchmark_adapters/code_tasks.py",
+      "bytes": 13790,
+      "sha256": "9f96fe63caeb5572f0bc318e9e1b64b4b2269032437eace08b327bf5a2e20112"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/adapter/src/benchmark_adapters/collection_runner.py",
+      "bytes": 19922,
+      "sha256": "246bd08eaef902c14bbd86d2a123bf272af969f6546ede4a8339d4da7562e17f"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/adapter/src/benchmark_adapters/config.py",
+      "bytes": 9424,
+      "sha256": "5877abea57efba5d39f7c9d21939782abc126e6bd59aa33b78577a74159fa436"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/adapter/src/benchmark_adapters/contracts.py",
+      "bytes": 598,
+      "sha256": "24092481e32a05b08ee67472c18e8a2ccdd3e294010c93cc765e03f0f2a0d1c6"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/adapter/src/benchmark_adapters/controller_paths.py",
+      "bytes": 1503,
+      "sha256": "5e2414788fa582e75ea94cd6e76626e29aa8f3d3476fe883d1528fe83a1341e1"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/adapter/src/benchmark_adapters/environment.py",
+      "bytes": 13838,
+      "sha256": "1e1463e8f57180c780360d8bb685ffa81a1744a8a46ef2d7d533dc7af06a049d"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/adapter/src/benchmark_adapters/evaluation.py",
+      "bytes": 6556,
+      "sha256": "acd8c9d91e316362ed966e25b831c7508e48e231928fd0a6e62ec33853bc228a"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/adapter/src/benchmark_adapters/images.py",
+      "bytes": 3955,
+      "sha256": "d7b8bd3da9f80758ce6f596461496b596ee78fc89476ef23e48fbcf8ff9fa59a"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/adapter/src/benchmark_adapters/local_environment.py",
+      "bytes": 8756,
+      "sha256": "f14278bcb3475eefdd6d360089d6c832b47a59bf6fd83ce9667078bed385ae3b"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/adapter/src/benchmark_adapters/prediction_export.py",
+      "bytes": 24176,
+      "sha256": "eb81ca5db9a098f1b69436446e57b671fbde0825eb1d96036ab0325634a39a0d"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/adapter/src/benchmark_adapters/research_splits.py",
+      "bytes": 7790,
+      "sha256": "3d93f891226e95ed7545ca6d39fd16529a324ad6bab05b0423d7f0f44ad2f955"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/adapter/src/benchmark_adapters/retrieval.py",
+      "bytes": 13743,
+      "sha256": "0426fec10b3ce2dc7beb838d03a95c96e21abcd172add027f3012f87fdc99dbb"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/adapter/src/benchmark_adapters/retrieval_tools.py",
+      "bytes": 5403,
+      "sha256": "238bb4988790b4716b329ce5d55c222feacc6ec98a0bb2d616d385ab7d72201a"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/adapter/src/benchmark_adapters/runner.py",
+      "bytes": 12407,
+      "sha256": "692d6c31e401864d35b7056a00da51814161790befc96c11754bfe14f312e617"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/adapter/src/benchmark_adapters/sdk_bridge.py",
+      "bytes": 8976,
+      "sha256": "20b397a171185357b58a1359d167c9662f45bb3481fa578e0c7eaeda42d44016"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/adapter/src/benchmark_adapters/sdk_provenance.py",
+      "bytes": 1858,
+      "sha256": "fbdd98c1c36f17061dd9d14f1f546bbe06562bd90302ae4f4831ef3350ecbed2"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/adapter/src/benchmark_adapters/swe.py",
+      "bytes": 4403,
+      "sha256": "e386bcb0b9edfee0249b8338d1c49d35efb5027c17d209a1b1cd450be5158af2"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/adapter/src/benchmark_adapters/tracing.py",
+      "bytes": 7909,
+      "sha256": "050d1092aa54ecd0e88759b6751e25f1b61524b902acd856cebe6cb4627087c0"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/scripts/collector.sh",
+      "bytes": 1342,
+      "sha256": "d575cc337010990325ac1d8bc11ca3b89f551dca6f4c16bb979ac180a0a5c240"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/scripts/common.sh",
+      "bytes": 1156,
+      "sha256": "e9c5eead360e648c3a7a201f20eea6eee2c49c72f7696b921e05072fdaeda7ba"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/scripts/install_controller.sh",
+      "bytes": 2725,
+      "sha256": "6e271fc471af6d4ea6724c0c7592b688b65056bb20144f64b03362b05ef2435e"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/scripts/launch_two_tmux.sh",
+      "bytes": 1671,
+      "sha256": "a829538a9efbba3ad4e3de322a88e467fe2aa008f597d920ca87e6281357a718"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/scripts/launcher_state.py",
+      "bytes": 14111,
+      "sha256": "27ab224bdd7a96b9af89e122d22d06a50bd7c3603d937201565f50e9a87f7c26"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/scripts/service.sh",
+      "bytes": 1544,
+      "sha256": "60e5a9e7b8e19992b72818aa1ae9c9b2c6e0ed54fb6c78542406108aecc3d54d"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/scripts/stop_owned_service.sh",
+      "bytes": 1364,
+      "sha256": "b40a2a9c2d12dd14fa10b711e24a5fc8be427f975a8ff9ba5233b03ba4cccc1d"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/scripts/test_launcher.py",
+      "bytes": 6910,
+      "sha256": "0d4d5474cf5ca33d22744e1d2f2e9c6b03504fdb35499e3af1d769d67ad96e25"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/tests/test_browsecomp.py",
+      "bytes": 8821,
+      "sha256": "4c2802c0a225ec6fb4524866dc8610277577b490b6797e292cd57d821fbfc180"
+    },
+    {
+      "path": "handoff_reference_20260921/browsecomp/tests/test_collection.py",
+      "bytes": 19124,
+      "sha256": "8d8abe262a9bfafd4450dec46acd94e80aa2d27b0aa9c0fb17ee85533c5aa9af"
+    },
+    {
+      "path": "handoff_reference_20260921/restore_from_markdown.py",
+      "bytes": 3921,
+      "sha256": "4d5fb9ac89d867116fe3d5f76603740caf451f6d3fac91840ddc12871df4ca3f"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/pyproject.toml",
+      "bytes": 776,
+      "sha256": "8253116ba06ea2e26f07fefbef0c7aad8c7246f03b400fab2796a31c068a6f59"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/src/benchmark_adapters/__init__.py",
+      "bytes": 92,
+      "sha256": "4f92db8e59a666228186c27707270c1aadae52d1744cbc09ced4b217ba82d7bf"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/src/benchmark_adapters/__main__.py",
+      "bytes": 48,
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/src/benchmark_adapters/cli.py",
+      "bytes": 16166,
+      "sha256": "625d05f7370f39fdd15f25f666fab15a4e0dce897c88496ea3bc183df8b8918a"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/src/benchmark_adapters/code_audit.py",
+      "bytes": 9364,
+      "sha256": "ae6b46b3ef35bc67c243f76df83854ee436573696af98aaeb15b816f3d47860a"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/src/benchmark_adapters/code_campaign.py",
+      "bytes": 20518,
+      "sha256": "662f6487248d8cea0bed51660a222338b38e322a965964bcef521754afb90768"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/src/benchmark_adapters/code_collection.py",
+      "bytes": 11940,
+      "sha256": "cc58da4f87266ba190a78278abbd9b24186509b33c3fdab56e812a2bca0e29ab"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/src/benchmark_adapters/code_evaluation.py",
+      "bytes": 4104,
+      "sha256": "9e79aaa5ad71118e3e55be448fd3441fdc9fc8cef5c0f3d623eee2f5cd317f25"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/src/benchmark_adapters/code_tasks.py",
+      "bytes": 13790,
+      "sha256": "9f96fe63caeb5572f0bc318e9e1b64b4b2269032437eace08b327bf5a2e20112"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/src/benchmark_adapters/collection_runner.py",
+      "bytes": 19922,
+      "sha256": "246bd08eaef902c14bbd86d2a123bf272af969f6546ede4a8339d4da7562e17f"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/src/benchmark_adapters/config.py",
+      "bytes": 9424,
+      "sha256": "5877abea57efba5d39f7c9d21939782abc126e6bd59aa33b78577a74159fa436"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/src/benchmark_adapters/contracts.py",
+      "bytes": 598,
+      "sha256": "24092481e32a05b08ee67472c18e8a2ccdd3e294010c93cc765e03f0f2a0d1c6"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/src/benchmark_adapters/controller_paths.py",
+      "bytes": 1503,
+      "sha256": "5e2414788fa582e75ea94cd6e76626e29aa8f3d3476fe883d1528fe83a1341e1"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/src/benchmark_adapters/environment.py",
+      "bytes": 13838,
+      "sha256": "1e1463e8f57180c780360d8bb685ffa81a1744a8a46ef2d7d533dc7af06a049d"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/src/benchmark_adapters/evaluation.py",
+      "bytes": 6556,
+      "sha256": "acd8c9d91e316362ed966e25b831c7508e48e231928fd0a6e62ec33853bc228a"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/src/benchmark_adapters/images.py",
+      "bytes": 3955,
+      "sha256": "d7b8bd3da9f80758ce6f596461496b596ee78fc89476ef23e48fbcf8ff9fa59a"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/src/benchmark_adapters/local_environment.py",
+      "bytes": 8756,
+      "sha256": "f14278bcb3475eefdd6d360089d6c832b47a59bf6fd83ce9667078bed385ae3b"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/src/benchmark_adapters/prediction_export.py",
+      "bytes": 24176,
+      "sha256": "eb81ca5db9a098f1b69436446e57b671fbde0825eb1d96036ab0325634a39a0d"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/src/benchmark_adapters/research_splits.py",
+      "bytes": 7790,
+      "sha256": "3d93f891226e95ed7545ca6d39fd16529a324ad6bab05b0423d7f0f44ad2f955"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/src/benchmark_adapters/retrieval.py",
+      "bytes": 13743,
+      "sha256": "0426fec10b3ce2dc7beb838d03a95c96e21abcd172add027f3012f87fdc99dbb"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/src/benchmark_adapters/retrieval_tools.py",
+      "bytes": 4240,
+      "sha256": "5d524b8864a1b8b8a10c3da301212f1f04a7d23cdad8378ad1604462dbe097eb"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/src/benchmark_adapters/runner.py",
+      "bytes": 11151,
+      "sha256": "cefcc299a6eb22f6ac7e62a0d7135e7592e4eda98bdf29ab073c7057f4173eed"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/src/benchmark_adapters/sdk_bridge.py",
+      "bytes": 8976,
+      "sha256": "20b397a171185357b58a1359d167c9662f45bb3481fa578e0c7eaeda42d44016"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/src/benchmark_adapters/sdk_provenance.py",
+      "bytes": 1858,
+      "sha256": "fbdd98c1c36f17061dd9d14f1f546bbe06562bd90302ae4f4831ef3350ecbed2"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/src/benchmark_adapters/swe.py",
+      "bytes": 4403,
+      "sha256": "e386bcb0b9edfee0249b8338d1c49d35efb5027c17d209a1b1cd450be5158af2"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/src/benchmark_adapters/tracing.py",
+      "bytes": 7909,
+      "sha256": "050d1092aa54ecd0e88759b6751e25f1b61524b902acd856cebe6cb4627087c0"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/tests/test_cleanup_deadline.py",
+      "bytes": 1893,
+      "sha256": "68ffe42397fa82208907c687b149f7b3fb3c34c0a9aa2faf39511953f48c5d7f"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/tests/test_cli_evaluation.py",
+      "bytes": 8928,
+      "sha256": "7cb9960cebbae2eebf7b5076ddf3c5aa5d794d2012a259fe07c6abc3ee167bd4"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/tests/test_code_tasks.py",
+      "bytes": 8076,
+      "sha256": "424492202b9d6a3a9cdb31c0fc1b55193469d8073c89bb09e922700ade5ed0a7"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/tests/test_collection_cli.py",
+      "bytes": 11979,
+      "sha256": "735703e0ddd3cba63e4d24693e41c4f95953af0068dc1fbe9282e842b190a86a"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/tests/test_collection_entrypoint.py",
+      "bytes": 6158,
+      "sha256": "a737a83c208376590aaf510d312c7abbedc464fdd8217dcfa8b0aee1c177f183"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/tests/test_collection_recovery.py",
+      "bytes": 8742,
+      "sha256": "038e752df53c6a06f617a1617de397cf082d6438c39d8f689c1f5f4f2d7c9ef7"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/tests/test_docker_contract.py",
+      "bytes": 9890,
+      "sha256": "ccb4a616a0301918ffa0bc092ae616a0d9ab352831eeb6e2e5f0a731dc0cb0ba"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/tests/test_execution.py",
+      "bytes": 5184,
+      "sha256": "1a95564013757d5d35592f3d290f6523dc36d7898d44ce978291421c5d14514b"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/tests/test_live_docker_isolation.py",
+      "bytes": 2361,
+      "sha256": "14de15df565e1249e2c2ea1c9151bef017625d83018aefcd35ad6e23e381a88b"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/tests/test_local_environment.py",
+      "bytes": 3147,
+      "sha256": "3337c2fe0c5ce2378432d8278a7ae3ad429c605441a2174e5d8d9d5ebf6de09b"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/tests/test_prediction_export.py",
+      "bytes": 19831,
+      "sha256": "0f4a9703cb251375a706b28670e100179ce268cc171678b09075a1944e0a0a74"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/tests/test_research_splits.py",
+      "bytes": 11739,
+      "sha256": "0a54056179bba91a9c9ec78b4682c79e15270a7355bbf6ad014653b5ebba7f28"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/tests/test_retrieval.py",
+      "bytes": 2419,
+      "sha256": "605a2485b03add69a00fb307c2e5f2ff5e5889a4ab4dd03005f36f7a74a90d30"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/tests/test_sampling_config.py",
+      "bytes": 8004,
+      "sha256": "7382337a6cd54fed959b76f6154bb6243c627d768b8efabdcece81ce54a1df5f"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/tests/test_sdk_runner.py",
+      "bytes": 11627,
+      "sha256": "a91f1c48d69a1fe995c4d7885f3165d24c440f8a8c165019fdf571fecc4537d5"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/tests/test_swe_contract.py",
+      "bytes": 7448,
+      "sha256": "08ce9bc45782518561a5fadbd127c32cb7a13545850974f18118eff951212a3b"
+    },
+    {
+      "path": "handoff_reference_20260921/source/code_adapter/tests/test_trace_limits.py",
+      "bytes": 2195,
+      "sha256": "da95cebfc863d117777ca10053140a0c90b3fce0f21c437c22df065a18a66e2f"
+    },
+    {
+      "path": "handoff_reference_20260921/upstream/BrowseComp-Plus.LICENSE",
+      "bytes": 1065,
+      "sha256": "a580afd0716e99a1c43fb297a950620a55980305aae9fcd236141101a7e21803"
+    },
+    {
+      "path": "handoff_reference_20260921/upstream/browsecomp_decrypt_dataset.py",
+      "bytes": 4598,
+      "sha256": "d25c7565ee7c1d9c8ec37f610b1f67756db8f8924ac6b8175ffff6d261a0e32d"
+    },
+    {
+      "path": "idea/design.md",
+      "bytes": 59972,
+      "sha256": "2bf076eeaf8a26d577cf93ae27fe03bfc87405c4ca0ebd60c861b8d13521ad8e"
+    },
+    {
+      "path": "idea/框架.md",
+      "bytes": 26100,
+      "sha256": "be205d204b1685240cebc6feb00b455f1cc04758d27e4e1950554ce53a857de0"
+    },
+    {
+      "path": "plans/native27b_calibration_online_20261001/README.md",
+      "bytes": 2854,
+      "sha256": "0d062f70321f98c0365b8c87848569f27b73c1575b7bc816bc614373e0d37afa"
+    },
+    {
+      "path": "plans/native27b_calibration_online_20261001/experiment.py",
+      "bytes": 34622,
+      "sha256": "251f0f7f1224d623cc3386059ac86d0393d63cdc4ecfff53de2a6bf973895871"
+    },
+    {
+      "path": "plans/native27b_calibration_online_20261001/run.sh",
+      "bytes": 1853,
+      "sha256": "1008965b1b88967c2fc304a19d4b9255394bfae10763016fd2a33ce3823a4cbc"
+    },
+    {
+      "path": "plans/native27b_calibration_online_20261001/test_experiment.py",
+      "bytes": 5603,
+      "sha256": "597aa2aba2773243e46c2b163bfd00cbdf62bf3a9f9a8126607efea502c38f4a"
+    },
+    {
+      "path": "plans/native27b_calibration_online_20261001/validate_and_summarize.py",
+      "bytes": 11329,
+      "sha256": "c709ece00ca3d90380c5f4a69d70ca9f318b01653f49f1e14f92dadcba5859ec"
+    },
+    {
+      "path": "plans/native27b_realtime_quantile_20261001/README.md",
+      "bytes": 3623,
+      "sha256": "820f52cbc02b874e141650d0c8f31b6114e0a8f26a153bee7686ee9875b2ccb2"
+    },
+    {
+      "path": "plans/native27b_realtime_quantile_20261001/experiment.py",
+      "bytes": 11074,
+      "sha256": "e5efd29768fcd9f8f2af914909461451fdaade5448dd83225a032ae290e89f87"
+    },
+    {
+      "path": "plans/native27b_realtime_quantile_20261001/smoke_runtime.py",
+      "bytes": 5713,
+      "sha256": "24683292ce6203cd8b89d100621e10ee522e9d1cea4d34018af78d41f422f8dc"
+    },
+    {
+      "path": "plans/native27b_rtt_1077_20261001/README.md",
+      "bytes": 8952,
+      "sha256": "b6c00ece1040561c91c3c68a423d8437187bb97ade25e72c09688cd5bb79a1d8"
+    },
+    {
+      "path": "plans/native27b_rtt_1077_20261001/code/predictor/__init__.py",
+      "bytes": 204,
+      "sha256": "f9226c928301cb7b22eb7a967529bbac13771042a8895e1efa1bc0e4192c0ecc"
+    },
+    {
+      "path": "plans/native27b_rtt_1077_20261001/code/predictor/cli.py",
+      "bytes": 12513,
+      "sha256": "41295f9bb41ce530e28d97adc09402ce7cb6193f5df32b5c709b7538e1eea196"
+    },
+    {
+      "path": "plans/native27b_rtt_1077_20261001/code/predictor/data.py",
+      "bytes": 12542,
+      "sha256": "9babfa2abfb601cc393763db6574af1628c5ea7ea511f26747963a8037514da8"
+    },
+    {
+      "path": "plans/native27b_rtt_1077_20261001/code/predictor/evaluation.py",
+      "bytes": 8642,
+      "sha256": "0dba0ae518d317efdf265dd72211457a52da7cd5f1e502e6810c6de8db64518f"
+    },
+    {
+      "path": "plans/native27b_rtt_1077_20261001/code/predictor/events.py",
+      "bytes": 849,
+      "sha256": "4f14df8440a4001603371c0542b22aca496225073ab232144785e3e759037123"
+    },
+    {
+      "path": "plans/native27b_rtt_1077_20261001/code/predictor/features.py",
+      "bytes": 3180,
+      "sha256": "ac9139e14a0b7d793ace8441d6ddcc1224a2048b0a51db95bfe2c818c61b7d83"
+    },
+    {
+      "path": "plans/native27b_rtt_1077_20261001/code/predictor/models.py",
+      "bytes": 13495,
+      "sha256": "a9adeb2a984c3f50da222cbafce61ad47ac12fbf6a518da352ad51e599babaaa"
+    },
+    {
+      "path": "plans/native27b_rtt_1077_20261001/dependencies.json",
+      "bytes": 143,
+      "sha256": "c336adafbc3373effb1b027b6217754de86f83387e21036f4144f8b375d8134f"
+    },
+    {
+      "path": "plans/native27b_rtt_1077_20261001/latency.py",
+      "bytes": 3449,
+      "sha256": "641362e8bdd3a68fb89c8a3540ba7396ba6d41709938aa9bc7fb71e98cd1b575"
+    },
+    {
+      "path": "plans/native27b_rtt_1077_20261001/model_config.json",
+      "bytes": 391,
+      "sha256": "d6e4a515990b55175478104e1ccc6d7988eef0e2d93866fe096a0a8020a2e326"
+    },
+    {
+      "path": "plans/native27b_rtt_1077_20261001/preflight.py",
+      "bytes": 5279,
+      "sha256": "6082fd2fb560b736446d12eaf0916288b3e2f2eaf7596cbe6aa84e1ba5311b86"
+    },
+    {
+      "path": "plans/native27b_rtt_1077_20261001/prepare_data.py",
+      "bytes": 16133,
+      "sha256": "00a9f133622eb856611e723e8dda793ed637e7d155e710fac95f2d5b637e9a5e"
+    },
+    {
+      "path": "plans/native27b_rtt_1077_20261001/ruff.toml",
+      "bytes": 156,
+      "sha256": "1c2450629cf71aab41ad161f626d06fea005bf85eed20289572feaf4ae9d9957"
+    },
+    {
+      "path": "plans/native27b_rtt_1077_20261001/run.sh",
+      "bytes": 2774,
+      "sha256": "96f409b280bd090b39185ea250625a1991933a9e176101ee9dfa724839fbde63"
+    },
+    {
+      "path": "plans/native27b_rtt_1077_20261001/summarize.py",
+      "bytes": 8685,
+      "sha256": "0921392d0193e9867490da61c7bf0efb9974a19925a5f46a2b06f3de51353daa"
+    },
+    {
+      "path": "plans/native27b_rtt_1077_20261001/test_preparation.py",
+      "bytes": 8737,
+      "sha256": "fdb8a1a63414450818970cea82077b8b4a0ad1b34e97c606b5d150de48540782"
+    },
+    {
+      "path": "plans/native27b_rtt_1077_20261001/workflow.py",
+      "bytes": 12316,
+      "sha256": "b417926e70c7a98a42ca0eff1a7d9e3c4a8fd4cf0b6a018028b9e7df7bbd8ccd"
+    },
+    {
+      "path": "predictor/README.md",
+      "bytes": 21171,
+      "sha256": "3ab0bcf361afd64083474d7d063d9c2b2cd3041b663dee0c436d2fa6b4199486"
+    },
+    {
+      "path": "predictor/__init__.py",
+      "bytes": 204,
+      "sha256": "f9226c928301cb7b22eb7a967529bbac13771042a8895e1efa1bc0e4192c0ecc"
+    },
+    {
+      "path": "predictor/cli.py",
+      "bytes": 12071,
+      "sha256": "0712f83932e7831ed1bb1d24340c9d93466ead15581ac5eb3ad9579f16f091e8"
+    },
+    {
+      "path": "predictor/data.py",
+      "bytes": 12350,
+      "sha256": "6c471442199e86d4aae730810a0f62894f4160f35d0d8d6d885d5881c1abd6ad"
+    },
+    {
+      "path": "predictor/evaluation.py",
+      "bytes": 8642,
+      "sha256": "0dba0ae518d317efdf265dd72211457a52da7cd5f1e502e6810c6de8db64518f"
+    },
+    {
+      "path": "predictor/events.py",
+      "bytes": 849,
+      "sha256": "4f14df8440a4001603371c0542b22aca496225073ab232144785e3e759037123"
+    },
+    {
+      "path": "predictor/features.py",
+      "bytes": 3180,
+      "sha256": "ac9139e14a0b7d793ace8441d6ddcc1224a2048b0a51db95bfe2c818c61b7d83"
+    },
+    {
+      "path": "predictor/models.py",
+      "bytes": 13495,
+      "sha256": "a9adeb2a984c3f50da222cbafce61ad47ac12fbf6a518da352ad51e599babaaa"
+    },
+    {
+      "path": "runtime/browsecomp-native/download_proxy_ranges.py",
+      "bytes": 4296,
+      "sha256": "9fdf0515f2a9d728e2ca1c53311d65bade6c616268382f22066b5276d55629c3"
+    },
+    {
+      "path": "runtime/browsecomp-native/requirements-cpu.lock",
+      "bytes": 87614,
+      "sha256": "eea44c12257eb70d687cef8d541c4bec25231410b840301cbb9fe6985a556832"
+    },
+    {
+      "path": "runtime/browsecomp-native/serve.py",
+      "bytes": 2675,
+      "sha256": "7546c761c9e2c486fda457148768e0923bbb21997cb543f101c307839116ecac"
+    },
+    {
+      "path": "scripts/analyze_predictor_workload.py",
+      "bytes": 10270,
+      "sha256": "0beaf8a283542bbef59212c5dee8ef31c480266abf6323f6401b514adba42f89"
+    },
+    {
+      "path": "scripts/analyze_time_predictor_results.py",
+      "bytes": 22523,
+      "sha256": "a1841b085d5e2ae2dc5c4d9b0c8f57dc50298561b9a2c2b3f554776ed5e3cc0a"
+    },
+    {
+      "path": "scripts/audit_predictor_handoff.py",
+      "bytes": 7194,
+      "sha256": "75957d7ea3516b5591133ddcfd0da77dfa71c30e379c82ae9bb6725808b83c84"
+    },
+    {
+      "path": "scripts/auto_continue_mixed_c4.py",
+      "bytes": 9110,
+      "sha256": "7975f81a39bb5073d5eca966b5d5782533b34fc443f9a5cfea4ca32e7d4b437e"
+    },
+    {
+      "path": "scripts/auto_finalize_predictors.py",
+      "bytes": 9082,
+      "sha256": "c9efbc1be77c6a8328e7194a12201a4e75b5b6df2e843b6d90ec57ddf5aa1f75"
+    },
+    {
+      "path": "scripts/browsecomp_timing.py",
+      "bytes": 1225,
+      "sha256": "b3a95678621cb28d5140b29b2ba5f5cb2e32a22816973ffa71e35c7cd6b692cf"
+    },
+    {
+      "path": "scripts/check_shared_model.py",
+      "bytes": 2576,
+      "sha256": "c092f4ffcbeb243574dd862b15eb8e94982ef2fdfe2345ddfd97e7c9b964523a"
+    },
+    {
+      "path": "scripts/collect_mixed_c4.sh",
+      "bytes": 434,
+      "sha256": "ca24355c567745ed5ae6a78499cb47dfbd1dd2b546519ea4f75a476ac72b9b93"
+    },
+    {
+      "path": "scripts/download_ranges.py",
+      "bytes": 4328,
+      "sha256": "1cddf13062cd389f0e3d24313d1844f114f72a9fbd49e68f3bc7cfc6864205be"
+    },
+    {
+      "path": "scripts/evaluate_browsecomp_local.py",
+      "bytes": 13834,
+      "sha256": "bd2125490309bc48b8826129daab4a4828df411bf83c8d91a81cca45fcb7b773"
+    },
+    {
+      "path": "scripts/evaluate_mixed_c4.sh",
+      "bytes": 3378,
+      "sha256": "ccc86bab5bdc262585d34b248aba7b55aa782358b1ccea56cf22512043bab6ec"
+    },
+    {
+      "path": "scripts/evaluate_tasks_mixed_c4.sh",
+      "bytes": 1067,
+      "sha256": "604ef164de5b39484171a47552a8fe9635dd7081da264f162ab662e13928a793"
+    },
+    {
+      "path": "scripts/export_tool_timings.py",
+      "bytes": 4327,
+      "sha256": "14ee3b50ec9c2d7513487bf8185748f7609ae104395e72cf86c9f80058fc3de7"
+    },
+    {
+      "path": "scripts/fetch_pinned_vllm_mirror_wheels_20260922.py",
+      "bytes": 5182,
+      "sha256": "316caf30c1f0fcb95b745b5d56ecfc67cd084036175315feff2edbeea1bb16cc"
+    },
+    {
+      "path": "scripts/finalize_predictor_suite.sh",
+      "bytes": 3003,
+      "sha256": "55622d08d982facd231df4ba09bd3c20c0938c95c21b600a843b7fcd112a6ae9"
+    },
+    {
+      "path": "scripts/finalize_preparation.py",
+      "bytes": 8125,
+      "sha256": "e6c224c7f98c6ec27322eff8393ca98f910b213717ab7d1ca94eadef43d60d15"
+    },
+    {
+      "path": "scripts/launch_qwen_hotpot_trial_20260922.py",
+      "bytes": 5299,
+      "sha256": "d0d5647ba811ce1cbf2318799799a8bcd3eb116d9015cc002547176ed87ed0a1"
+    },
+    {
+      "path": "scripts/mixed_c4_control.py",
+      "bytes": 3701,
+      "sha256": "ebe7b7c2183046c295d0b591dd550b233e3a614b73bacc31252fd33af55b0bac"
+    },
+    {
+      "path": "scripts/open_corpus_tunnel.sh",
+      "bytes": 282,
+      "sha256": "e0859def9148fd6d7eb7eec7f6a2b4def73946abcca5870ce366dffab168736e"
+    },
+    {
+      "path": "scripts/prepare_browsecomp_native_assets.py",
+      "bytes": 3292,
+      "sha256": "62ab3b0a90b3715d150f013ba03dc9a41ad4cf26aff841a54724215254cc1668"
+    },
+    {
+      "path": "scripts/prepare_downloaded_data.py",
+      "bytes": 11699,
+      "sha256": "6ce49c0393624ba5c45f97262f2cfb88c06f71e96bf1497caa787be49985edcf"
+    },
+    {
+      "path": "scripts/prepare_github_source.py",
+      "bytes": 6908,
+      "sha256": "f05cc4a5d0f9ec8ad684498522319a8810e2e90b0dd10d88efdd31b3866495bc"
+    },
+    {
+      "path": "scripts/prepare_hotpot_corpus.py",
+      "bytes": 3073,
+      "sha256": "f7460f7be1665452db91ca0e35831bf3115e189f3a156233c645fa32761e33d2"
+    },
+    {
+      "path": "scripts/prepare_mixed_c4.py",
+      "bytes": 10438,
+      "sha256": "77ae5e94318bb43a9c867f952c0d0c10a6cbf8dcd95f88c4ad018c6b8bc95374"
+    },
+    {
+      "path": "scripts/probe_remote_retrieval.py",
+      "bytes": 4396,
+      "sha256": "94e4d3b0c7bb9cd110bf1874e38367344b215386c7903f31cd553df39c4bcbf7"
+    },
+    {
+      "path": "scripts/replay_time_predictor.py",
+      "bytes": 285,
+      "sha256": "5a79901f52b86f47af10991e75d41785297237e0529a381e19bca58659b1c3bf"
+    },
+    {
+      "path": "scripts/requirements-data.txt",
+      "bytes": 16,
+      "sha256": "c8d942b4f137ab3dedb56cfe8ed0c5d82c211d37f3237882ff65ef31328e7e3f"
+    },
+    {
+      "path": "scripts/requirements-predictor-lock.txt",
+      "bytes": 159,
+      "sha256": "09d8fac86feb14abe59471b46acd1d57260598c88ee9768bff30b7cc2df28441"
+    },
+    {
+      "path": "scripts/requirements-predictor.txt",
+      "bytes": 112,
+      "sha256": "29ef24a5b72cfe01ae917305e0b976e7d4e4bf9c3d7cad6ef24a9746735e374f"
+    },
+    {
+      "path": "scripts/run_predictor_suite.sh",
+      "bytes": 2582,
+      "sha256": "40f0e125e985a7345c3e09fc656f556d8dbc2571955f2e7da4f3d98fa6c0dbfa"
+    },
+    {
+      "path": "scripts/serve_browsecomp_native.sh",
+      "bytes": 588,
+      "sha256": "ca3cac35c4ec06b4bf3f5441bde216ccd412f6092abdb8c71c8fd2b138fcab44"
+    },
+    {
+      "path": "scripts/serve_browsecomp_timed.py",
+      "bytes": 635,
+      "sha256": "eb66296f926cd706f92b4098d5f97dbef5dffff738413d8bf65283642c263713"
+    },
+    {
+      "path": "scripts/serve_corpus_c4.sh",
+      "bytes": 1075,
+      "sha256": "af884fbfe2190211a25f29d5d0da81e4e69e9d409f2253e5ec883e7fe3a3b843"
+    },
+    {
+      "path": "scripts/serve_qwen_262k.sh",
+      "bytes": 1148,
+      "sha256": "0abc778dc07c60f891f63ac54c70e4601c0a09f9c3266b3c1c4c8773288aa751"
+    },
+    {
+      "path": "scripts/serve_qwen_c4.sh",
+      "bytes": 1459,
+      "sha256": "bfe3c47e6cb0316f4b655868275228fd6fc463ee592b28d9e19511c106a45964"
+    },
+    {
+      "path": "scripts/smoke_browsecomp_native.py",
+      "bytes": 4559,
+      "sha256": "ee3c4ff9a7525a99d82d92c7a3f813867dc97f1c66bbe9c04d0b12b2eb910d93"
+    },
+    {
+      "path": "scripts/start_auto_finalize_tmux.sh",
+      "bytes": 1092,
+      "sha256": "cbef5a466b9173ac9b865eaa746f4989db420a27c39b34a62aba56e4dc25c58e"
+    },
+    {
+      "path": "scripts/start_predictor_tmux.sh",
+      "bytes": 1375,
+      "sha256": "3c03b872342fe0092747d4238399c2113e166d2d65d353abc08209a0c2c17083"
+    },
+    {
+      "path": "scripts/summarize_task_timing.py",
+      "bytes": 14260,
+      "sha256": "b89986ab26860a05240a150249fabeca893f11b4e335ee6da9d09a4695c8cbc1"
+    },
+    {
+      "path": "scripts/summarize_time_predictors.py",
+      "bytes": 2630,
+      "sha256": "c1d51ad85377e2a7f4c1c686801a8a7e3ec652f28ccb8d9f4d4ec124564384a1"
+    },
+    {
+      "path": "scripts/train_time_predictor.py",
+      "bytes": 292,
+      "sha256": "9327d5a5b50a7ecad472b3d6345920409d52197a4d47e4d953c59f74581e47c0"
+    },
+    {
+      "path": "scripts/verify_vllm_wheel.py",
+      "bytes": 1918,
+      "sha256": "a6016621b845da7b549ee7bcfca056ecbe1c141f82f4429fbc71fd444e707fae"
+    },
+    {
+      "path": "tests/test_auto_continue_mixed_c4.py",
+      "bytes": 4886,
+      "sha256": "156f4dc8a4b7eca0f639f89295ce6c2cdc0d697d35c341777ac3602894cdcff3"
+    },
+    {
+      "path": "tests/test_auto_finalize_predictors.py",
+      "bytes": 3541,
+      "sha256": "562f11faf0ec095c52faf42bf7e3eca38c34cbb8b8de3dbe66c7124c8927d2e1"
+    },
+    {
+      "path": "tests/test_mixed_c4_preparation.py",
+      "bytes": 6771,
+      "sha256": "f56bcc3a52ae272e77ff81445ad36991a761514fc98da919fb013928f9b64d7b"
+    },
+    {
+      "path": "tests/test_online_quantile_calibration.py",
+      "bytes": 12116,
+      "sha256": "2b7d659a943069da3b1decd9e896d0b5929ae4f7c2b53677e844457484719a9d"
+    },
+    {
+      "path": "tests/test_predictor_bridge.py",
+      "bytes": 29455,
+      "sha256": "ed419c3af836f9c0df5d03aae99ba57b16f69f55fdc86a8452212014ba121ad3"
+    },
+    {
+      "path": "tests/test_time_predictor.py",
+      "bytes": 14299,
+      "sha256": "cdbf4f95b2e4d36c29699873abb764285c24cdbfade9b646fda2f4934c3cc6fa"
+    },
+    {
+      "path": "交接文档.md",
+      "bytes": 52571,
+      "sha256": "bda6180999a6a8403864cc610fce9a4327545452d23aedf56f681b910066d5dd"
+    },
+    {
+      "path": "交接文档9.22.md",
+      "bytes": 56277,
+      "sha256": "c59fa330194bae6c458321b4aa3864b6e31987533361c1c757822f1de01c7fb9"
+    },
+    {
+      "path": "交接（包含源码与校验）.md",
+      "bytes": 1201051,
+      "sha256": "d71067fa7bb9ad7506ea2a31d11e3339a21fb55e3e780bc7147df5694d77b6fd"
+    },
+    {
+      "path": "双机检索部署与连接方案_2026-09-22.md",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "混合并行采集实验设计_2026-09-21.md",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "excluded": [
+    "datasets/corpora/indexes/trajectories",
+    "model binaries",
+    "virtual environments and installed runtimes",
+    "logs and caches",
+    "credentials and local environment configuration",
+    "nested .git metadata and submodule pointers"
+  ],
+  "note": "Historical experiment scripts/docs retain provenance paths; start here with README.md and docs/GITHUB_HANDOFF.md."
+}

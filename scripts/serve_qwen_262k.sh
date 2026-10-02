@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+# Reproduce the measured 262144-token TP2/C1 configuration on local GPUs 3 and 4.
+cd /root/flowpilot_predictor
+exec env CUDA_VISIBLE_DEVICES=GPU-72d75f1b-6e69-cc22-5c86-56c23f19f199,GPU-051458bc-cdf6-c361-ed99-fcd351a31898 CUDA_DEVICE_ORDER=PCI_BUS_ID CUDA_HOME=/usr/local/cuda OMP_NUM_THREADS=8 VLLM_USE_FLASHINFER_SAMPLER=0 HF_HUB_OFFLINE=1 HF_DATASETS_OFFLINE=1 VLLM_CACHE_ROOT=/root/flowpilot_predictor/evidence/remote_comparison/model_262k/cache/vllm TORCHINDUCTOR_CACHE_DIR=/root/flowpilot_predictor/evidence/remote_comparison/model_262k/cache/torchinductor PATH=/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin /root/flowpilot_predictor/.venv-vllm/bin/python -m vllm.entrypoints.openai.api_server --model /root/flowpilot_predictor/models/Qwen3.5-9B --served-model-name qwen3.5-9b --host 127.0.0.1 --port 8100 --dtype bfloat16 --tensor-parallel-size 2 --max-model-len 262144 --gpu-memory-utilization 0.58 --max-num-seqs 1 --max-num-batched-tokens 2048 --language-model-only --enable-auto-tool-choice --tool-call-parser qwen3_coder --reasoning-parser qwen3 --enforce-eager

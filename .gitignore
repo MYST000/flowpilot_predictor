@@ -1,56 +1,41 @@
-# Markdown handoff and research documents are kept local.
-*.md
-*.markdown
-
-# Datasets, indexes, downloads, and package/model caches.
-/data/
-/downloads/
-/cache/
-/tmp/
-/runtime/browsecomp-native/java21/
-/runtime/browsecomp-native/tokenizer/
-/runtime/browsecomp-native/hf-cache/
-
-# Generated experiment outputs.
-/logs/
-/runs/
-
-# Local Python runtimes and environments.
-/.python/
-/.venv*/
-**/.venv/
+# Local environments, credentials, datasets and experiment output.
+.venv*/
+.python/
+.local/
 __pycache__/
 *.py[cod]
 *.egg-info/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
-.coverage
-htmlcov/
-
-# Local credentials and editor/OS state.
 .env
 .env.*
-!.env.example
 *.pem
 *.key
 *credentials*.json
-.DS_Store
-.idea/
-.vscode/
-*.swp
-*~
-
-# Large binary artifacts that belong in release storage, not Git.
-*.whl
-*.tar
-*.tar.gz
-*.tar.bz2
-*.zip
-*.part
-*.assembling
-*.sqlite
-*.sqlite3
+/data/
+/datasets/
+/runs/
+/logs/
+/cache/
+/tmp/
+/downloads/
+/evidence/
+/models/
+/configs/predictor/runtime.json
+*.joblib
+*.pkl
+*.pickle
+*.sqlite*
 *.safetensors
 *.pt
 *.pth
+*.whl
+*.tar*
+*.zip
+/runtime/browsecomp-native/java21/
+/runtime/browsecomp-native/tokenizer/
+/runtime/browsecomp-native/hf-cache/
+.DS_Store
+.idea/
+.vscode/

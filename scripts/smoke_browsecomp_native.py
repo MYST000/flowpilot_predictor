@@ -18,7 +18,7 @@ from benchmark_adapters.retrieval_tools import (
 from benchmark_adapters.sdk_bridge import Binding
 from benchmark_adapters.tracing import Budget, TraceRecorder
 
-ROOT = Path("/home/qiulin/flowpilot_predictor")
+ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "evidence/retrieval/native_smoke_20260922"
 BARRIER = threading.Barrier(4, timeout=60)
 QUERIES = ("London museum", "mathematics history", "ocean research", "railway station")

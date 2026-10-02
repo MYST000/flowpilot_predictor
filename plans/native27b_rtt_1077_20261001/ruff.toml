@@ -1,0 +1,7 @@
+line-length = 100
+target-version = "py312"
+extend-exclude = ["code"]
+[lint]
+select = ["E4", "E7", "E9", "F", "I"]
+[lint.per-file-ignores]
+"*.py" = ["E402"]

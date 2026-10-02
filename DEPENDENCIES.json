@@ -1,0 +1,16 @@
+{
+  "openhands_current": {
+    "repository": "https://github.com/Fate0123/Openhands-software-agent-sdk.git",
+    "base_commit": "a1ab0a99cf63536e32db868667c91dda18df945e",
+    "includes_uncommitted_and_untracked_adapter_source": true
+  },
+  "openhands_legacy": {
+    "repository": "https://github.com/Fate0123/Openhands-software-agent-sdk.git",
+    "base_commit": "2b788bf22e7449ed6cdc70abaefe7c680161f039",
+    "includes_uncommitted_and_untracked_adapter_source": true
+  },
+  "flowpilot": {
+    "repository": "https://github.com/MYST000/flowpilot.git",
+    "compatible_commit": "a8850d9ee665b2a7a18dcd686248c6ac00e25ea0"
+  }
+}

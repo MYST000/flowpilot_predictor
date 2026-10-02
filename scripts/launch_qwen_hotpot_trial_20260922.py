@@ -15,13 +15,15 @@ import subprocess
 import time
 
 
-ROOT = Path("/home/qiulin/flowpilot_predictor")
-OWNER = ROOT / "evidence" / "qwen_hotpot_trial_20260922"
-MODEL = Path("/home/qiulin/HF_Model/Qwen3.5-9B")
+ROOT = Path(__file__).resolve().parents[1]
+OWNER = ROOT / "evidence" / "qwen_hotpot_trial_local"
+MODEL = ROOT / "models" / "Qwen3.5-9B"
 PYTHON = ROOT / ".venv-vllm" / "bin" / "python"
 
 
 def main() -> None:
+    if not (MODEL / "config.json").is_file():
+        raise SystemExit(f"Local model is not prepared: {MODEL}")
     OWNER.mkdir(parents=True, exist_ok=True)
     state_file = OWNER / "service_state.json"
     if state_file.exists():
@@ -75,7 +77,7 @@ def main() -> None:
     env_settings = {
         "CUDA_VISIBLE_DEVICES": ",".join(gpu["uuid"] for gpu in selected),
         "CUDA_DEVICE_ORDER": "PCI_BUS_ID",
-        "CUDA_HOME": "/usr/local/cuda-12.5",
+        "CUDA_HOME": "/usr/local/cuda",
         "OMP_NUM_THREADS": "8",
         "VLLM_USE_FLASHINFER_SAMPLER": "0",
         "HF_HUB_OFFLINE": "1",
@@ -85,7 +87,7 @@ def main() -> None:
     }
     env = os.environ.copy()
     env.update(env_settings)
-    env["PATH"] = "/usr/local/cuda-12.5/bin:" + env["PATH"]
+    env["PATH"] = "/usr/local/cuda/bin:" + env["PATH"]
     args = [
         str(PYTHON),
         "-m",

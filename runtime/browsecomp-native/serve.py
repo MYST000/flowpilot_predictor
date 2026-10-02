@@ -8,7 +8,7 @@ from pathlib import Path
 import sys
 import types
 
-ROOT = Path("/home/qiulin/flowpilot_predictor")
+ROOT = Path(__file__).resolve().parents[2]
 SOURCE = ROOT / "repos/BrowseComp-Plus/searcher"
 # Pyserini's Lucene package also imports unused neural searchers eagerly.
 # Execute its pinned initializer with only those two imports omitted; retain the

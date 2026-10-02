@@ -1,0 +1,10 @@
+iniconfig==2.3.0
+joblib==1.4.2
+lightgbm==4.6.0
+numpy==2.2.6
+packaging==26.3
+pluggy==1.6.0
+pytest==8.3.5
+scikit-learn==1.6.1
+scipy==1.15.3
+threadpoolctl==3.6.0

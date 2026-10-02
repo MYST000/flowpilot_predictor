@@ -1,8 +1,0 @@
-Using Python 3.12.14 environment at: .venv-vllm
-error: No solution found when resolving dependencies
-  cause: Because only vllm==0.29.0+cu129 is available and vllm==0.29.0+cu129 depends on mistral-common[image]>=1.11.6, we can conclude that all versions of vllm depend on mistral-common[image]>=1.11.6.
-         And because only mistral-common<=1.11.6 is available and mistral-common==1.11.6 depends on numpy{python_full_version < '3.13'}>=1.25,<2.4, we can conclude that all versions of vllm depend on numpy{python_full_version < '3.13'}>=1.25,<2.4.
-         And because only the following versions of numpy are available:
-             numpy<1.25
-             numpy>=2.4
-         and you require vllm, we can conclude that your requirements are unsatisfiable.

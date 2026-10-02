@@ -1,0 +1,18 @@
+{
+  "seed": 20260927,
+  "threads": 8,
+  "feature_level": "history_state",
+  "target": "round_trip_ms",
+  "target_transform": "log1p",
+  "min_samples": 32,
+  "min_groups": 4,
+  "n_estimators": 200,
+  "min_samples_leaf": 20,
+  "max_depth": 6,
+  "learning_rate": 0.05,
+  "n_clusters": 8,
+  "max_tfidf_features": 4096,
+  "ewma_alpha": 0.2,
+  "residual_buffer": 512,
+  "bootstrap_repeats": 500
+}
