@@ -3,7 +3,7 @@ T1 工具 RTT 预测适配层
 
 此包位于预测器仓库，仅实现预测输入、并发推理、在线反馈和耗时先验交付。
 不包含工具执行、缓存策略、admission、KV offload/reload 决策。
-原 predictor/*.py、正式 LightGBM 工件和用户 SDK 修改保持原样。
+历史 LightGBM 工件保持原样；后端身份修订须从已校验的原始输入重建数据并重训。
 
 交给调度器的具体参数
 --------------------
@@ -50,6 +50,20 @@ resolution version 和有效期后写入已有耗时字段，并触发现有投�
 每个 Tool Call 一个 ToolPredictionRequest；多个请求并发。缓存分支独立继续。
 无工具回复传空列表，记录 no_tool；没有完整参数的调用不能虚构预测。
 
+``FrameworkPredictor.on_response`` 返回覆盖本次工具批次的 awaitable，供网关的
+后台 retention 收集。它等待权威 resolution 以及适用结果的原子写入，不阻塞
+回复转发和实际工具执行；不能以返回 None 代表尚未完成的本地预测。
+``runtime.wait`` 只等待计算，``runtime.wait_for_delivery`` 才等待该调用的交付。
+缓存命中、跟随者、终态与失效调用无需本地先验；预测不可用或 sink 异常会使
+收集失败，失败批次的部分结果不参与这次 retention 决策。取消收集仍允许延迟 RTT 学习。
+初始 ToolResolution 占位记录不是缓存未命中，只有 reuse/SDK 工具事实能够授权回写。
+
+身份直接继承 OpenHands 注册与请求头；一个实验 run_id 可以对应多个 Job。
+默认根 Job/Line 从持久化 conversation UUID 派生，子代理继承根 Job。
+benchmark 的 ``flowpilot_request_identity`` 日志记录实验与工作流的映射；
+DCS 的 ``flowpilot_response_identity`` 将 RTT 关联到最终续接调用。
+内部续接保留预测上下文，并按整个外层请求的累计耗时计算快照年龄。
+
 ::
 
     from flowpilot_predictor_bridge import (
@@ -81,6 +95,27 @@ T0 历史/负载/预算及快照 age。``request_from_tool_call`` 可从已闭�
 从不修改缓存权威状态。hit/follower 也运行模型，但不回写本地执行耗时先验。
 模型对未知 backend/schema 或请求内部并行工具执行保持 unsupported。
 跨 request 并发预测与原有单请求串行工具执行是不同约束。
+
+后端身份 v2（2026-10-04）由 ``predictor.data.backend_signature`` 统一生成，
+哈希包含身份版本、T0 environment、dataset_revision 和 tool_execution_profile。
+``replica_id`` 标识采集/运行角色，不再参与工具后端版本；实际后端、语料版本、
+schema、工具执行配置仍隔离。训练准备与实时桥接必须使用同一个函数。
+
+历史 prepared 数据无法仅靠已存的哈希重建身份。迁移命令必须读取原 manifest
+记录的 ``prediction_dataset/inputs.jsonl``，逐文件核验 SHA256，再写新目录：
+
+::
+
+    python -m predictor.migrate_backend_identity \
+      --prepared-data /path/to/original-prepared \
+      --output /path/to/new-prepared-v2 \
+      --original-source-root /data1/ql_flowpilot_predictor \
+      --source-root /data/ql_flowpilot_predictor
+
+迁移仅改变 ``context.backend_version``，保留划分、标签与其他特征；来源不完整或
+哈希不符直接报错。随后沿用原训练超参数重新训练，并将 ``model_path``、
+``prepared_data``、``artifact_code_root`` 一起切换到新产物。不能给旧权重改别名，
+也不能把未知后端标记为 supported。新 manifest 留存来源、版本映射和数据哈希。
 
 缓存先返回时可以立即交付，不等待模型；预测先返回则暂存，收到 local 事实再交付。
 真实 Tool 结束后即使模型晚到，也不会再写入该调用的时间先验。
@@ -136,7 +171,7 @@ execution_attempt 的身份与预测记录，不能反复更新同一调用。
 逐分位方案已完成事件回放和桥接验证：连续反馈测试中 Q50 误差基本持平，
 Q90 覆盖率 89.37% -> 90.89%，Q99 分位损失基本持平。原测试数据已经查看，
 本次属于探索性分析，尚未测量真实调度吞吐或 SLO 收益。
-报告位于 ``/data1/ql_flowpilot_predictor/predictor_experiments/native27b_realtime_quantile_v1/REPORT.md``。
+报告位于 ``/data/ql_flowpilot_predictor/predictor_experiments/native27b_realtime_quantile_v1/REPORT.md``。
 
 并发与运行边界
 --------------
@@ -165,7 +200,8 @@ expires_at_monotonic 仅能在同进程/时钟域消费；本接口是进程内 
 
     cd /root/flowpilot_predictor
     PYTHONDONTWRITEBYTECODE=1 .venv-predictor/bin/python -m pytest -q \
-      -p no:cacheprovider tests/test_predictor_bridge.py tests/test_time_predictor.py
+      -p no:cacheprovider tests/test_predictor_bridge.py tests/test_prediction_completion.py \
+      tests/test_time_predictor.py
 
 测试中的 duration consumer 是明确的 fixture，用来检查接口字段、CAS/终态竞争，
 不代表目标调度器已绑定。正式本地工件存在时同时运行 LightGBM 工件兼容与在线更新检查。

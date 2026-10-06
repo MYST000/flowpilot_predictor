@@ -3,7 +3,7 @@ set -euo pipefail
 umask 077
 PLAN="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PYTHON=/root/flowpilot_predictor/.venv-predictor/bin/python
-OUT=/data1/ql_flowpilot_predictor/predictor_experiments/native27b_calibration_online_v1
+OUT=/data/ql_flowpilot_predictor/predictor_experiments/native27b_calibration_online_v1
 SOCKET=flowpilot-predictor-calibration-online
 SESSION=native27b_calibration_online_v1
 export PYTHONDONTWRITEBYTECODE=1 CUDA_VISIBLE_DEVICES=""

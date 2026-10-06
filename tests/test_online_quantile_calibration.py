@@ -217,7 +217,7 @@ def test_quantile_feedback_before_native_prediction_does_not_leak_into_it():
 
 def test_native27b_default_config_loads_snapshot_and_realtime_corrector():
     root = Path(__file__).resolve().parents[1]
-    model = Path('/data1/ql_flowpilot_predictor/predictor_experiments/native27b_1077_v1/train/lightgbm/model.joblib')
+    model = Path('/data/ql_flowpilot_predictor/predictor_experiments/native27b_1077_v1/train/lightgbm/model.joblib')
     if not model.exists():
         pytest.skip("27B artifact not installed")
     async def run():
@@ -238,15 +238,17 @@ def test_native27b_default_config_loads_snapshot_and_realtime_corrector():
 def test_saved_artifact_snapshot_mismatch_is_rejected(tmp_path):
     from flowpilot_predictor_bridge.artifact import load_runtime_model
     import shutil
-    root = Path('/data1/ql_flowpilot_predictor/predictor_experiments/native27b_1077_v1')
+    root = Path('/data/ql_flowpilot_predictor/predictor_experiments/native27b_1077_v1')
     model = root / "train/lightgbm/model.joblib"
     if not model.exists():
         pytest.skip("27B artifact not installed")
-    shutil.copytree(root / "deployment_snapshot/code", tmp_path / "code")
+    shutil.copytree(
+        root / "deployment_snapshot/code/predictor", tmp_path / "code/predictor"
+    )
     p = tmp_path / "code/predictor/models.py"
     p.write_text(p.read_text() + "\n# deliberate mismatch\n")
     with pytest.raises(ValueError, match="saved model/code snapshot mismatch"):
-        load_runtime_model(model, '/data1/ql_flowpilot_predictor/predictor_prepared/native27b_1077_v1', tmp_path / "code")
+        load_runtime_model(model, '/data/ql_flowpilot_predictor/predictor_prepared/native27b_1077_v1', tmp_path / "code")
 
 
 def test_gateway_factory_preserves_settings_and_registers_realtime_adapter(tmp_path, monkeypatch):

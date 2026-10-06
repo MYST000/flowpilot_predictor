@@ -7,7 +7,8 @@ import json
 import time
 from collections import Counter, OrderedDict
 
-from predictor.data import schema_signature, signature
+from predictor.data import backend_signature, schema_signature
+
 from .contracts import CallIdentity, ToolFeedback, ToolPredictionRequest
 from .runtime import PredictorRuntime
 
@@ -80,6 +81,7 @@ class FrameworkPredictor:
         }
         names = set(context["environment_tools"])
         environment_calls = [c for c in calls if c["name"] in names]
+        submitted = []
         for index, call in enumerate(environment_calls):
             name = call["name"]
             arguments = call["arguments"]
@@ -107,13 +109,8 @@ class FrameworkPredictor:
             ][-64:]
             model_context = dict(
                 backend_id=env.get("backend", context["benchmark"]),
-                backend_version=signature(
-                    {
-                        "environment": env,
-                        "dataset_revision": context["dataset_revision"],
-                        "actor": context["replica_id"],
-                        "profile": profile,
-                    }
+                backend_version=backend_signature(
+                    env, context["dataset_revision"], profile
                 ),
                 tool_schema_version=schema_signature(schema),
                 tool_name=name,
@@ -154,18 +151,22 @@ class FrameworkPredictor:
             while len(self.calls) > self.runtime.max_records:
                 self.calls.popitem(last=False)
             self.runtime.submit(ToolPredictionRequest(call_id, model_context))
+            submitted.append(call_id)
             self.metrics["submitted"] += 1
             self._task(self._record_prediction(call_id))
-            if not has_reuse_policy:
-                self._task(self._local_resolution(call_id))
+        if submitted:
+            return self._task(self._wait_response(submitted))
 
-    async def _local_resolution(self, identity):
-        records = await self.app.state.tool_resolutions.get_for_line(
-            identity.job_id, identity.line_id, identity.tail_request_id
+    async def _wait_response(self, identities):
+        # Initial Tool records are placeholders, not authoritative cache misses.
+        # on_resolution supplies gateway reuse / SDK execution facts separately.
+        outcomes = await asyncio.gather(
+            *(self.runtime.wait_for_delivery(identity) for identity in identities),
+            return_exceptions=True,
         )
-        for record in records:
-            if record.tool_call_id == identity.tool_call_id:
-                self.on_resolution(record)
+        for outcome in outcomes:
+            if isinstance(outcome, BaseException):
+                raise outcome
 
     def on_resolution(self, record):
         identity = self.calls.get(self.key(record))

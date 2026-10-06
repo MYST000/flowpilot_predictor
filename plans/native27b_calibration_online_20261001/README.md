@@ -1,6 +1,6 @@
 # 新 27B 轨迹：分组校准与 LightGBM 在线反馈
 
-执行用户要求的两项预测实验，所有产物位于 `/data1/ql_flowpilot_predictor/predictor_experiments/native27b_calibration_online_v1`。
+执行用户要求的两项预测实验，所有产物位于 `/data/ql_flowpilot_predictor/predictor_experiments/native27b_calibration_online_v1`。
 
 本次不启动 LLM/vLLM 服务，只回放已采集的原生 Qwen3.5-27B 工具 RTT，不部署模型或修改 FlowPilot 调度策略。
 

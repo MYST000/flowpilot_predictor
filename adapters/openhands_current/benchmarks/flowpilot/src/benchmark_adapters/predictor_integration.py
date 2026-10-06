@@ -18,7 +18,7 @@ from .prediction_export import _features
 from .tracing import TraceRecorder, write_json
 
 
-def benchmark_flowpilot_config(config, identity):
+def benchmark_flowpilot_config(config, _identity):
     from openhands.sdk.flowpilot import FlowPilotConfig
 
     retrieval = config.dataset.kind in {"hotpot", "browsecomp"}
@@ -42,8 +42,8 @@ def benchmark_flowpilot_config(config, identity):
         enabled=True,
         gateway_url=os.environ["FLOWPILOT_PREDICTOR_GATEWAY"],
         api_key=os.environ["FLOWPILOT_INGRESS_API_KEY"],
-        job_id=identity["run_id"],
-        line_id=identity["attempt_id"] + "-" + identity["task_id"],
+        # LocalConversation derives job/line IDs from its persistent UUID.
+        # The benchmark run/task/attempt identity remains collection metadata.
         deployment_id=os.environ.get("FLOWPILOT_REUSE_DEPLOYMENT_ID", "local"),
         namespace_id=os.environ.get("FLOWPILOT_REUSE_DEFAULT_NAMESPACE", "default"),
         exact_reuse_enabled=retrieval,
@@ -132,6 +132,7 @@ class PredictorTraceRecorder(TraceRecorder):
         required = (
             "job_id",
             "line_id",
+            "conversation_id",
             "request_id",
             "tail_request_id",
             "llm_call_id",
@@ -144,6 +145,7 @@ class PredictorTraceRecorder(TraceRecorder):
         self._identities[request_id] = identity
         while len(self._identities) > 4096:
             self._identities.popitem(last=False)
+        self.emit("flowpilot_request_identity", request_id=request_id, flowpilot_identity=identity)
         history = sorted(
             [r for records in self._history.values() for r in records], key=lambda r: r["seq"]
         )
@@ -175,6 +177,23 @@ class PredictorTraceRecorder(TraceRecorder):
             context, ensure_ascii=True, separators=(",", ":")
         )
         self.predictor_metrics["request_contexts"] += 1
+
+    def response_decision(self, request_id, response):
+        super().response_decision(request_id, response)
+        final = (response.get("flowpilot") or {}).get("final_identity")
+        if final is not None:
+            # The SDK validates and adopts this continuation before emitting
+            # Actions. Keep its registered job/line/conversation/epoch; bind RTT
+            # to the final invocation that actually produced the local Tool Call.
+            identity = dict(self._identities[request_id])
+            for key in ("request_id", "tail_request_id", "llm_call_id", "attempt"):
+                identity[key] = final[key]
+            self._identities[request_id] = identity
+            self.emit(
+                "flowpilot_response_identity",
+                request_id=request_id,
+                flowpilot_identity=identity,
+            )
 
     def _timing(self, timing):
         identity = self._identities.get(timing["request_id"])

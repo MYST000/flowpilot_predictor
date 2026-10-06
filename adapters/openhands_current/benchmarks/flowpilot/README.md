@@ -88,3 +88,11 @@ python -m ruff format --check src tests
 ```
 
 实际文件变化与原因见[CHANGES.md](CHANGES.md)；本服务器路径、测量结论及验证记录见[服务器说明](/root/flowpilot/OpenHands代码适配器整合说明_2026-09-16.md)。服务器说明是本地资产，不是另一台服务器的必需依赖。
+
+### 实验 SLO 入口
+
+设置 `FLOWPILOT_EXPERIMENT_PROFILE` 后，runner 读取 `workload.baseline_latency_path`、`baseline_latency_sha256` 与 `slo_multiplier`。基线按 dataset ID、revision、task ID 和题目文本哈希匹配；deadline 等于本次任务开始时间加历史 `duration_s` 乘倍率。在 SDK 会话注册前登记同一 `job-<conversation UUID>`，两次运行使用独立 UUID。SLO 记录写入 `slo.json`，结果包含 `slo_met`、`slo_lateness_s`；SLO 是端到端完成目标，不替代 task_timeout。
+
+当前 FlowPilot 实机配置固定到保留工具全文及采样参数的 DCS 修复版 SDK `c4f3ea625f8fbe72f2af12e879651dcff4ba4ef9`；历史 SDK 版本的显式支持及原有 live_web 配置仍保留。provenance 检查继续核对所选提交的核心源码。新基线在 Chat（list/string）和 Responses 输入构造时均不按字符数裁剪工具文本，DCS 和缓存同样保留全文；模型上下文硬上限仍生效。
+
+检索工具显式声明 `readOnlyHint=True`，同时保留历史 actor 请求的 `summary/security_risk` LLM schema；这个兼容层使用固定 SDK 的 schema 构造器，不改变实际 MCP 参数或训练 schema 身份。active 语义命中立即交付，DCS 隐藏续跑仍只接收 exact 命中，两者可同时开启。

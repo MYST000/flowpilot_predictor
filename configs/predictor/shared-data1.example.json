@@ -1,7 +1,7 @@
 {
-  "model_path": "/data1/ql_flowpilot_predictor/predictor_experiments/native27b_1077_v1/train/lightgbm/model.joblib",
-  "prepared_data": "/data1/ql_flowpilot_predictor/predictor_prepared/native27b_1077_v1",
-  "artifact_code_root": "/data1/ql_flowpilot_predictor/predictor_experiments/native27b_1077_v1/deployment_snapshot/code",
+  "model_path": "/data/ql_flowpilot_predictor/predictor_experiments/native27b_1077_v1/train/lightgbm/model.joblib",
+  "prepared_data": "/data/ql_flowpilot_predictor/predictor_prepared/native27b_1077_v1",
+  "artifact_code_root": "/data/ql_flowpilot_predictor/predictor_experiments/native27b_1077_v1/deployment_snapshot/code",
   "selected_quantile": "q50",
   "workers": 4,
   "max_pending": 128,

@@ -35,6 +35,12 @@ def signature(value):
     return hashlib.sha256(json.dumps(value, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
 
 
+def backend_signature(environment, dataset_revision, profile):
+    """Identify the tool backend independently of the LLM experiment replica."""
+    return signature({'identity_version': 2, 'environment': environment,
+                      'dataset_revision': dataset_revision, 'profile': profile})
+
+
 def schema_signature(schema):
     # Runtime workspace locations do not change tool semantics. Preserve all
     # other description/parameter details and retain raw snapshot file hashes.
@@ -75,7 +81,8 @@ def index_unique(items, key_fn):
 def prepare(project, output):
     project, output = Path(project).resolve(), Path(output).resolve()
     output.mkdir(parents=True, exist_ok=False)
-    manifest = {'schema_version': 1, 'stage': 'T1_llm_response_proxy', 'splits': {},
+    manifest = {'schema_version': 1, 'backend_identity_version': 2,
+                'stage': 'T1_llm_response_proxy', 'splits': {},
                 'source_sha256': {}, 'quantiles': [.1, .5, .9, .99],
                 'limitations': ['T1 uses llm_response before parsing, not a fresh parse-complete snapshot',
                                 'load and per-task history are observed T0 snapshots with ages',
@@ -162,8 +169,7 @@ def prepare(project, output):
                 batch_count = sum(a['tool_name'] in ENV_TOOLS[adapter] for a in actions)
                 schema_version = schema_signature(schemas[tool])
                 backend = env.get('backend', adapter)
-                backend_version = signature({'environment': env, 'dataset_revision': inp['dataset_revision'],
-                                             'actor': inp['replica_id'], 'profile': profile})
+                backend_version = backend_signature(env, inp['dataset_revision'], profile)
                 context = {
                     'backend_id': backend, 'backend_version': backend_version,
                     'tool_schema_version': schema_version, 'tool_name': tool,

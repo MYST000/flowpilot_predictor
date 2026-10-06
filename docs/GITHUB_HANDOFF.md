@@ -1,15 +1,15 @@
 # GitHub 发布与共享 27B LightGBM 使用手册
 
-本手册适用于 2026-10-02 的预测侧交付。模型留在共享 `/data1`，GitHub 只发布代码、文档、算法参数/依赖锁定文件和适配器源码。
+本手册适用于 2026-10-02 的预测侧交付。模型留在共享 `/data`，GitHub 只发布代码、文档、算法参数/依赖锁定文件和适配器源码。
 
 ## 1. 已有模型与必须保留的文件
 
 | 项目 | 路径 |
 | --- | --- |
-| 正式 raw LightGBM | `/data1/ql_flowpilot_predictor/predictor_experiments/native27b_1077_v1/train/lightgbm/model.joblib` |
-| 模型 manifest | `/data1/ql_flowpilot_predictor/predictor_experiments/native27b_1077_v1/train/lightgbm/manifest.json` |
-| 准备数据 metadata | `/data1/ql_flowpilot_predictor/predictor_prepared/native27b_1077_v1/manifest.json` |
-| 训练时的 predictor 代码快照 | `/data1/ql_flowpilot_predictor/predictor_experiments/native27b_1077_v1/deployment_snapshot/code/predictor/` |
+| 正式 raw LightGBM | `/data/ql_flowpilot_predictor/predictor_experiments/native27b_1077_v1/train/lightgbm/model.joblib` |
+| 模型 manifest | `/data/ql_flowpilot_predictor/predictor_experiments/native27b_1077_v1/train/lightgbm/manifest.json` |
+| 准备数据 metadata | `/data/ql_flowpilot_predictor/predictor_prepared/native27b_1077_v1/manifest.json` |
+| 训练时的 predictor 代码快照 | `/data/ql_flowpilot_predictor/predictor_experiments/native27b_1077_v1/deployment_snapshot/code/predictor/` |
 
 模型版本：`tool-rtt-v2:lightgbm:a54e331d027f9348`。
 
@@ -21,15 +21,15 @@
 
 模型训练集 9,335 条工具 RTT（包含仅用于辅助训练的 QuixBugs），四个 LightGBM 分位头为 Q10/Q50/Q90/Q99。正式桥接加载 raw 工件，再使用在线校正，不加载离线静态校准工件。
 
-当前模型目录权限为 `700`，模型及其 manifest 为 `600`；若同门使用另一 Linux 用户，仅能访问 `/data1` 顶层还不够，需要额外只读授权。使用同一 root 账号读取则无需改权限。发布操作不自动放宽共享文件权限。
+当前模型目录权限为 `700`，模型及其 manifest 为 `600`；若同门使用另一 Linux 用户，仅能访问 `/data` 顶层还不够，需要额外只读授权。使用同一 root 账号读取则无需改权限。发布操作不自动放宽共享文件权限。
 
-共享访问必须同时满足：同门所在机器挂载的是**同一套文件内容**，路径一致，且用户可遍历所有父目录并读取上述文件。另一台机器有同名 `/data1` 不代表共享成功。若挂载点不同，只修改自己本地 `configs/predictor/runtime.json` 的三个路径；不修改模型/manifest，也不取消校验。
+共享访问必须同时满足：同门所在机器挂载的是**同一套文件内容**，路径一致，且用户可遍历所有父目录并读取上述文件。另一台机器有同名 `/data` 不代表共享成功。若挂载点不同，只修改自己本地 `configs/predictor/runtime.json` 的三个路径；不修改模型/manifest，也不取消校验。
 
 由共享目录管理者针对同门实际 Linux 用户授权后，在同门账号执行以下只读检查：
 
 ```bash
-namei -l /data1/ql_flowpilot_predictor/predictor_experiments/native27b_1077_v1/train/lightgbm/model.joblib
-test -r /data1/ql_flowpilot_predictor/predictor_experiments/native27b_1077_v1/train/lightgbm/model.joblib && echo "model readable"
+namei -l /data/ql_flowpilot_predictor/predictor_experiments/native27b_1077_v1/train/lightgbm/model.joblib
+test -r /data/ql_flowpilot_predictor/predictor_experiments/native27b_1077_v1/train/lightgbm/model.joblib && echo "model readable"
 ```
 
 需要授权的是上述文件的读取和所有父目录的遍历，不需要共享目录写权限，也不需要递归授权所有实验数据。
@@ -112,7 +112,7 @@ python -B scripts/check_shared_model.py
 
 常见启动失败：
 
-- `PermissionError`：由共享磁盘管理者按用户组授权读取模型及父目录；不要对整个 `/data1` 递归放宽权限。
+- `PermissionError`：由共享磁盘管理者按用户组授权读取模型及父目录；不要对整个 `/data` 递归放宽权限。
 - `model/runtime dependency mismatch`：按精确 Python/依赖锁文件建立独立环境。
 - `saved model/code snapshot mismatch` / `runtime model implementation mismatch`：使用本次交付的预测代码和模型对应快照，检查 SHA；不要绕过校验。
 - `data manifest mismatch`：`prepared_data` 指向 `native27b_1077_v1`，不要指向旧 9B 数据准备目录。
@@ -194,4 +194,71 @@ python -m pip install -e adapters/openhands_current/benchmarks/flowpilot
 
 `tracked-changes.patch` 仅包含已跟踪文件相对所列 base commit 的修改；新增文件包含在源码快照中。不能只应用 patch 而漏掉新增文件，也不要同时叠加 legacy/current 两份扩展。已有 SDK 改动先对比后合并，不覆盖同门的其他修改。适配器安装仍需 SDK/容器/检索服务等原有依赖；它不提供语料与 GPU 环境。
 
+### 身份对齐与实验映射
+
+OpenHands 是会话身份的来源。适配器不再设置 `job_id = run_id`，而是沿用 `LocalConversation` 的持久化 UUID：根会话默认生成 `job-<conversation_id>` 和 `line-<conversation_id>`。FlowPilot 先接受 Job/Line 注册，再验证请求头；预测器使用这些已验证的身份，不另行生成 Job 或会话 ID。
+
+| 字段 | 对应关系 |
+| --- | --- |
+| `run_id` | 一批实验，可关联多个独立任务的 Job，不是调度 Job |
+| `run_id/task_id/attempt_id` | 一次 benchmark 任务尝试；通过日志关联该次根会话与 Job |
+| `job_id` | 一个工作流；根会话及其子代理共享，独立任务各有自己的 Job |
+| `conversation_id/line_id` | 一个 OpenHands 会话及其调度线路；子代理各自持有新的会话和线路 |
+| `request_id/attempt/llm_call_id` | 一次逻辑请求及其传输尝试；传输重试保留逻辑请求 ID，递增 attempt 并产生新的 LLM 调用 ID |
+
+恢复同一个持久化会话时沿用其身份；重新创建会话的任务重跑会生成新的 Job。benchmark 的 `attempt_id` 与请求头中的整数 `attempt` 是两个不同概念。
+
+任务目录中的 `events.jsonl` 新增 `flowpilot_request_identity`，顶层保留 `run_id/task_id/attempt_id`，`flowpilot_identity` 保存来自 SDK 请求头的 Job、Line、conversation 和调用身份。日志的顶层 `request_id` 是采集请求 ID，内层 `flowpilot_identity.request_id` 才是 FlowPilot 逻辑请求 ID。DCS 续接还记录 `flowpilot_response_identity`，将最终调用关联到同一采集请求，真实工具 RTT 反馈使用该最终调用身份。
+
+因此，两边通过现有 `X-FlowPilot-*` 请求头、回复中的 `flowpilot.final_identity` 和 `/flowpilot/v1/predictor/feedback` 对齐，无需额外身份分配或映射 RPC。实验 ID 不进入 provider messages，也不参与 Job 公平性计算。
+
+### 预测完成与 DCS
+
+`FrameworkPredictor.on_response()` 同步提交工作，返回本次工具批次的后台 awaitable。完成表示适用的本地预测已经过实际 resolution 和版本校验写入；仅原生模型计算结束还不算交付完成。KV 保留决策收集该信号，正常回复和 OpenHands 工具执行不等待它。预测不可用、超时或写入异常会使该批次预测明确失效；命中、跟随者及已结束的工具无需等待本地耗时。取消收集不会停止原生计算或丢弃合法的延迟 RTT 学习。
+
+DCS 内部请求保留原始预测上下文，并以最外层请求到达网关的时间为统一起点累计快照年龄，包含中间推理与缓存处理时间，不比较不同主机的单调时钟。每轮仍使用自己的请求／LLM 调用身份；私有预测头不会转发到 vLLM。
+
+### 本次修复的本地验证（2026-10-03）
+
+- FlowPilot 全套测试与预测器核心回归：520 passed、3 skipped。跳过项依赖旧工件／历史准备数据；正式 27B 工件加载和快照篡改拒绝测试通过。
+- 实际 OpenHands SDK、身份关联及本地 DCS 联通组合：53 passed。交付快照的同一组身份测试另行运行，3 passed。
+- FlowPilot 生产代码及本次定向检查的 Ruff/Pyright、SDK 修改文件的 pre-commit、11 个修改模块的编译检查通过。扩大到所有旧测试文件的 Pyright 仍有 20 处既有类型错误，均位于本次未改动的测试文件。
+- 联通使用真实 OpenHands、FlowPilot 与本地模拟推理服务；尚未取得真实 vLLM/GPU 调度收益或恢复成本的生产证据。
+
+本机复现命令（其他机器替换仓库和已锁定的模型环境路径）：
+
+```bash
+fp_repo=/home/liyachen/workspace/flowpilot
+predictor_repo=/home/liyachen/workspace/flowpilot_predictor
+sdk_repo=/home/liyachen/openhands/software-agent-sdk
+ml_site=/home/liyachen/.conda/envs/flowpilot-predictor-27b/lib/python3.12/site-packages
+
+cd "$fp_repo"
+FLOWPILOT_SDK_REPO="$predictor_repo/adapters/openhands_current" \
+PYTHONPATH="$ml_site:$predictor_repo:$fp_repo" \
+.venv/bin/python -B -m pytest tests \
+  "$predictor_repo/tests/test_prediction_completion.py" \
+  "$predictor_repo/tests/test_predictor_bridge.py" \
+  "$predictor_repo/tests/test_online_quantile_calibration.py" \
+  "$predictor_repo/tests/test_time_predictor.py" -q --disable-warnings --tb=short
+
+cd "$sdk_repo"
+OPENHANDS_SUPPRESS_BANNER=1 LITELLM_LOCAL_MODEL_COST_MAP=True \
+NO_PROXY=127.0.0.1,localhost \
+PYTHONPATH="$fp_repo:$sdk_repo/benchmarks/flowpilot/src" \
+.venv/bin/python -B -m pytest \
+  "$fp_repo/integration/test_predictor_identity.py" \
+  "$fp_repo/integration/test_openhands_reuse.py::test_deferred_gateway_preserves_prediction_context_across_rounds" \
+  "$fp_repo/integration/test_openhands_reuse.py::test_deferred_gateway_records_inner_tool_hits" \
+  tests/sdk/test_flowpilot.py tests/sdk/test_flowpilot_mcp_arguments.py \
+  -q --disable-warnings --tb=short
+
+OPENHANDS_SUPPRESS_BANNER=1 LITELLM_LOCAL_MODEL_COST_MAP=True \
+PYTHONPATH="$fp_repo:$predictor_repo/adapters/openhands_current/benchmarks/flowpilot/src" \
+.venv/bin/python -B -m pytest "$fp_repo/integration/test_predictor_identity.py" \
+  -q --disable-warnings --tb=short
+```
+
 历史训练/采集脚本需要原数据目录才能复现实验；同门仅调用现成预测器无需运行这些脚本。模型加载、四并发检查成功后，还须在正式框架实测 `duration_estimate_ms` 回写和真实 feedback 更新，才能确认整个系统已接入。
+
+2026-10-04 已完成 BrowseComp-Plus 五题各两次的实机测试前置准备，包含远端 MCP、冻结题目、历史耗时 × 1.5 的 SLO 入口及完整链路启动脚本。因 GPU 资源占用，10 次任务尚未执行；状态、证据与下次命令见 [5 × 2 实机测试交接](BROWSECOMP_5X2_HANDOFF_20261004.md)。

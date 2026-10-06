@@ -15,7 +15,7 @@ import time
 import uuid
 from collections import Counter, OrderedDict
 from concurrent.futures import ThreadPoolExecutor
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, field
 from typing import Any
 
 from .artifact import load_runtime_model
@@ -55,6 +55,8 @@ class _Call:
     running: bool = False
     attempted_version: int = -1
     delivery: asyncio.Task | None = None
+    delivery_error: Exception | None = None
+    changed: asyncio.Event = field(default_factory=asyncio.Event)
     task: asyncio.Task | None = None
     timer: asyncio.TimerHandle | None = None
 
@@ -115,11 +117,17 @@ class PredictorRuntime:
             self.bias = OnlineBias(alpha)
             self.online_config = {"alpha": alpha}
         else:
-            self.online_config = {"alpha": alpha, "shrinkage_rows": 256, **(online_config or {})}
+            self.online_config = {
+                "alpha": alpha,
+                "shrinkage_rows": 256,
+                **(online_config or {}),
+            }
             self.bias = OnlineQuantileCalibration(**self.online_config)
         self.sink = duration_sink
         self.model_version = getattr(model, "version", model.name)
-        config_hash = hashlib.sha256(json.dumps(self.online_config, sort_keys=True).encode()).hexdigest()[:12]
+        config_hash = hashlib.sha256(
+            json.dumps(self.online_config, sort_keys=True).encode()
+        ).hexdigest()[:12]
         mode = f"{online_method}:{config_hash}" if online else "frozen"
         self.predictor_version = (
             f"{self.model_version}:t1-rtt-v1:{selected_quantile}:{mode}"
@@ -140,9 +148,13 @@ class PredictorRuntime:
         self.artifact_sha256: str | None = None
 
     @classmethod
-    def from_artifact(cls, model_path, prepared_data, *, artifact_code_root=None, **kwargs):
+    def from_artifact(
+        cls, model_path, prepared_data, *, artifact_code_root=None, **kwargs
+    ):
         # Startup-only, outside the serving hot path.
-        model, digest = load_runtime_model(model_path, prepared_data, artifact_code_root)
+        model, digest = load_runtime_model(
+            model_path, prepared_data, artifact_code_root
+        )
         runtime = cls(model, **kwargs)
         runtime.artifact_sha256 = digest
         return runtime
@@ -247,6 +259,38 @@ class PredictorRuntime:
         # Cancelling one waiter never cancels the native worker or another waiter.
         return copy.deepcopy(await asyncio.shield(self.calls[identity].future))
 
+    async def wait_for_delivery(self, identity: CallIdentity) -> None:
+        """Wait for this call's factual resolution and version-checked handoff.
+
+        Cancelling a response collector does not cancel native inference or RTT
+        learning. Hits, followers and terminal calls need no local duration.
+        """
+        self._check_loop()
+        call = self.calls[identity]
+        while True:
+            call.changed.clear()
+            if call.invalid or call.terminal or self._closed:
+                return
+            if call.resolution != "UNKNOWN" and call.resolution not in LOCAL:
+                return
+            remaining = call.expires - time.monotonic()
+            if remaining <= 0:
+                raise TimeoutError("prediction expired before duration handoff")
+            if call.resolution in LOCAL and call.result is not None:
+                if call.result["duration_ms"] is None:
+                    reason = call.result["fallback"]["reason"]
+                    raise RuntimeError(f"prediction unavailable: {reason}")
+                if (
+                    call.delivery is None
+                    and call.attempted_version == call.resolution_version
+                ):
+                    if call.delivery_error is not None:
+                        raise RuntimeError(
+                            "duration handoff failed"
+                        ) from call.delivery_error
+                    return
+            await asyncio.wait_for(call.changed.wait(), timeout=remaining)
+
     def _unavailable(self, call, reason):
         return {
             "prediction_id": call.prediction_id,
@@ -264,6 +308,7 @@ class PredictorRuntime:
         if not call.future.done():
             call.result = copy.deepcopy(result)
             call.future.set_result(call.result)
+            call.changed.set()
 
     def _timeout(self, call):
         if not call.future.done():
@@ -300,9 +345,7 @@ class PredictorRuntime:
                     "selected_quantile": self.quantile,
                     "target": "local_execution_round_trip_from_dispatch",
                     "predictor_version": self.predictor_version,
-                    "online_method": self.online_method
-                    if self.online
-                    else "frozen",
+                    "online_method": self.online_method if self.online else "frozen",
                     "online_state_version": call.snapshot.version,
                     "online_observations": call.snapshot.observations,
                     "online_calibration": self.bias.metadata(call.snapshot)
@@ -346,6 +389,7 @@ class PredictorRuntime:
             raise ValueError("conflicting resolution at the same version")
         call.resolution, call.resolution_version = resolution, version
         self._schedule_delivery(call)
+        call.changed.set()
         return True
 
     def _can_deliver(self, call):
@@ -370,6 +414,7 @@ class PredictorRuntime:
             if not self._can_deliver(call):
                 return
             call.attempted_version = call.resolution_version
+            call.delivery_error = None
             q = call.result["duration_ms"]
             prior = DurationPrior(
                 call.identity,
@@ -389,12 +434,14 @@ class PredictorRuntime:
             self.metrics["priors_accepted" if accepted else "priors_rejected"] += 1
         except asyncio.CancelledError:
             raise
-        except Exception:
+        except Exception as exc:
+            call.delivery_error = exc
             self.metrics["sink_errors"] += 1
         finally:
             call.delivery = None
             # Only a newer authoritative version permits a new handoff attempt.
             self._schedule_delivery(call)
+            call.changed.set()
 
     def observe(self, feedback: ToolFeedback) -> dict:
         """Accept actual client RTT; a hit/follower is never an execution label."""
@@ -427,6 +474,7 @@ class PredictorRuntime:
             self.feedback_events.popitem(last=False)
         call.feedback = feedback
         call.terminal = True
+        call.changed.set()
         if not feedback.executed or feedback.resolution not in LOCAL:
             return {"status": "ignored", "reason": "not_local_execution"}
         if feedback.round_trip_ms is None or feedback.status not in (
@@ -467,11 +515,15 @@ class PredictorRuntime:
         # completions must not replace its residual reference with a newer one.
         if isinstance(self.bias, OnlineQuantileCalibration):
             self.bias.observe(
-                call.context, call.raw["duration_ms"], f.round_trip_ms,
+                call.context,
+                call.raw["duration_ms"],
+                f.round_trip_ms,
                 call.context.get("task_group_id", call.identity.job_id),
             )
         else:
-            self.bias.observe(call.context, call.raw["duration_ms"]["q50"], f.round_trip_ms)
+            self.bias.observe(
+                call.context, call.raw["duration_ms"]["q50"], f.round_trip_ms
+            )
         call.learned = True
         self.metrics["online_updates"] += 1
 
@@ -481,12 +533,14 @@ class PredictorRuntime:
         call = self.calls.get(identity)
         if call is not None:
             call.terminal = True
+            call.changed.set()
 
     def invalidate(self, identity: CallIdentity, reason: str = "invalidated"):
         self._check_loop()
         call = self.calls.get(identity)
         if call is not None:
             call.invalid = True
+            call.changed.set()
             self._complete(call, self._unavailable(call, reason))
             if call.delivery:
                 call.delivery.cancel()

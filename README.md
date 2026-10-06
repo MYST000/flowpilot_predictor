@@ -5,7 +5,7 @@
 模型保存在共享磁盘：
 
 ```text
-/data1/ql_flowpilot_predictor/predictor_experiments/native27b_1077_v1/train/lightgbm/model.joblib
+/data/ql_flowpilot_predictor/predictor_experiments/native27b_1077_v1/train/lightgbm/model.joblib
 ```
 
 同门需要读取该文件、同目录的 `manifest.json`、对应代码快照，以及准备数据目录中的 `manifest.json`。仅加载和推理不读取训练 JSONL，不需要重新采集或训练。

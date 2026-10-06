@@ -9,7 +9,16 @@ from .contracts import ConfigurationError
 SDK_COMMIT = "a6db5dcba26a3acfaeac58c8ba5195433a0e223d"
 # Keep the historical pin valid; the integration profile pins the merged upstream core.
 INTEGRATION_SDK_COMMIT = "762cf11dcb79989bf99c2bc451567394c0c5c6a7"
-SUPPORTED_SDK_COMMITS = (SDK_COMMIT, INTEGRATION_SDK_COMMIT)
+FLOWPILOT_SDK_COMMIT = "7a976b07332aa1b5e42fd4bbddb1762ce0e24a37"
+DCS_SAMPLING_SDK_COMMIT = "3c7e620883d3246d283d24790cf4532849a60ab6"
+FULL_TEXT_SDK_COMMIT = "c4f3ea625f8fbe72f2af12e879651dcff4ba4ef9"
+SUPPORTED_SDK_COMMITS = (
+    SDK_COMMIT,
+    INTEGRATION_SDK_COMMIT,
+    FLOWPILOT_SDK_COMMIT,
+    DCS_SAMPLING_SDK_COMMIT,
+    FULL_TEXT_SDK_COMMIT,
+)
 SDK_PATH = str(Path(__file__).resolve().parents[4])
 
 
@@ -76,6 +85,7 @@ class RetrievalConfig:
     mcp_url: str = "http://127.0.0.1:8123/mcp"
     index_path: str = ""
     corpus_revision: str = ""
+    server_policy_revision: str = ""
     top_k: int = 5
     snippet_chars: int = 1200
     read_chars: int = 6000
